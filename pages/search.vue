@@ -39,12 +39,25 @@
                   :items="[
                     { value: 'grid', text: $t('grid') },
                     { value: 'list', text: $t('list') },
+                    { value: 'image', text: $t('thumbnail') },
+                    {
+                      text: $t('table'),
+                      value: 'table',
+                    },
+                    {
+                      text: $t('graph'),
+                      value: 'stats',
+                    },
                   ]"
                   :label="$t('layout')"
                 ></v-select>
               </v-col>
 
-              <v-col v-if="layout === 'grid'" cols="12" sm="3">
+              <v-col
+                v-if="layout === 'grid' || layout === 'image'"
+                cols="12"
+                sm="3"
+              >
                 <v-select
                   v-model="col"
                   :label="$t('col')"
@@ -90,6 +103,7 @@
           <template v-if="total > 0">
             <div class="text-center">
               <v-pagination
+                v-show="layout !== 'stats'"
                 v-model="currentPage"
                 :length="paginationLength"
                 :total-visible="7"
@@ -106,6 +120,7 @@
 
             <div class="text-center">
               <v-pagination
+                v-show="layout !== 'stats'"
                 v-model="currentPage"
                 :length="paginationLength"
                 :total-visible="7"
@@ -285,6 +300,19 @@ export default class search extends Vue {
 
   @Watch('layout')
   watchLayout(currentValue: any) {
+    if (
+      (currentValue === 'image' || currentValue === 'stats') &&
+      this.facetFlag
+    ) {
+      this.setFacetFlag()
+    } else if (
+      (currentValue === 'grid' ||
+        currentValue === 'list' ||
+        currentValue === 'table') &&
+      !this.facetFlag
+    ) {
+      this.setFacetFlag()
+    }
     queryStore.setLayout(currentValue)
   }
 

@@ -56,13 +56,14 @@ export default class Data extends Vue {
         label: this.$t('list_of_prints'),
         icon: this.baseUrl + '/img/iiif-logo.svg',
         description: '',
-        url:
-          'https://raw.githubusercontent.com/nakamura196/piranesi/master/docs/print/iiif/top2.json',
+        url: this.baseUrl + '/data/print/iiif/top2.json',
         related: [
           {
             label: this.$t('view_ia'),
             url:
-              'https://www.kanzaki.com/works/2016/pub/image-annotator?u=https://raw.githubusercontent.com/nakamura196/piranesi/master/docs/print/iiif/top2.json',
+              'https://www.kanzaki.com/works/2016/pub/image-annotator?u=' +
+              this.baseUrl +
+              '/data/print/iiif/top2.json',
           },
         ],
       },
@@ -70,13 +71,14 @@ export default class Data extends Vue {
         label: this.$t('list_of_photo'),
         icon: this.baseUrl + '/img/iiif-logo.svg',
         description: '',
-        url:
-          'https://raw.githubusercontent.com/nakamura196/piranesi/master/docs/photo/iiif/top.json',
+        url: this.baseUrl + '/data/photo/iiif/top.json',
         related: [
           {
             label: this.$t('view_ia'),
             url:
-              'https://www.kanzaki.com/works/2016/pub/image-annotator?u=https://raw.githubusercontent.com/nakamura196/piranesi/master/docs/photo/iiif/top.json',
+              'https://www.kanzaki.com/works/2016/pub/image-annotator?u=' +
+              this.baseUrl +
+              '/data/photo/iiif/top.json',
           },
         ],
       },
@@ -84,12 +86,14 @@ export default class Data extends Vue {
         label: this.$t('Index of cities'),
         icon: this.baseUrl + '/img/rdf-logo.svg',
         description: '',
-        url: 'https://nakamura196.github.io/piranesi3/json/city_index.json',
+        url: this.baseUrl + '/data/json/city_index.json',
         related: [
           {
             label: this.$t('view_ld'),
             url:
-              'https://www.kanzaki.com/works/2014/pub/ld-browser?u=https://nakamura196.github.io/piranesi3/json/city_index.json',
+              'https://www.kanzaki.com/works/2014/pub/ld-browser?u=' +
+              this.baseUrl +
+              '/data/json/city_index.json',
           },
         ],
       },

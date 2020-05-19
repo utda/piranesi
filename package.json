@@ -21,10 +21,13 @@
     "@nuxtjs/google-analytics": "^2.2.3",
     "@nuxtjs/moment": "^1.6.1",
     "@nuxtjs/vuetify": "^1.11.2",
+    "@types/chart.js": "^2.9.20",
+    "chart.js": "^2.9.3",
     "npm-check-updates": "^5.0.0",
     "nuxt": "^2.12.2",
     "nuxt-i18n": "^6.11.1",
-    "push-dir": "^0.4.1"
+    "push-dir": "^0.4.1",
+    "vue-chartjs": "^3.5.0"
   },
   "devDependencies": {
     "@mdi/js": "^5.1.45",

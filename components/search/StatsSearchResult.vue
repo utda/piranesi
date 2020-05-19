@@ -1,38 +1,36 @@
 <template>
   <div>
-    <!--
-  <div
-    v-for="(buckets, index) in results.aggregations"
-    :key="index"
-    class="mb-4"
-  >
-    <b-card v-if="buckets.buckets.length > 1" no-body>
-      <b-card-body>
-        <h4 class="mb-4">{{ index }}</h4>
-        <chart
-          :height="200"
-          class="mb-4"
-          :buckets="buckets.buckets"
-          :label="index"
-        ></chart>
-        <PieChart
-          :height="200"
-          :buckets="buckets.buckets"
-          :label="index"
-        ></PieChart>
-      </b-card-body>
-    </b-card>
+    <template v-for="(label, index) in facetLabels">
+      <v-card
+        v-if="
+          aggregations[index] &&
+          aggregations[index].buckets &&
+          aggregations[index].buckets.length > 0
+        "
+        :key="index"
+        no-body
+        class="mb-10"
+      >
+        <v-card-title class="grey lighten-2">{{ label }}</v-card-title>
+        <div class="pa-5">
+          <Chart
+            :height="400"
+            class="mb-4"
+            :buckets="aggregations[index].buckets"
+          ></Chart>
+        </div>
+      </v-card>
+    </template>
   </div>
-  --></div>
 </template>
 
 <script lang="ts">
 import { Vue, Prop, Component } from 'nuxt-property-decorator'
-import CardItem from '~/components/display/CardItem.vue'
+import Chart from '~/components/search/TestChart.vue'
 
 @Component({
   components: {
-    CardItem,
+    Chart,
   },
 })
 export default class statssearchresult extends Vue {
@@ -42,6 +40,13 @@ export default class statssearchresult extends Vue {
       return []
     },
   })
-  results88!: any
+  aggregations!: any
+
+  @Prop({
+    default() {
+      return []
+    },
+  })
+  facetLabels!: string[]
 }
 </script>

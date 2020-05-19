@@ -72,17 +72,6 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item :to="localePath('data')" link>
-          <v-list-item-action>
-            <v-icon>mdi-download</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <span>{{ $t('data_set') }}</span>
-          </v-list-item-content>
-        </v-list-item>
-
-        <v-divider class="my-5" />
-
         <v-list-item
           href="https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/page/about"
           link
@@ -108,8 +97,7 @@
           </v-list-item-action>
           <v-list-item-content>
             <span
-              >{{ $t('legend') }} （一部不足あり）
-              <i class="fas fa-external-link-alt"></i
+              >{{ $t('legend') }} <i class="fas fa-external-link-alt"></i
             ></span>
           </v-list-item-content>
         </v-list-item>
@@ -124,9 +112,17 @@
           </v-list-item-action>
           <v-list-item-content>
             <span
-              >{{ $t('license') }} （写真どうする？）
-              <i class="fas fa-external-link-alt"></i
+              >{{ $t('license') }} <i class="fas fa-external-link-alt"></i
             ></span>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item :to="localePath('dataset')" link>
+          <v-list-item-action>
+            <v-icon>mdi-download</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <span>{{ $t('data_set') }}</span>
           </v-list-item-content>
         </v-list-item>
 
@@ -140,24 +136,6 @@
             ></span>
           </v-list-item-content>
         </v-list-item>
-
-        <!-- 
-        <v-list-item
-          href="https://www.kanzaki.com/works/2016/pub/image-annotator?u=https://raw.githubusercontent.com/nakamura196/piranesi/master/docs/print/iiif/top2.json"
-          link
-          target="_blank"
-        >
-          <v-list-item-action>
-            <v-icon>mdi-image</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <span
-              >{{ $t('ia_print') }} <i class="fas fa-external-link-alt"></i
-            ></span>
-          </v-list-item-content>
-        </v-list-item>
-
-        -->
       </v-list>
     </v-navigation-drawer>
 
