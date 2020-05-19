@@ -1,0 +1,150 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0019/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Veduta dell'arco con due colonne di giallo antico",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0019"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2074-0019"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Veduta dell'arco con due colonne di giallo antico"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Aqua Antoniniana"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[68] Acqua Antoniniana [g] (tratto del c. d. Arco di Druso)"
+        },
+        {
+            "label": "photo_date",
+            "value": "2002"
+        },
+        {
+            "label": "photographer",
+            "value": "Giuseppe STUTO "
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografato da est."
+        },
+        {
+            "label": "Cronologia",
+            "value": "Cronologia: nel 211-216 d.C.."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "La fronte esterno con due colonne di giallo antico."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "A nord della porta S. Sebastiano"
+        },
+        {
+            "label": "soggetto",
+            "value": "Si tratta di un fornice per l'attraversamento della Via Appia dell'acquedotto che alimentava le terme di Caracalla."
+        },
+        {
+            "label": "sort2",
+            "value": "1031s, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "68"
+        },
+        {
+            "label": "file_n1",
+            "value": "1031"
+        },
+        {
+            "label": "main1",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[68] Acqua Antoniniana [g] (tratto del c. d. Arco di Druso) "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "1031_03"
+        },
+        {
+            "label": "縦横",
+            "value": "縦長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "934"
+        },
+        {
+            "label": "巻",
+            "value": "1"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "旧map_no",
+            "value": "80"
+        }
+    ],
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0019/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://nakamura196.github.io/piranesi/photo/iiif/0019/canvas/1",
+                            "resource": {
+                                "@id": "https://nakamura196.github.io/piranesi/photo/l/0019.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://nakamura196.github.io/piranesi/photo/m/0019.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://nakamura196.github.io/piranesi/photo/m/0019.jpg",
+    "viewingDirection": "left-to-right"
+}

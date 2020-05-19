@@ -1,0 +1,54 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0002/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "0002",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0002"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2073-0002"
+        }
+    ],
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0002/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 525,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://nakamura196.github.io/piranesi/photo/iiif/0002/canvas/1",
+                            "resource": {
+                                "@id": "https://nakamura196.github.io/piranesi/p_maps/roma_mapping.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 525,
+                                "width": 660
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://nakamura196.github.io/piranesi/p_maps/roma_mapping.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 660
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://nakamura196.github.io/piranesi/p_maps/roma_mapping.jpg",
+    "viewingDirection": "left-to-right"
+}

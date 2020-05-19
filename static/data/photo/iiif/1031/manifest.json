@@ -1,0 +1,162 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/1031/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Veduta del tamburo del Mausoleo",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "1031"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2087-1031"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Veduta del tamburo del Mausoleo"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Mausoleum Caeciliae Metellae"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[73] Mausoleo di Cecilia Metella"
+        },
+        {
+            "label": "photo_date",
+            "value": "2001. 7"
+        },
+        {
+            "label": "photographer",
+            "value": "Kazuko FUKUMURA"
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografato da sud."
+        },
+        {
+            "label": "Cronologia",
+            "value": "Cronologia: I sec.a.C.."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Parte occidentale del Mausoleo."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "III miglio della via Appia Antica(lato orientale)"
+        },
+        {
+            "label": "sort",
+            "value": "1"
+        },
+        {
+            "label": "sort2",
+            "value": "8078m, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma, Subrubio"
+        },
+        {
+            "label": "map_no",
+            "value": "73"
+        },
+        {
+            "label": "file_n1",
+            "value": "8078"
+        },
+        {
+            "label": "main1",
+            "value": "m"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[73] Mausoleo di Cecilia Metella "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "0944"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "347"
+        },
+        {
+            "label": "巻",
+            "value": "8"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "データ登録日のコピー",
+            "value": "2004-01-09 00:00:00"
+        },
+        {
+            "label": "備考",
+            "value": "DSCF0944"
+        },
+        {
+            "label": "撮影順",
+            "value": "0887"
+        },
+        {
+            "label": "旧map_no",
+            "value": "93"
+        }
+    ],
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/1031/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://nakamura196.github.io/piranesi/photo/iiif/1031/canvas/1",
+                            "resource": {
+                                "@id": "https://nakamura196.github.io/piranesi/photo/l/1031.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://nakamura196.github.io/piranesi/photo/m/1031.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://nakamura196.github.io/piranesi/photo/m/1031.jpg",
+    "viewingDirection": "left-to-right"
+}

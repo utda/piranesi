@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <title>Mirador</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+</head>
+
+<body>
+  <div id="mirador" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"></div>
+  <script src="mirador.min.js"></script>
+  <script type="text/javascript">
+
+    var vars = {};
+    var param = location.search.substring(1).split('&');
+    for (var i = 0; i < param.length; i++) {
+      var keySearch = param[i].search(/=/);
+      var key = '';
+      if (keySearch != -1) key = param[i].slice(0, keySearch);
+      var val = param[i].slice(param[i].indexOf('=', 0) + 1);
+      if (key != '') vars[key] = decodeURI(val);
+    }
+
+    var config = {
+      id: 'mirador',
+      window : {
+        allowClose : false,
+        allowFullscreen: true,
+        allowMaximize: false,
+        hideWindowTitle: true,
+      },
+      windows: [],
+      language: 'ja',
+      manifests: {
+        /*
+        "https://media.nga.gov/public/manifests/nga_highlights.json": { provider: "National Gallery of Art" },
+        "https://data.ucd.ie/api/img/manifests/ucdlib:33064": { provider: "Irish Architectural Archive" },
+        "https://wellcomelibrary.org/iiif/b18035723/manifest": { provider: "Wellcome Library" },
+        "https://demos.biblissima.fr/iiif/metadata/florus-dispersus/manifest.json": { provider: "Biblissima" },
+        "https://www.e-codices.unifr.ch/metadata/iiif/gau-Fragment/manifest.json": { provider: "e-codices - Virtual Manuscript Library of Switzerland" },
+        "https://wellcomelibrary.org/iiif/collection/b18031511": { provider: "Wellcome Library" },
+        "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10022508f/manifest.json": { provider: "Bibliothèque nationale de France" },
+        "https://manifests.britishart.yale.edu/Osbornfa1": { provider: "Beinecke Rare Book and Manuscript Library, Yale University" },
+        "https://iiif.biblissima.fr/chateauroux/B360446201_MS0005/manifest.json": { provider: "Biblissima" },
+        "https://iiif.durham.ac.uk/manifests/trifle/32150/t1/m4/q7/t1m4q77fr328/manifest": { provider: "Durham University Library" },
+        */
+        // "https://iiif.vam.ac.uk/collections/O1023003/manifest.json": { provider: "Ocean liners"},
+      },
+      workspace: {
+        type: 'mosaic', // Which workspace type to load by default. Other possible values are "elastic"
+        showZoomControls: true
+      },
+      workspaceControlPanel : {
+        enabled: false,
+      }
+    }
+
+    /*
+    {
+      manifestId: 'https://genji.dl.itc.u-tokyo.ac.jp/data/iiif/org/東大本/02/manifest.json',
+      canvasId: 'https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/4c7f22cf-9fe1-5405-1f3a-c53b39e3a45e/canvas/p5#xywh=1096,1069,272,2920'
+    }
+    */
+
+    /*
+
+    displayAllAnnotations: true,
+    window: {
+      sideBarOpenByDefault: true,
+      defaultSideBarPanel: 'annotations'
+    },
+    */
+
+    if (vars["manifest"]) {
+      config.windows = [
+        {
+          manifestId : decodeURIComponent(vars["manifest"])
+        }
+      ]
+    }
+
+    if (vars["config"]) {
+      let query = JSON.parse(decodeURIComponent(vars["config"]))
+      for(let key in query){
+        config[key] = query[key]
+      }
+    }
+
+    var miradorInstance = Mirador.viewer(config);
+  </script>
+</body>
+
+</html>

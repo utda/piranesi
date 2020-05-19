@@ -1,0 +1,45 @@
+service:
+  name: umesao-app
+
+plugins:
+  - serverless-nuxt-plugin
+
+package:
+  individually: true
+  excludeDevDependencies: true
+
+resources:
+  Resources:
+    AssetsBucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: ${self:custom.nuxt.bucketName}
+        CorsConfiguration:
+          CorsRules:
+            - AllowedMethods:
+              - GET
+              - HEAD
+              AllowedOrigins:
+              - "*"
+
+provider:
+  name: aws
+  region: us-east-1 # this field is used for the assets files s3 path.
+  stage: ${opt:stage, 'dev'}
+  runtime: nodejs12.x
+  profile: cj-app-user
+  environment:
+    NODE_ENV: ${file(.env.${self:provider.stage}.yml):NODE_ENV}
+
+custom:
+  nuxt:
+    version: v0.0.21
+    bucketName: ${self:service.name}-${self:provider.stage}
+    cdnPath: ${opt:cdnPath}
+
+functions:
+  nuxt:
+    handler: handler.render
+    events:
+      - http: ANY /
+      - http: ANY /{proxy+}

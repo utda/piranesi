@@ -1,0 +1,146 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0119/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Veduta dell'interno della porta",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0119"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2080-0119"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Veduta dell'interno della porta"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Porta Tiburtina"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[60] Porta Tiburtina"
+        },
+        {
+            "label": "photo_date",
+            "value": "2002"
+        },
+        {
+            "label": "photographer",
+            "value": "Giuseppe STUTO "
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografato da sud."
+        },
+        {
+            "label": "Cronologia",
+            "value": "Cronologia: Acquedotti: 5 a.C., Porta: 270-272 d.C.."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Parte del monumento: facciata ovest con l'iscrizione onoriana."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "Porta S. Lorenzo"
+        },
+        {
+            "label": "sort2",
+            "value": "9014s, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "60"
+        },
+        {
+            "label": "file_n1",
+            "value": "9014"
+        },
+        {
+            "label": "main1",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[60] Porta Tiburtina "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "9014_01"
+        },
+        {
+            "label": "縦横",
+            "value": "縦長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "930"
+        },
+        {
+            "label": "巻",
+            "value": "9"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "旧map_no",
+            "value": "70"
+        }
+    ],
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0119/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://nakamura196.github.io/piranesi/photo/iiif/0119/canvas/1",
+                            "resource": {
+                                "@id": "https://nakamura196.github.io/piranesi/photo/l/0119.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://nakamura196.github.io/piranesi/photo/m/0119.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://nakamura196.github.io/piranesi/photo/m/0119.jpg",
+    "viewingDirection": "left-to-right"
+}

@@ -1,0 +1,154 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0041/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Veduta della facciata di Sant'Urbano",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0041"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2075-0041"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Veduta della facciata di Sant'Urbano"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Triopius"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[74] Triopio di Erode Attico"
+        },
+        {
+            "label": "photo_date",
+            "value": "2002"
+        },
+        {
+            "label": "photographer",
+            "value": "Giuseppe STUTO "
+        },
+        {
+            "label": "Cronologia",
+            "value": "Cronologia: chiesa costruita nel X sec. probabilimente sul tempio( tempio di Cerere e Faustina) costruito nel 2 sec. d.C., e restaurata nel 1634."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Probabile adattamento di un tempio costruito da Erode Attico nel Pago Triopio. Facciata della chiesa con quattro colonne di marmo pentelico."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "Via della Caffarella"
+        },
+        {
+            "label": "sort",
+            "value": "1"
+        },
+        {
+            "label": "sort2",
+            "value": "16063m, 6016s,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma, Subrubio"
+        },
+        {
+            "label": "map_no",
+            "value": "74"
+        },
+        {
+            "label": "file_n1",
+            "value": "16063"
+        },
+        {
+            "label": "main1",
+            "value": "m"
+        },
+        {
+            "label": "file_n2",
+            "value": "6016"
+        },
+        {
+            "label": "main2",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[74] Triopio di Erode Attico "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "16063_05"
+        },
+        {
+            "label": "縦横",
+            "value": "縦長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "1035"
+        },
+        {
+            "label": "巻",
+            "value": "16"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-10-05 00:00:00"
+        },
+        {
+            "label": "旧map_no",
+            "value": "95"
+        }
+    ],
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0041/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://nakamura196.github.io/piranesi/photo/iiif/0041/canvas/1",
+                            "resource": {
+                                "@id": "https://nakamura196.github.io/piranesi/photo/l/0041.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://nakamura196.github.io/piranesi/photo/m/0041.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://nakamura196.github.io/piranesi/photo/m/0041.jpg",
+    "viewingDirection": "left-to-right"
+}

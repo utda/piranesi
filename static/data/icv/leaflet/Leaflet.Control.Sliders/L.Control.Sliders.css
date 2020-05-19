@@ -1,0 +1,26 @@
+/* IIIF Curation Viewer - Sliders control Leaflet plugin
+ * http://codh.rois.ac.jp/software/iiif-curation-viewer/
+ *
+ * Copyright 2019 Center for Open Data in the Humanities, Research Organization of Information and Systems
+ * Released under the MIT license
+ *
+ * Core contributor: Jun HOMMA (@2SC1815J)
+ *
+ * Based on
+ * "L.control.layers" (2-clause BSD License, Copyright (c) 2010-2016, Vladimir Agafonkin, Copyright (c) 2010-2011, CloudMade)
+ *  https://github.com/Leaflet/Leaflet/blob/v1.3.1/src/control/Control.Layers.js
+ *  https://github.com/Leaflet/Leaflet/blob/v0.7.7/src/control/Control.Layers.js
+ * "Leaflet.Control.Opacity" (MIT License, Copyright (c) 2018 Yasunori Kirimoto)
+ *  https://github.com/dayjournal/Leaflet.Control.Opacity
+ */
+.leaflet-control-layers-range {
+    -webkit-appearance: none;
+    width: 110px;
+    height: 10px;
+    background: #F1F0EE;
+    border-radius: 30px;
+    outline: none;
+}
+.leaflet-control-sliders label {
+    margin-bottom: 10px;
+}

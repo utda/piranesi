@@ -1,0 +1,126 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/3010/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "3010",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "3010"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-0523-0010"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Forum Nervae  (Forum Transitorivm)"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[18] Foro di Augusto"
+        },
+        {
+            "label": "photo_date",
+            "value": "1999. 7-9"
+        },
+        {
+            "label": "photographer",
+            "value": "Paolo MONTI"
+        },
+        {
+            "label": "sort2",
+            "value": "17027s, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "18"
+        },
+        {
+            "label": "file_n1",
+            "value": "17027"
+        },
+        {
+            "label": "main1",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[18] Foro di Augusto "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "0000-0000-0523-0010"
+        },
+        {
+            "label": "縦横",
+            "value": "縦長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "18"
+        },
+        {
+            "label": "巻",
+            "value": "17"
+        },
+        {
+            "label": "memo",
+            "value": "カベ"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "旧map_no",
+            "value": "17"
+        }
+    ],
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/3010/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://nakamura196.github.io/piranesi/photo/iiif/3010/canvas/1",
+                            "resource": {
+                                "@id": "https://nakamura196.github.io/piranesi/photo/l/3010.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://nakamura196.github.io/piranesi/photo/m/3010.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://nakamura196.github.io/piranesi/photo/m/3010.jpg",
+    "viewingDirection": "left-to-right"
+}

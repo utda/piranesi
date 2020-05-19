@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/*
+ * IIIF Curation Viewer v1.7
+ * http://codh.rois.ac.jp/software/iiif-curation-viewer/
+ *
+ * Copyright 2019 Center for Open Data in the Humanities, Research Organization of Information and Systems
+ * Released under the MIT license
+ *
+ * Core contributor: Jun HOMMA (@2SC1815J)
+ *
+ * Licenses of open source libraries, see acknowledgements.txt
+ */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
+.icv-annotation-div-icon {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #ff2800;
+  text-shadow: white 1px 1px 0px, white -1px 1px 0px, white 1px -1px 0px, white -1px -1px 0px;
+}

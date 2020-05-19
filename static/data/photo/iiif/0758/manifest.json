@@ -1,0 +1,158 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0758/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Zona di Aventino",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0758"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2087-0758"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Zona di Aventino"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[71] Via Marmorata (presso il Tevere)"
+        },
+        {
+            "label": "photo_date",
+            "value": "2001. 7"
+        },
+        {
+            "label": "photographer",
+            "value": "Kazuko FUKUMURA"
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografato da sud."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Parte del monumento: la parte sud della scarpata del'Aventino."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "Via Marmorata"
+        },
+        {
+            "label": "sort",
+            "value": "1"
+        },
+        {
+            "label": "sort2",
+            "value": "1039m, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "71"
+        },
+        {
+            "label": "file_n1",
+            "value": "1039"
+        },
+        {
+            "label": "main1",
+            "value": "m"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[71] Via Marmorata (presso il Tevere) "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "0670"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "197"
+        },
+        {
+            "label": "巻",
+            "value": "1"
+        },
+        {
+            "label": "memo",
+            "value": "アウェンティヌス丘裾にある通称マルモラタ通り沿いの建物の遺構"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-10-05 00:00:00"
+        },
+        {
+            "label": "データ登録日のコピー",
+            "value": "2003-12-26 00:00:00"
+        },
+        {
+            "label": "備考",
+            "value": "DSCF0670"
+        },
+        {
+            "label": "撮影順",
+            "value": "0687"
+        },
+        {
+            "label": "旧map_no",
+            "value": "83"
+        }
+    ],
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0758/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://nakamura196.github.io/piranesi/photo/iiif/0758/canvas/1",
+                            "resource": {
+                                "@id": "https://nakamura196.github.io/piranesi/photo/l/0758.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://nakamura196.github.io/piranesi/photo/m/0758.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://nakamura196.github.io/piranesi/photo/m/0758.jpg",
+    "viewingDirection": "left-to-right"
+}

@@ -1,0 +1,102 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0162/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "0162",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0162"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2082-0162"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Theatrum Marcelli"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[33] Teatro di Marcello"
+        },
+        {
+            "label": "photo_date",
+            "value": "2002"
+        },
+        {
+            "label": "photographer",
+            "value": "Giuseppe STUTO "
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "33"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[33] Teatro di Marcello "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "4040_02"
+        },
+        {
+            "label": "レコード番号",
+            "value": "1112"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "追加",
+            "value": "追加"
+        },
+        {
+            "label": "旧map_no",
+            "value": "34"
+        }
+    ],
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0162/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://nakamura196.github.io/piranesi/photo/iiif/0162/canvas/1",
+                            "resource": {
+                                "@id": "https://nakamura196.github.io/piranesi/photo/l/0162.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://nakamura196.github.io/piranesi/photo/m/0162.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://nakamura196.github.io/piranesi/photo/m/0162.jpg",
+    "viewingDirection": "left-to-right"
+}

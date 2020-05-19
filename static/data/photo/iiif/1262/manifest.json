@@ -1,0 +1,134 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/1262/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "1262",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "1262"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2088-1262"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Porta Praenestina "
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[62] Porta Maggiore"
+        },
+        {
+            "label": "photo_date",
+            "value": "2003.9.27"
+        },
+        {
+            "label": "photographer",
+            "value": "Natsumi ARAKI"
+        },
+        {
+            "label": "sort",
+            "value": "1"
+        },
+        {
+            "label": "sort2",
+            "value": "16052m, 1028s,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "62"
+        },
+        {
+            "label": "file_n1",
+            "value": "16052"
+        },
+        {
+            "label": "main1",
+            "value": "m"
+        },
+        {
+            "label": "file_n2",
+            "value": "1028"
+        },
+        {
+            "label": "main2",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[62] Porta Maggiore "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "16052-1"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "46"
+        },
+        {
+            "label": "巻",
+            "value": "16"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "旧map_no",
+            "value": "73"
+        }
+    ],
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/1262/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://nakamura196.github.io/piranesi/photo/iiif/1262/canvas/1",
+                            "resource": {
+                                "@id": "https://nakamura196.github.io/piranesi/photo/l/1262.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://nakamura196.github.io/piranesi/photo/m/1262.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://nakamura196.github.io/piranesi/photo/m/1262.jpg",
+    "viewingDirection": "left-to-right"
+}

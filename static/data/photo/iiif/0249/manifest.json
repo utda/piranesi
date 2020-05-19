@@ -1,0 +1,166 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0249/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "La facciata della chiesa con la ripida scalinata ",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0249"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2086-0249"
+        },
+        {
+            "label": "Didascalia",
+            "value": "La facciata della chiesa con la ripida scalinata "
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[21] Monte Capitolino"
+        },
+        {
+            "label": "photo_date",
+            "value": "2001. 7"
+        },
+        {
+            "label": "photographer",
+            "value": "Kazuko FUKUMURA"
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografato da ovest."
+        },
+        {
+            "label": "Direzione dell'oggetto",
+            "value": "La scalinata realizzata nel 1348 da Cola di Rienzo."
+        },
+        {
+            "label": "Cronologia",
+            "value": "Cronologia: XIII sec.d.C.."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Parte del monumento: La facciata trecentista e la ripida scalinata di 122 gradini marmorei."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "Piazza d'Aracoeli"
+        },
+        {
+            "label": "soggetto",
+            "value": "La scalinata realizzata nel 1348 da Cola di Rienzo."
+        },
+        {
+            "label": "sort",
+            "value": "1"
+        },
+        {
+            "label": "sort2",
+            "value": "17007m, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "※"
+        },
+        {
+            "label": "file_n1",
+            "value": "17007"
+        },
+        {
+            "label": "main1",
+            "value": "m"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[21] Monte Capitolino "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "0149"
+        },
+        {
+            "label": "縦横",
+            "value": "縦長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "196"
+        },
+        {
+            "label": "巻",
+            "value": "17"
+        },
+        {
+            "label": "memo",
+            "value": "サンタ・マリア・イン・アラチェリ［アラコエリ］教会"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "データ登録日のコピー",
+            "value": "2004-01-09 00:00:00"
+        },
+        {
+            "label": "備考",
+            "value": "DSCF0149"
+        },
+        {
+            "label": "撮影順",
+            "value": "0225"
+        },
+        {
+            "label": "旧map_no",
+            "value": "16"
+        }
+    ],
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0249/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://nakamura196.github.io/piranesi/photo/iiif/0249/canvas/1",
+                            "resource": {
+                                "@id": "https://nakamura196.github.io/piranesi/photo/l/0249.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://nakamura196.github.io/piranesi/photo/m/0249.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://nakamura196.github.io/piranesi/photo/m/0249.jpg",
+    "viewingDirection": "left-to-right"
+}

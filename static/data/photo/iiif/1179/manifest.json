@@ -1,0 +1,102 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/1179/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "1179",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "1179"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2087-1179"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Basilica laurentiana et Pelagiana"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[109] Basilica di S. Lorenzo fuori le Mura"
+        },
+        {
+            "label": "photo_date",
+            "value": "2001. 7"
+        },
+        {
+            "label": "photographer",
+            "value": "Kazuko FUKUMURA"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "111"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[109] Basilica di S. Lorenzo fuori le Mura "
+        },
+        {
+            "label": "レコード番号",
+            "value": "1730"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "備考",
+            "value": "DSCF1092"
+        },
+        {
+            "label": "撮影順",
+            "value": "1036"
+        },
+        {
+            "label": "旧map_no",
+            "value": "64"
+        }
+    ],
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/1179/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://nakamura196.github.io/piranesi/photo/iiif/1179/canvas/1",
+                            "resource": {
+                                "@id": "https://nakamura196.github.io/piranesi/photo/l/1179.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://nakamura196.github.io/piranesi/photo/m/1179.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://nakamura196.github.io/piranesi/photo/m/1179.jpg",
+    "viewingDirection": "left-to-right"
+}

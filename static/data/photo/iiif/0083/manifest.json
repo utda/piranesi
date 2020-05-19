@@ -1,0 +1,142 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0083/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Veduta della Piazza ",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0083"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2077-0083"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Veduta della Piazza "
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[121] Piazza del Quirinale (Piazza di Monte Cavallo)"
+        },
+        {
+            "label": "photo_date",
+            "value": "2002"
+        },
+        {
+            "label": "photographer",
+            "value": "Giuseppe STUTO "
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografata da sud."
+        },
+        {
+            "label": "Cronologia",
+            "value": "Cronologia: statue: copie di et&#224; imperiale romana di originali greci del V sec.a.C., palazzo: XVI-XVIII sec.."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Le colossali statue dei Dioscuri con l'obelisco proveniente dal mausoleo di Augusto e il Palazzo del Quirinale."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "Piazza del Quirinale"
+        },
+        {
+            "label": "sort2",
+            "value": "16028s, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "123"
+        },
+        {
+            "label": "file_n1",
+            "value": "16028"
+        },
+        {
+            "label": "main1",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[121] Piazza del Quirinale (Piazza di Monte Cavallo) "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "16028_03"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "1004"
+        },
+        {
+            "label": "巻",
+            "value": "16"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "データ登録日のコピー",
+            "value": "2004-01-13 00:00:00"
+        },
+        {
+            "label": "旧map_no",
+            "value": "55"
+        }
+    ],
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0083/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://nakamura196.github.io/piranesi/photo/iiif/0083/canvas/1",
+                            "resource": {
+                                "@id": "https://nakamura196.github.io/piranesi/photo/l/0083.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://nakamura196.github.io/piranesi/photo/m/0083.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://nakamura196.github.io/piranesi/photo/m/0083.jpg",
+    "viewingDirection": "left-to-right"
+}

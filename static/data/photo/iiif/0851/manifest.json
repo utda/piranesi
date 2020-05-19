@@ -1,0 +1,166 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0851/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Veduta della facciata posteriore ",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0851"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2087-0851"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Veduta della facciata posteriore "
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[108] Basilica di S. Maria Maggiore"
+        },
+        {
+            "label": "photo_date",
+            "value": "2001. 7"
+        },
+        {
+            "label": "photographer",
+            "value": "Kazuko FUKUMURA"
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografata da nord-ovest."
+        },
+        {
+            "label": "Direzione dell'oggetto",
+            "value": "La facciata secentesca, opera di Carlo Rainaldi."
+        },
+        {
+            "label": "Cronologia",
+            "value": "Cronologia: Vsec.;restauro da papa Sisto III(432 d.C.)."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Parte del monumento: esterno dell'apside."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "Piazza di Santa Maria Maggiore"
+        },
+        {
+            "label": "soggetto",
+            "value": "La facciata secentesca, opera di Carlo Rainaldi."
+        },
+        {
+            "label": "sort",
+            "value": "1"
+        },
+        {
+            "label": "sort2",
+            "value": "16020m, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "110"
+        },
+        {
+            "label": "file_n1",
+            "value": "16020"
+        },
+        {
+            "label": "main1",
+            "value": "m"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[108] Basilica di S. Maria Maggiore "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "0764"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "174"
+        },
+        {
+            "label": "巻",
+            "value": "16"
+        },
+        {
+            "label": "memo",
+            "value": "S.M.Maggiore大聖堂"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "データ登録日のコピー",
+            "value": "2004-01-09 00:00:00"
+        },
+        {
+            "label": "備考",
+            "value": "DSCF0764"
+        },
+        {
+            "label": "撮影順",
+            "value": "0754"
+        },
+        {
+            "label": "旧map_no",
+            "value": "67"
+        }
+    ],
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0851/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://nakamura196.github.io/piranesi/photo/iiif/0851/canvas/1",
+                            "resource": {
+                                "@id": "https://nakamura196.github.io/piranesi/photo/l/0851.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://nakamura196.github.io/piranesi/photo/m/0851.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://nakamura196.github.io/piranesi/photo/m/0851.jpg",
+    "viewingDirection": "left-to-right"
+}

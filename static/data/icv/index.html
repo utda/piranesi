@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-89206154-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-89206154-1');</script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="leaflet/leaflet-0.7.7/leaflet.css">
+    <link rel="stylesheet" href="leaflet/Leaflet.fullscreen/leaflet.fullscreen.css">
+    <link rel="stylesheet" href="leaflet/Leaflet.toolbar/leaflet.toolbar.css">
+    <link rel="stylesheet" href="leaflet/L.Control.Credits/leaflet-control-credits.css">
+    <link rel="stylesheet" href="leaflet/Leaflet.draw/leaflet.draw.css">
+    <link rel="stylesheet" href="leaflet/Leaflet.label/leaflet.label.css">
+    <link rel="stylesheet" href="leaflet/Leaflet.Control.Sliders/L.Control.Sliders.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui-1.12.1.min.css">
+    <link rel="stylesheet" href="iiif-curation-viewer/viewer.css">
+    <link rel="stylesheet" href="iiif-curation-viewer/header_footer.css">
+    <link rel="stylesheet" href="iiif-curation-viewer/annotation.css">
+    <!--
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="mask-icon" href="favicons/favicon-black.svg" color="#3F415E">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicons/favicon.ico">
+    <link rel="icon" type="image/svg+xml" sizes="any" href="favicons/favicon.svg">
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="spin/spin.min.js"></script>
+    <script src="jquery/jquery-1.12.4.min.js"></script>
+    <script src="jquery/jquery.lazyload.min.js"></script>
+    <script src="jquery/jPages.min.js"></script>
+    <script src="jquery/jquery.spin.js"></script>
+    <script src="jquery-ui/jquery-ui-1.12.1.min.js"></script>
+    <script src="jquery-ui/jquery.ui.touch-punch.min.js"></script>
+    <script src="leaflet/leaflet-0.7.7/leaflet.js"></script>
+    <script src="leaflet/Leaflet.fullscreen/Leaflet.fullscreen.min.js"></script>
+    <script src="leaflet/Leaflet.toolbar/leaflet.toolbar.js"></script>
+    <script src="leaflet/Leaflet.Spin/leaflet.spin.min.js"></script>
+    <script src="leaflet/L.Control.Credits/leaflet-control-credits.js"></script>
+    <script src="leaflet/Leaflet.Control.Sliders/L.Control.Sliders.js"></script>
+    <script src="iiif-curation-viewer/toolbarConflictWorkaroundPre.js"></script>
+    <script src="leaflet/Leaflet.draw/leaflet.draw.js"></script>
+    <script src="iiif-curation-viewer/toolbarConflictWorkaroundPost.js"></script>
+    <script src="leaflet/Leaflet.label/leaflet.label.js"></script>
+    <script src="leaflet/leaflet-iiif/leaflet-iiif.js"></script>
+    <script src="leaflet/Leaflet.ImageOverlayCustom/Leaflet.ImageOverlayCustom.js"></script>
+    <script src="bootstrap/bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="bootstrap/bootstrap-datepicker/locales/bootstrap-datepicker.ja.min.js"></script>
+    <script src="lz-string/lz-string.min.js"></script>
+    <title>IIIF Curation Viewer</title>
+    <!-- Licenses of open source libraries, see iiif-curation-viewer/acknowledgements.txt -->
+  </head>
+  <body>
+
+    <header class="navbar navbar-default navbar-custom-header">
+      <div class="container container-custom-header">
+        <div class="navbar-header navbar-header-custom-header">
+          <button class="navbar-toggle navbar-toggle-custom-header collapsed" type="button" data-toggle="collapse" data-target="#navbar_lang">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- Organization name, collection name, project name, etc. -->
+          <a id="navbar_brand" class="navbar-brand navbar-brand-custom-header" href="index.html"><span class="icp_navbar_brand_logo"></span>IIIF Curation Viewer</a>
+        </div>
+        <div id="navbar_lang" class="collapse navbar-collapse navbar-collapse-custom-header">
+          <ul id="navbar_lang_ul" class="nav navbar-nav navbar-nav-custom navbar-right">
+            <li class="nav_lang_ja navbar-text navbar-text-custom-header">日本語</li>
+            <li class="nav_lang_en navbar-text navbar-text-custom-header"><a href="index.html#">English</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="container container-custom">
+      <div id="iiif-curation-viewer">
+        <div class="header">
+          <h2 id="book_title">IIIF Curation Viewer <small>/ Drop a manifest URL to open</small></h2>
+        </div>
+        <div id="image_canvas_nav_container">
+          <nav aria-label="Page navigation" id="page_navigation">
+            
+            <ul class="pagination pagination-sm pagination-custom" id="page_nav">
+              <li>
+                <a href="javascript:iiifViewer.prev();" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;前</span>
+                </a>
+              </li>
+              <li><span id="page">0</span></li>
+              <li>
+                <a href="javascript:iiifViewer.next();" aria-label="Next">
+                  <span aria-hidden="true">次&raquo;</span>
+                </a>
+              </li>
+            </ul>
+            
+            <ul class="pagination pagination-sm pagination-custom">
+              <li><a href="javascript:iiifViewer.showThumbnails();" id="show_thumbnails">サムネイル一覧</a></li>
+            </ul>
+            
+            <ul class="pagination pagination-sm pagination-custom" id="step_nav">
+              <li id="decrease_step">
+                <a href="javascript:iiifViewer.decreaseStep();" aria-label="Decrease Step">
+                  <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                </a>
+              </li>
+              <li id="increase_step">
+                <a href="javascript:iiifViewer.increaseStep();" aria-label="Increase Step">
+                  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                </a>
+              </li>
+            </ul>
+            
+            <ul class="pagination pagination-sm pagination-custom">
+              <li><a href="javascript:void(0);" id="cursor_date"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></a></li>
+            </ul>
+            <ul class="pagination pagination-sm pagination-custom">
+              <li><a href="javascript:iiifViewer.latest();" id="timeline_latest"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span></a></li>
+            </ul>
+            
+            <ul class="pagination pagination-sm pagination-custom navbar-right pagination-custom-right">
+              <li>
+                <ul class="pagination pagination-sm pagination-custom" id="books_nav">
+                  <li>
+                    <a href="javascript:iiifViewer.prevBook();" aria-label="Previous Book">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li><span id="books">資料</span></li>
+                  <li>
+                    <a href="javascript:iiifViewer.nextBook();" aria-label="Next Book">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li>
+                <ul class="pagination pagination-sm pagination-custom" id="page_orig_nav">
+                  <li><a id="page_orig">0</a></li>
+                </ul>
+              </li>
+              
+              <li>
+                <ul class="pagination pagination-sm pagination-custom" id="curation_nav">
+                  <li><a href="javascript:iiifViewer.toggleFav();" id="fav_star_link"><span class="glyphicon glyphicon-star-empty" aria-hidden="true" id="fav_star"></span></a></li>
+                  <li><a href="javascript:iiifViewer.showCurationList();" id="show_curation_list"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span></a></li>
+                </ul>
+              </li>
+              
+              <li>
+                <ul class="pagination pagination-sm pagination-custom">
+                  <li><a id="image_download"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></a></li>
+                </ul>
+              </li>
+              
+              <li>
+                <ul class="pagination pagination-sm pagination-custom" id="info_nav">
+                  <li class="dropdown dropdown-custom">
+                    <a href="index.html#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="info_dropdown">
+                      <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-custom">
+                      <li id="info_list"></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              
+              <li>
+                <ul class="pagination pagination-sm pagination-custom" id="help_nav">
+                  <li><a href="javascript:iiifViewer.showHelp();"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a></li>
+                </ul>
+              </li>
+
+              <li>
+                <ul class="pagination pagination-sm pagination-custom" id="viewmode_nav">
+                  <li><a href="index.html#" id="toggle_viewmode"><span class="glyphicon glyphicon-comment" aria-hidden="true" id="toggle_viewmode_icon"></span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div id="image_canvas">
+            <div id="image_canvas_overlay_wrapper">
+              <a href="index.html#" id="image_canvas_overlay_left" style="display: none;"></a>
+              <a href="index.html#" id="image_canvas_overlay_right" style="display: none;"></a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" tabindex="-1" id="thumbnails_win">
+          <div class="modal-dialog modal-lg" id="thumbnails_dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div id="thumbnails">
+                  <div id="thumbnails_nav"></div>
+                  <ul id="thumbnails_container"></ul>
+                </div>
+              </div>
+              <div class="modal-footer modal-footer-custom">
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="thumbnails_close">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" tabindex="-1" id="help_win">
+          <div class="modal-dialog modal-lg" id="help_dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <h4 id="help_title" class="help_title">IIIF Curation Viewer</h4>
+                <div id="help_contents">
+                </div>
+              </div>
+              <div class="modal-footer modal-footer-custom">
+                <a href="index.html#" class="btn btn-default" target="_blank" id="help_more">More info</a>
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="help_close">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" tabindex="-1" id="curation_list_win">
+          <div class="modal-dialog modal-lg" id="curation_list_dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <h4 id="curation_list_title" class="curation_list_title">Curation List</h4>
+                <div id="curation_list_url">
+                </div>
+                <div id="curation_list">
+                  <ul id="curation_list_ul" class="curation_list_ul">
+                  </ul>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+              <div class="modal-footer modal-footer-custom">
+                <button type="button" class="btn btn-default pull-left" id="curation_list_clear">Clear All</button>
+                <button type="button" class="btn btn-default btn-icv-export" id="curation_list_export">Export</button>
+                <button type="button" class="btn btn-default" id="curation_list_json"><span class="glyphicon glyphicon-download-alt"></span> JSON</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="curation_list_close">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="iiif-curation-viewer/viewer.js"></script>
+    <script src="index.js"></script>
+
+    <!-- IIIF Curation Viewer - Firebase authentication plugin -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-auth.js"></script>
+    <link rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.css">
+    <script>
+      if (typeof iiifViewer !== 'undefined' && iiifViewer.getLang() !== 'ja') {
+        document.write(unescape('%3Cscript src="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.js"%3E%3C/script%3E'));
+      } else {
+        document.write(unescape('%3Cscript src="https://www.gstatic.com/firebasejs/ui/3.4.1/firebase-ui-auth__ja.js"%3E%3C/script%3E'));
+      }
+    </script>
+    <link rel="stylesheet" href="iiif-curation-viewer-plugins/icv.authFirebase.css">
+    <script src="iiif-curation-viewer-plugins/icv.authFirebase.js"></script>
+    <script src="authFirebase.js"></script>
+
+    <!-- IIIF Curation Viewer - JSONkeeper export plugin -->
+    <link rel="stylesheet" href="iiif-curation-viewer-plugins/icv.exportJsonKeeper.css">
+    <script src="iiif-curation-viewer-plugins/icv.exportJsonKeeper.js"></script>
+    <script src="exportJsonKeeper.js"></script>
+
+    <!-- IIIF Curation Viewer - Curation metadata edit plugin -->
+    <!-- Licenses of open source libraries, see icv.editCurationMetadata.txt -->
+    <link rel="stylesheet" href="iiif-curation-viewer-plugins/icv.editCurationMetadata.css">
+    <script src="json-editor/jsoneditor.min.js"></script>
+    <link rel="stylesheet" href="leaflet/leaflet-sidebar/L.Control.Sidebar.css">
+    <script src="leaflet/leaflet-sidebar/L.Control.Sidebar.js"></script>
+    <script src="iiif-curation-viewer-plugins/icv.editCurationMetadata.js"></script>
+    <script src="editCurationMetadata.js"></script>
+
+    <!-- IIIF Curation Viewer - Crop size conditions set plugin -->
+    <!-- Licenses of open source libraries, see icv.setCropSizeConditions.txt -->
+    <script src="bootstrap/bootstrap-validator/validator.min.js"></script>
+    <script src="iiif-curation-viewer-plugins/icv.setCropSizeConditions.js"></script>
+    <script src="setCropSizeConditions.js"></script>
+
+    <!-- IIIF Curation Viewer - Curation list export plugin -->
+    <script src="iiif-curation-viewer-plugins/icv.exportCurationList.js"></script>
+    <script src="exportCurationList.js"></script>
+
+    <!-- IIIF Curation Viewer - Cropped image export plugin -->
+    <link rel="stylesheet" href="iiif-curation-viewer-plugins/icv.exportCroppedImage.css">
+    <script src="iiif-curation-viewer-plugins/icv.exportCroppedImage.js"></script>
+    <script src="exportCroppedImage.js"></script>
+
+    <footer class="navbar-inverse navbar-custom-footer">
+      <div class="container container-custom-footer">
+        <!-- Organization link, License, etc. -->
+        <p class="navbar-text navbar-text-custom-footer text-center"><a href="http://codh.rois.ac.jp/" class="navbar-link">Center for Open Data in the Humanities</a>, <a href="http://ds.rois.ac.jp/" class="navbar-link">Research Organization of Information and Systems</a>. Powered by <a href="http://codh.rois.ac.jp/software/iiif-curation-viewer/" class="navbar-link">IIIF Curation Viewer</a>.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>

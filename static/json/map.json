@@ -1,0 +1,1529 @@
+[
+    {
+        "@id": "http://example.org/map",
+        "http://www.w3.org/2000/01/rdf-schema#label": "Map",
+        "http://purl.org/dc/terms/hasPart": [
+            {
+                "@id": "http://dbpedia.org/resource/Roman_Forum",
+                "http://www.w3.org/2000/01/rdf-schema#label": [
+                    {
+                        "value": "Foro Romano",
+                        "type": "literal",
+                        "lang": "it"
+                    },
+                    {
+                        "value": "Forum Romanum",
+                        "type": "literal",
+                        "lang": "la"
+                    }
+                ],
+                "http://purl.org/dc/terms/hasPart": [
+                    {
+                        "@id": "http://dbpedia.org/resource/Arch_of_Titus",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Arco di Tito",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Arcus Titi",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "8"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Temple_of_Venus_and_Roma",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Tempio di Venere e Roma",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Aedes Veneris et Romae",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "9"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Basilica_of_Maxentius",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Basilica di Massenzio e di Constantino",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Basilica Nova",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "10"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Column_of_Phocas",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Colonna di Foca",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Columna Phocae",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "11"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Temple_of_Castor_and_Pollux",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Tempio dei Castori (o dei Dioscuri)",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Aedes Castorum",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "12"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Temple_of_Antoninus_and_Faustina",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Tempio di Antonino e Faustina",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Templum Antonini et Faustinae",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "13"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Arch_of_Septimius_Severus",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Arco di Settimio Severo",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Arcus Septimii Severi",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "14"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Temple_of_Vespasian_and_Titus",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Tempio di Vespasiano e Tito",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Templum Vespasiani et Titi",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "15"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Temple_of_Saturn",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Tempio di Saturno",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Aedes Saturni",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "16"
+                    }
+                ]
+            },
+            {
+                "@id": "http://dbpedia.org/resource/Imperial_fora",
+                "http://www.w3.org/2000/01/rdf-schema#label": [
+                    {
+                        "value": "Fori Imperiali",
+                        "type": "literal",
+                        "lang": "it"
+                    }
+                ],
+                "http://purl.org/dc/terms/hasPart": [
+                    {
+                        "@id": "http://dbpedia.org/resource/Forum_of_Nerva",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Foro di Nerva o Transitorio",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Forum Nervae (Forum Transitorivm)",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "17"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Forum_of_Augustus",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Foro di Augusto",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Forum Augusti",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "18"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Trajan's_Market",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Mercati traianei",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "19"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Trajan's_Column",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Colonna Traiana",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Columna Traiani",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "20"
+                    }
+                ]
+            },
+            {
+                "@id": "http://dbpedia.org/resource/Forum_Boarium",
+                "http://www.w3.org/2000/01/rdf-schema#label": [
+                    {
+                        "value": "Foro Boario, Foro Olitrio",
+                        "type": "literal",
+                        "lang": "it"
+                    }
+                ],
+                "http://purl.org/dc/terms/hasPart": [
+                    {
+                        "@id": "http://dbpedia.org/resource/Arch_of_Janus",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Arco di Giano c. d.",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Ianus Quadrifrons",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "23"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Vicus_Jugarius",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Portico di epoca repubblicana sul Vicus Iugarius",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Vicus Iugarius",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "24"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Temple_of_Portunus",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Tempio di Portumno",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Portunium, Aedes Portuni",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "25"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Temple_of_Hercules_Victor",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Tempio di Ercole Vincitore",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Aedes Herculis Victoris",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "26"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Cloaca_Maxima",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Foce della Cloaca Massima",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Cloaca Maxima",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "27"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Pons_Aemilius",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Ponte Emilio (Ponte Rotto)",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Pons Aemilius",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "28"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Tiber_Island",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Isola Tiberina",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Insula Tiberina",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "29"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Pons_Cestius",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Ponte Cestio",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Pons Cestius",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "30"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Pons_Fabricius",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Ponte Fabrizio",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Pons Fabricius",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "31"
+                    },
+                    
+                    {
+                        "@id": "http://dbpedia.org/resource/Forum_Holitorium",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Templi repubblicani del Foro Olitorio",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "32"
+                    },
+                    {
+                        "@id": "https://it.wikipedia.org/wiki/Casa_dei_Crescenzi",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Casa dei Crescenzi",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "112"
+                    }
+                ]
+            },
+            {
+                "@id": "http://dbpedia.org/resource/Campus_Martius",
+                "http://www.w3.org/2000/01/rdf-schema#label": [
+                    {
+                        "value": "Campo Marzo",
+                        "type": "literal",
+                        "lang": "it"
+                    },
+                    {
+                        "value": "Campus Martius",
+                        "type": "literal",
+                        "lang": "la"
+                    }
+                ],
+                "http://purl.org/dc/terms/hasPart": [
+                    {
+                        "@id": "http://dbpedia.org/resource/Theatre_of_Marcellus",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Teatro di Marcello",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Theatrum Marcelli",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "33"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Porticus_Octaviae",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Portico di Ottavia",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Porticus Octaviae",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "34"
+                    },
+                    {
+                        "@id": "https://it.wikipedia.org/wiki/Portico_di_Filippo",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Portico di Filippo",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Porticus Philippi",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "35"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Circus_Flaminius",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Circo Flaminio",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Circus Flaminius",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "36"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Amphitheater_of_Statilius_Taurus",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Anfiteatro di Statilio Tauro",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Amphitheatrum Statilii Tauri",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "37"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Theatre_of_Balbus",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Teatro di Balbo",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Theatrum Balbi",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "38"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Saepta_Julia",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Septi Giuli",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Saepta Iulia",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "39"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Pantheon,_Rome",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Pantheon",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Pantheon",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "40"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Baths_of_Agrippa",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Terme di Agrippa",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Thermae Agrippae",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "41"
+                    },
+                    
+                    {
+                        "@id": "http://dbpedia.org/resource/Largo_di_Torre_Argentina",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Tempio di Giuturna, Area sacra di largo Argentina",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Templum Iuturnae",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "42"
+                    },
+
+                    {
+                        "@id": "https://it.wikipedia.org/wiki/Theatre_of_Pompey",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Teatro di Pompeo",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Theatrum Pompeii",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "43"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Stadium_of_Domitian",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Stadio di Domiziano (Piazza Navona)",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Stadium Domitiani",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "44"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Pons_Neronianus",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Ponte Trionfale ",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Pons Triumphalis",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "45"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Castel_Sant'Angelo",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Mausoleo di Adriano",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Mausoleum Hadriani",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "46"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Ponte_Sant'Angelo",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Ponte S. Angelo",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Pons Aelius (Pons Hadrianus)",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "47"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Mausoleum_of_Augustus",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Mausoleo di Augusto",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Mausoleum Augusti",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "48"
+                    },
+                    {
+                        "@id": "http://example.org/Colonna di Antonino Pio Columna Antonii Pii",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Colonna di Antonino Pio",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Columna Antonii Pii",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "49"
+                    },
+                    
+                    {
+                        "@id": "http://dbpedia.org/resource/Column_of_Marcus_Aurelius",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Colonna di Marco Aurelio",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Columna Marci Aurelii Antonini",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "50"
+                    },
+
+                    {
+                        "@id": "http://dbpedia.org/resource/Temple_of_Hadrian",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Tempio del divo Adriano",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Hadrianeum",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "51"
+                    },
+
+                    {
+                        "@id": "http://dbpedia.org/resource/Palazzo_Montecitorio",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Curia Innocenziana (Palazzo di Montecitorio)",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "120"
+                    },
+
+                    {
+                        "@id": "http://dbpedia.org/resource/Piazza_della_Rotonda",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Piazza di Rotonda",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "128"
+                    },
+
+                    {
+                        "@id": "http://dbpedia.org/resource/Palazzo_Vidoni-Caffarelli",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Palazzo Stoppani (Palazzo Vindoni Caffarelli)",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "130"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Palazzo_Farnese",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Palazzo Farnese",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "131"
+                    }
+                ]
+            },
+            {
+                "@id": "http://dbpedia.org/resource/Appian_Way",
+                "http://example.org/slug": "appia",
+                "http://www.w3.org/2000/01/rdf-schema#label": [
+                    {
+                        "value": "Via Appia",
+                        "type": "literal",
+                        "lang": "it"
+                    },
+                    {
+                        "value": "Via Appius",
+                        "type": "literal",
+                        "lang": "la"
+                    }
+                ],
+                "http://purl.org/dc/terms/hasPart": [
+                    {
+                        "@id": "http://dbpedia.org/resource/Tomb_of_Caecilia_Metella",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Mausoleo di Cecilia Metella Mausoleum",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Caeciliae Metellae",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "73"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Sant'Urbano_alla_Caffarella,_Rome",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Chiesa di Sant'Urbano alla Caffarella (Triopio di Erode Attico)",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Triopius",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "74"
+                    },
+                    {
+                        "@id": "http://example.org/Camera sepolcrale dirimpetto alla Chiesa di S. Sebastiano fuori delle mura",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Camera sepolcrale dirimpetto alla Chiesa di S. Sebastiano fuori delle mura",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "75"
+                    },
+                    {
+                        "@id": "http://example.org/Camera Sepolcrale presso la tomba della familia degli Arruntii",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Camera Sepolcrale presso la tomba della familia degli Arruntii",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "76"
+                    },
+                    {
+                        "@id": "http://example.org/Tomba della familia degli Arruntii, liberti e schiavi",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Tomba della familia degli Arruntii, liberti e schiavi",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Sepulcrum Arruntiorum",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "77"
+                    },
+                    {
+                        "@id": "http://example.org/Colombario dei Liberti di Augusto",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Colombario dei Liberti di Augusto",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "78"
+                    },
+                    {
+                        "@id": "http://example.org/Collegio di Silvano Aureliano",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Collegio di Silvano Aureliano",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Collegium Silvani Aureliani",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "79"
+                    },
+                    {
+                        "@id": "https://it.wikipedia.org/wiki/Ninfeo_di_Egeria",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Ninfeo di Egeria",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Nymphaeum Egeriae",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "80"
+                    },
+                    {
+                        "@id": "http://example.org/Sepolcrale accanto a Torre pignatara",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Sepolcrale accanto a Torre pignatara",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "81"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Villa_Gordiani",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Sepolcrale situata nella Villa Gordianida di Tor de schiavi",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "82"
+                    },
+                    {
+                        "@id": "http://example.org/Sepolcrale vicino a Tor de schiavi",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Sepolcrale vicino a Tor de schiavi",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "83"
+                    },
+                    {
+                        "@id": "http://example.org/Sepolcro antico su la via Appia",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Sepolcro antico su la via Appia",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "84"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Tomb_of_Priscilla",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Sepolcro c.d. di Priscilla",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Priscillae sepulchrum",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "85"
+                    },
+                    {
+                        "@id": "http://example.org/Sepolcro di Aulus Persius Flaccus",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Sepolcro di Aulus Persius Flaccus",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "86"
+                    },
+                    {
+                        "@id": "http://example.org/Sepolcro nella Vigna Buonamici",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Sepolcro nella Vigna Buonamici",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "87"
+                    },
+                    {
+                        "@id": "http://example.org/Stanza sepolcrale nella vigna Casali a Porta S. Sebastiano",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Stanza sepolcrale nella vigna Casali a Porta S. Sebastiano",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "88"
+                    },
+                    {
+                        "@id": "http://example.org/Tempio antico volgarmente detto della Salute",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Tempio antico volgarmente detto della Salute",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "89"
+                    },
+                    {
+                        "@id": "https://it.wikipedia.org/wiki/Cenotafio_di_Annia_Regilla",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Sepolcro di Annia Regillia",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "90"
+                    },
+                    {
+                        "@id": "http://example.org/Tre sale sepolcrali credute della famiglia di Augusto",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Tre sale sepolcrali credute della famiglia di Augusto",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "91"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Ustrinum",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Ustrino",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Ustrinum",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "92"
+                    },
+                    {
+                        "@id": "http://example.org/Sepolcro a piramide attribuito al Quintilii",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Sepolcro a piramide attribuito al Quintilii",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "93"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Circus_of_Maxentius",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Circo di Caracalla",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Circus Maxentii",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "94"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/San_Sebastiano_fuori_le_mura",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Basilica di S. Sebastiano fuori le Mura di Roma",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Basilica Apostolorum",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "111"
+                    }
+                ]
+            },
+            {
+                "@id": "http://dbpedia.org/resource/Via_Tiburtina",
+                "http://example.org/slug": "tibr",
+                "http://www.w3.org/2000/01/rdf-schema#label": [
+                    {
+                        "value": "Via Tiburtina",
+                        "type": "literal",
+                        "lang": "it"
+                    },
+                    {
+                        "value": "Via Tiburtina",
+                        "type": "literal",
+                        "lang": "la"
+                    }
+                ],
+                "http://purl.org/dc/terms/hasPart": [
+                    {
+                        "@id": "https://it.wikipedia.org/wiki/Mausoleo_dei_Plauzi",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Mausoleo della famiglia Plauzia",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Mausoleum Plautiorum",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "98"
+                    },
+                    {
+                        "@id": "https://it.wikipedia.org/wiki/Ponte_Lucano",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Ponte Lucano",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Pons Lucanus",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "99"
+                    },
+                    {
+                        "@id": "http://example.org/Sepolcro_sulla_via_Tiburtina_vicino_a_Ponte_Lugano",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Sepolcro sulla via Tiburtina vicino a Ponte Lugano",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "100"
+                    }
+                ]
+            },
+            {
+                "@id": "http://dbpedia.org/resource/Via_Salaria",
+                "http://example.org/slug": "salaria",
+                "http://www.w3.org/2000/01/rdf-schema#label": [
+                    {
+                        "value": "Via Salaria",
+                        "type": "literal",
+                        "lang": "it"
+                    },
+                    {
+                        "value": "Via Salaria",
+                        "type": "literal",
+                        "lang": "la"
+                    }
+                ],
+                "http://purl.org/dc/terms/hasPart": [
+                    {
+                        "@id": "http://dbpedia.org/resource/Ponte_Salario",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Ponte Salario",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Pons Salarius",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "101"
+                    },
+                    {
+                        "@id": "http://example.org/Villa_dei_Cinque",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Villa dei Cinque",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "102"
+                    }
+                ]
+            },
+            {
+                "@id": "http://dbpedia.org/resource/Via_Cassia",
+                "http://example.org/slug": "cassia",
+                "http://www.w3.org/2000/01/rdf-schema#label": [
+                    {
+                        "value": "Via Cassia",
+                        "type": "literal",
+                        "lang": "it"
+                    },
+                    {
+                        "value": "Via Cassius",
+                        "type": "literal",
+                        "lang": "la"
+                    }
+                ],
+                "http://purl.org/dc/terms/hasPart": [
+                    {
+                        "@id": "http://dbpedia.org/resource/Ponte_Milvio",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Ponte Molle",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Pons Mulvius",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "103"
+                    },
+                    {
+                        "@id": "https://it.wikipedia.org/wiki/Tomba_di_Nerone",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Sepolcro di P. Vibio Mariano (Tomba di Nerone)",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "103"
+                    }
+                ]
+            },
+            {
+                "@id": "http://dbpedia.org/resource/Paestum",
+                "http://www.w3.org/2000/01/rdf-schema#label": [
+                    {
+                        "value": "Pesto",
+                        "type": "literal",
+                        "lang": "it"
+                    },
+                    {
+                        "value": "Paestum",
+                        "type": "literal",
+                        "lang": "la"
+                    }
+                ],
+                "http://purl.org/dc/terms/hasPart": [
+                    {
+                        "@id": "http://example.org/Tempio d'Hera I Heraion I",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Tempio d'Hera I",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Heraion I",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "301",
+                        "http://example.org/index": "1"
+                    },
+                    {
+                        "@id": "http://example.org/Tempio d'Hera II Heraion II",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Tempio d'Hera II",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Heraion II",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "302",
+                        "http://example.org/index": "2"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Temple_of_Athena_(Paestum)",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Tempio di Atena",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Athenaion",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "303",
+                        "http://example.org/index": "3"
+                    }
+                ]
+            },
+            {
+                "@id": "http://dbpedia.org/resource/Pula",
+                "http://www.w3.org/2000/01/rdf-schema#label": [
+                    {
+                        "value": "Pula",
+                        "type": "literal",
+                        "lang": "it"
+                    },
+                    {
+                        "value": "Pola",
+                        "type": "literal",
+                        "lang": "la"
+                    }
+                ],
+                "http://purl.org/dc/terms/hasPart": [
+                    {
+                        "@id": "http://dbpedia.org/resource/Pula_Arena",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Anfiteatro di Pola (Pula)",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Amphitheatrum Polae",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "401",
+                        "http://example.org/index": "1"
+                    },
+                    {
+                        "@id": "http://example.org/Arco di Pula (Pula) Arcus Sergii",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Arco di Pula (Pula)",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Arcus Sergii",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "402",
+                        "http://example.org/index": "2"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Temple_of_Augustus,_Pula",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Tempio di Pola (Pula)",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Templum Divi Augusti",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "403",
+                        "http://example.org/index": "3"
+                    }
+                ]
+            },
+            {
+                "@id": "http://dbpedia.org/resource/Hadrian's_Villa",
+                "http://www.w3.org/2000/01/rdf-schema#label": [
+                    {
+                        "value": "Villa Adriana",
+                        "type": "literal",
+                        "lang": "it"
+                    },
+                    {
+                        "value": "Villa Hadriana",
+                        "type": "literal",
+                        "lang": "la"
+                    }
+                ],
+                "http://purl.org/dc/terms/hasPart": [
+                    {
+                        "@id": "http://dbpedia.org/resource/Stoa_Poikilea",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Poikile",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "601",
+                        "http://example.org/index": "1"
+                    },
+                    {
+                        "@id": "http://example.org/Sala dei filosofi",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Sala dei filosofi",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "602",
+                        "http://example.org/index": "2"
+                    },
+                    {
+                        "@id": "http://example.org/Piccole Terme",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Piccole Terme",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "603",
+                        "http://example.org/index": "3"
+                    },
+                    {
+                        "@id": "http://example.org/Grandi Terme",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Grandi Terme",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "604",
+                        "http://example.org/index": "4"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Praetorium",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Pretorio",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Praetorium",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "605",
+                        "http://example.org/index": "5"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Grotta_del_Ninfeo",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Ninfeo",
+                                "type": "literal",
+                                "lang": "it"
+                            },
+                            {
+                                "value": "Nymphaeum",
+                                "type": "literal",
+                                "lang": "la"
+                            }
+                        ],
+                        "http://example.org/slug": "606",
+                        "http://example.org/index": "6"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Temple_of_Apollo_(Delphi)",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Tempio detto di Apollo",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "607",
+                        "http://example.org/index": "7"
+                    },
+                    {
+                        "@id": "http://example.org/Piazza d'Oro",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Piazza d'Oro",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "608",
+                        "http://example.org/index": "8"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Triclinium",
+                        "http://www.w3.org/2000/01/rdf-schema#label": [
+                            {
+                                "value": "Triclinio Imperiale",
+                                "type": "literal",
+                                "lang": "it"
+                            }
+                        ],
+                        "http://example.org/slug": "609",
+                        "http://example.org/index": "9"
+                    }
+                ]
+            }
+        ]
+    }
+]

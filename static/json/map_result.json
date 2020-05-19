@@ -1,0 +1,403 @@
+{
+    "head": {
+      "link": [
+        
+      ],
+      "vars": [
+        "s",
+        "label",
+        "url",
+        "comment",
+        "label_ja",
+        "comment_ja",
+        "p",
+        "thumbnail"
+      ]
+    },
+    "results": {
+      "distinct": false,
+      "ordered": true,
+      "bindings": [
+        {
+          "s": {
+            "type": "uri",
+            "value": "http://dbpedia.org/resource/Temple_of_Castor_and_Pollux"
+          },
+          "label": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Temple of Castor and Pollux"
+          },
+          "url": {
+            "type": "uri",
+            "value": "http://en.wikipedia.org/wiki/Temple_of_Castor_and_Pollux"
+          },
+          "comment": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "The Temple of Castor and Pollux (Italian: Tempio dei Dioscuri) is an ancient temple in the Roman Forum, Rome, central Italy. It was originally built in gratitude for victory at the Battle of Lake Regillus (495 BC). Castor and Pollux (Greek Polydeuces) were the Dioscuri, the \"twins\" of Gemini, the twin sons of Zeus (Jupiter) and Leda. Their cult came to Rome from Greece via Magna Graecia and the Greek culture of Southern Italy."
+          },
+          "label_ja": {
+            "type": "literal",
+            "xml:lang": "ja",
+            "value": "カストルとポルックス神殿"
+          },
+          "comment_ja": {
+            "type": "literal",
+            "xml:lang": "ja",
+            "value": "カストルとポルックス神殿またはディオスクーリ神殿（イタリア語: Tempio dei Dioscuri）はローマのフォロ・ロマーノにある古代の建築物である。紀元前495年、レギッルス湖畔の戦いの勝利への感謝を込めて建設された。カストルとポルックス（ギリシア語ではポリュデウケース）はディオスクーロイまたはジェミニ（双子）と呼ばれ、ゼウス（ユーピテル）とレーダーの双子の息子を意味する。その信仰はギリシャからマグナ・グラエキアを経由して南イタリアのギリシア文化と共にローマにもたらされた。"
+          },
+          "p": {
+            "type": "literal",
+            "value": "41.89163333333333 12.485761111111112"
+          },
+          "thumbnail": {
+            "type": "uri",
+            "value": "http://commons.wikimedia.org/wiki/Special:FilePath/RomaForoRomanoTempioCastori.jpg?width=300"
+          }
+        },
+        {
+          "s": {
+            "type": "uri",
+            "value": "http://dbpedia.org/resource/Roman_Forum"
+          },
+          "label": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Roman Forum"
+          },
+          "url": {
+            "type": "uri",
+            "value": "http://en.wikipedia.org/wiki/Roman_Forum"
+          },
+          "comment": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "The Roman Forum (Latin: Forum Romanum, Italian: Foro Romano) is a rectangular forum (plaza) surrounded by the ruins of several important ancient government buildings at the center of the city of Rome. Citizens of the ancient city referred to this space, originally a marketplace, as the Forum Magnum, or simply the Forum."
+          },
+          "label_ja": {
+            "type": "literal",
+            "xml:lang": "ja",
+            "value": "フォロ・ロマーノ"
+          },
+          "comment_ja": {
+            "type": "literal",
+            "xml:lang": "ja",
+            "value": "フォロ・ロマーノ（伊:Foro Romano）は、ローマにある古代ローマ時代の遺跡。観光地として有名である。フォロ・ロマーノは、ラテン語の古名フォルム・ロマヌム（Forum Romanum）のイタリア語読みである。 紀元前6世紀頃からローマ帝国がテトラルキアを採用する293年にかけて、国家の政治・経済の中心地であったが、ローマ帝国が東西に分裂し、首都機能がラヴェンナに移されると異民族の略奪に曝されるようになり、西ローマ帝国滅亡後は打ち捨てられ、土砂の下に埋もれてしまった。 フォロ・ロマーノの発掘は、19世紀から本格的に行われるようになったが、帝政時代初期までに開発が繰り返されており、遺構も様々な時代のものが混在しているので、発掘調査は難しい。現在の遺跡は、大部分が帝政時代以降のものである。"
+          },
+          "p": {
+            "type": "literal",
+            "value": "41.8922 12.4852"
+          },
+          "thumbnail": {
+            "type": "uri",
+            "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Forum_Romanum_(16640231981).jpg?width=300"
+          }
+        },
+        {
+          "s": {
+            "type": "uri",
+            "value": "http://dbpedia.org/resource/Column_of_Phocas"
+          },
+          "label": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Column of Phocas"
+          },
+          "url": {
+            "type": "uri",
+            "value": "http://en.wikipedia.org/wiki/Column_of_Phocas"
+          },
+          "comment": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "The Column of Phocas (Italian: Colonna di Foca) is a Roman monumental column in the Roman Forum of Rome, Italy. Erected before the Rostra and dedicated or rededicated in honour of the Eastern Roman Emperor Phocas on August 1, 608, it was the last addition made to the Forum Romanum. The fluted Corinthian column stands 13.6 m (44 ft) tall on its cubical white marble socle. On stylistic grounds, the column seems to have been made in the 2nd century for an unknown structure, and then recycled for the present monument. Likewise, the socle was recycled from its original use supporting a statue dedicated to Diocletian; the former inscription was chiselled away to provide a space for the later text."
+          },
+          "label_ja": {
+            "type": "literal",
+            "xml:lang": "ja",
+            "value": "フォカスの記念柱"
+          },
+          "comment_ja": {
+            "type": "literal",
+            "xml:lang": "ja",
+            "value": "フォカスの記念柱 (伊: La Colonna di Foca、英: The Column of Phocas） は、西暦601年8月1日、東ローマ帝国皇帝フォカスを称えて、ローマ中心部、フォロ・ロマーノのロストラ（演説台）の前に建立され、フォカスに献納または再献納された石柱（コロンナ）である。この記念柱は、古代にあって、フォロ・ロマーノに加えられた最後の建造物である。 白大理石でつくられた立方体の台石の上に、縦溝の彫られたコリント式の円柱が、13.6メートルの高さでそびえ立っている。石柱は2世紀ごろに製作されたものの転用と考えられる。 煉瓦でできた四角形の基礎は、以前は地面の下に埋もれて見えていなかったものである。19世紀に至って、アウグストゥス帝が最初に敷設した舗装路面まで、蓄積した土砂などがフォロ・ロマーノから除去された結果、本来の姿が現れた。"
+          },
+          "p": {
+            "type": "literal",
+            "value": "41.8925 12.484722222222222"
+          },
+          "thumbnail": {
+            "type": "uri",
+            "value": "http://en.wikipedia.org/wiki/Special:FilePath/RomaForoRomanoColonnaFoca2.JPG?width=300"
+          }
+        },
+        {
+          "s": {
+            "type": "uri",
+            "value": "http://dbpedia.org/resource/Temple_of_Saturn"
+          },
+          "label": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Temple of Saturn"
+          },
+          "url": {
+            "type": "uri",
+            "value": "http://en.wikipedia.org/wiki/Temple_of_Saturn"
+          },
+          "comment": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "The Temple of Saturn (Latin: Templum Saturni or Aedes Saturnus, Italian: Tempio di Saturno) is a temple to the god Saturn in ancient Rome. The original dedication of a temple to Saturn was traditionally dated to 497 BC, but ancient writers disagreed greatly about the history of this site. The ruins of the temple stand at the foot of the Capitoline Hill in the western end of the Forum Romanum."
+          },
+          "label_ja": {
+            "type": "literal",
+            "xml:lang": "ja",
+            "value": "サートゥルヌス神殿"
+          },
+          "comment_ja": {
+            "type": "literal",
+            "xml:lang": "ja",
+            "value": "サートゥルヌス神殿（ラテン語: Templum Saturni または Aedes Saturnus、イタリア語: Tempio di Saturno）は、ローマ神話の神サートゥルヌスを祭った神殿で、イタリア、ローマのフォロ・ロマーノの西端にある。"
+          },
+          "p": {
+            "type": "literal",
+            "value": "41.892519444444446 12.484183333333334"
+          },
+          "thumbnail": {
+            "type": "uri",
+            "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_Saturn,_Rome.jpg?width=300"
+          }
+        },
+        {
+          "s": {
+            "type": "uri",
+            "value": "http://dbpedia.org/resource/Temple_of_Venus_and_Roma"
+          },
+          "label": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Temple of Venus and Roma"
+          },
+          "url": {
+            "type": "uri",
+            "value": "http://en.wikipedia.org/wiki/Temple_of_Venus_and_Roma"
+          },
+          "comment": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "The Temple of Venus and Roma Latin: Templum Veneris et Romae is thought to have been the largest temple in Ancient Rome. Located on the Velian Hill, between the eastern edge of the Forum Romanum and the Colosseum, it was dedicated to the goddesses Venus Felix (\"Venus the Bringer of Good Fortune\") and Roma Aeterna (\"Eternal Rome\"). The architect was the emperor Hadrian and construction began in 121. It was officially inaugurated by Hadrian in 135, and finished in 141 under Antoninus Pius. Damaged by fire in 307, it was restored with alterations by the emperor Maxentius."
+          },
+          "label_ja": {
+            "type": "literal",
+            "xml:lang": "ja",
+            "value": "ウェヌスとローマ神殿"
+          },
+          "comment_ja": {
+            "type": "literal",
+            "xml:lang": "ja",
+            "value": "ウェヌスとローマ神殿（ラテン語: Templum Veneris et Romae，イタリア語: Tempio di Venere e Roma）は古代ローマで既知の最大の神殿。フォロ・ロマーノの東端、コロッセオの近くにあり、女神ウェヌス・フェリクス（好意的なウェヌス）と女神ローマ（永遠なるローマ）を祭っている。ローマ皇帝ハドリアヌスが設計した。建設は121年に始まり、ハドリアヌスにより公式に公開されたのが135年、アントニヌス・ピウスにより最終的に完成したのが141年である。307年の火災で損傷したが、マクセンティウス帝が設計を変更して修復した。"
+          },
+          "p": {
+            "type": "literal",
+            "value": "41.89083333333333 12.489722222222222"
+          },
+          "thumbnail": {
+            "type": "uri",
+            "value": "http://en.wikipedia.org/wiki/Special:FilePath/Temple-of-Venus-and-Roma.jpg?width=300"
+          }
+        },
+        {
+          "s": {
+            "type": "uri",
+            "value": "http://dbpedia.org/resource/Arch_of_Septimius_Severus"
+          },
+          "label": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Arch of Septimius Severus"
+          },
+          "url": {
+            "type": "uri",
+            "value": "http://en.wikipedia.org/wiki/Arch_of_Septimius_Severus"
+          },
+          "comment": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "The white marble Arch of Septimius Severus (Italian: Arco di Settimio Severo) at the northwest end of the Roman Forum is a triumphal arch dedicated in AD 203 to commemorate the Parthian victories of Emperor Septimius Severus and his two sons, Caracalla and Geta, in the two campaigns against the Parthians of 194/195 and 197-199."
+          },
+          "label_ja": {
+            "type": "literal",
+            "xml:lang": "ja",
+            "value": "セプティミウス・セウェルスの凱旋門"
+          },
+          "comment_ja": {
+            "type": "literal",
+            "xml:lang": "ja",
+            "value": "セプティミウス・セウェルスの凱旋門（ラテン語: Arcus Septimii Severi）はフォロ・ロマーノの北西端にある白い大理石製の凱旋門で、皇帝セプティミウス・セウェルスとその息子カラカラとゲタの第6次パルティア戦争（194年/195年と197年から199年までの遠征）での勝利を記念して紀元203年に建設された。 セプティミウス・セウェルスの死後、カラカラとゲタは共同皇帝として即位したが、212年にカラカラがゲタを暗殺した。このため、ゲタを記念した彫刻は建築物や記念碑からことごとく削除された。当然ながらこの凱旋門でもゲタに関する部分は削り取られている。"
+          },
+          "p": {
+            "type": "literal",
+            "value": "41.892758 12.484744"
+          },
+          "thumbnail": {
+            "type": "uri",
+            "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Rome-ForumRomain-ArcheSeptime.jpg?width=300"
+          }
+        },
+        {
+          "s": {
+            "type": "uri",
+            "value": "http://dbpedia.org/resource/Arch_of_Titus"
+          },
+          "label": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Arch of Titus"
+          },
+          "url": {
+            "type": "uri",
+            "value": "http://en.wikipedia.org/wiki/Arch_of_Titus"
+          },
+          "comment": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "The Arch of Titus (Italian: Arco di Tito; Latin: Arcus Titi) is a 1st-century A.D. honorific arch, located on the Via Sacra, Rome, just to the south-east of the Roman Forum. It was constructed in c. A.D. 81 by the Emperor Domitian shortly after the death of his older brother Titus to commemorate Titus' victories, including the Siege of Jerusalem (AD 70). The arch has provided the general model for many triumphal arches erected since the 16th century—perhaps most famously it is the inspiration for the Arc de Triomphe in Paris, France."
+          },
+          "label_ja": {
+            "type": "literal",
+            "xml:lang": "ja",
+            "value": "ティトゥスの凱旋門"
+          },
+          "comment_ja": {
+            "type": "literal",
+            "xml:lang": "ja",
+            "value": "ティトゥスの凱旋門（ティトゥスのがいせんもん、ラテン語: Arcus Titi，イタリア語: Arco di Tito）は、イタリア・ローマのフォルム・ロマヌムにある古代ローマ時代の凱旋門。82年、ローマ帝国第11代皇帝ドミティアヌスにより、先代皇帝でドミティアヌスの兄でもあるティトゥスのエルサレム攻囲戦等での戦功を称えるため建てられた。 この凱旋門は、16世紀以降に建てられることとなる凱旋門のスタイルの手本とされ、その中には有名なパリのエトワール凱旋門などがある。 中世、フランジパニ家が、この凱旋門を砦に造り替えた。また、近世において初めて復元作業が行われた建物のうちのひとつでもある。修復事業は、ローマ教皇ピウス7世のもとで1817年に建築家ラファエル・スターン（Raffaele Stern）が取り掛かり、ジュゼッペ・ヴァラディエールが引き継いで、1821年に（建設時と異なる方式の）トラバーチンを用いた組積造にて完了した。 凱旋門に使われている円柱は、縦溝の有るものと無いものがあり、後者は19世紀の修復で造られたものである。"
+          },
+          "p": {
+            "type": "literal",
+            "value": "41.890717 12.488585"
+          },
+          "thumbnail": {
+            "type": "uri",
+            "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Arch_Titus,_Forum_Romanum,_Rome,_Italy.jpg?width=300"
+          }
+        },
+        {
+          "s": {
+            "type": "uri",
+            "value": "http://dbpedia.org/resource/Basilica_of_Maxentius"
+          },
+          "label": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Basilica of Maxentius"
+          },
+          "url": {
+            "type": "uri",
+            "value": "http://en.wikipedia.org/wiki/Basilica_of_Maxentius"
+          },
+          "comment": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "The Basilica of Maxentius and Constantine (sometimes known as the Basilica Nova - meaning \"new basilica\" - or Basilica of Maxentius) is an ancient building in the Roman Forum, Rome, Italy. It was the largest building in the Forum."
+          },
+          "label_ja": {
+            "type": "literal",
+            "xml:lang": "ja",
+            "value": "マクセンティウスのバシリカ"
+          },
+          "comment_ja": {
+            "type": "literal",
+            "xml:lang": "ja",
+            "value": "マクセンティウスのバシリカ（ラテン語: Basilica Maxentii, イタリア語: Basilica di Massenzio）は古代ローマ時代にフォルム・ロマヌムに建てられた公会堂（バシリカ）。コンスタンティヌスのバシリカ（ラテン語: Basilica Constantiniana）や新バシリカ（ラテン語: Basilica Nova）と表記されることもある。"
+          },
+          "p": {
+            "type": "literal",
+            "value": "41.891775 12.488446"
+          },
+          "thumbnail": {
+            "type": "uri",
+            "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Basilica_of_Maxentius.JPG?width=300"
+          }
+        },
+        {
+          "s": {
+            "type": "uri",
+            "value": "http://dbpedia.org/resource/Temple_of_Vespasian_and_Titus"
+          },
+          "label": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Temple of Vespasian and Titus"
+          },
+          "url": {
+            "type": "uri",
+            "value": "http://en.wikipedia.org/wiki/Temple_of_Vespasian_and_Titus"
+          },
+          "comment": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "The Temple of Vespasian and Titus (Latin: Templum divi Vespasiani, Italian: Tempio di Vespasiano) is located in Rome at the western end of the Roman Forum between the Temple of Concordia and the Temple of Saturn. It is dedicated to the deified Vespasian and his son, the deified Titus. It was begun by Titus in 79 after Vespasian's death and Titus's succession. Titus’ brother, Domitian, completed and dedicated the temple to Titus and Vespasian in approximately 87."
+          },
+          "label_ja": {
+            "type": "literal",
+            "xml:lang": "ja",
+            "value": "ウェスパシアヌスとティトゥス神殿"
+          },
+          "comment_ja": {
+            "type": "literal",
+            "xml:lang": "ja",
+            "value": "平面図 フォルム・ロマヌム内での位置（赤丸） ウェスパシアヌスとティトゥス神殿（ラテン語: Templum Vespasiani et Titi、イタリア語: Tempio di Vespasiano e Tito）は、ローマのフォロ・ロマーノ西端、サートゥルヌス神殿とコンコルディア神殿の間にあった神殿である。ウェスパシアヌス帝と息子のティトゥス帝を神格化して祭っている。ウェスパシアヌスの死後、ティトゥス治世下の紀元79年に着工した。ティトゥスの弟ドミティアヌス帝が紀元87年ごろ完成させ、ティトゥスとウェスパシアヌスを祭る神殿とした。単にウェスパシアヌス神殿と表記されることもある。"
+          },
+          "p": {
+            "type": "literal",
+            "value": "41.892727 12.483891"
+          },
+          "thumbnail": {
+            "type": "uri",
+            "value": "http://commons.wikimedia.org/wiki/Special:FilePath/RomaForoRomanoTempioVespasiano.JPG?width=300"
+          }
+        },
+        {
+          "s": {
+            "type": "uri",
+            "value": "http://dbpedia.org/resource/Temple_of_Antoninus_and_Faustina"
+          },
+          "label": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "Temple of Antoninus and Faustina"
+          },
+          "url": {
+            "type": "uri",
+            "value": "http://en.wikipedia.org/wiki/Temple_of_Antoninus_and_Faustina"
+          },
+          "comment": {
+            "type": "literal",
+            "xml:lang": "en",
+            "value": "The Temple of Antoninus and Faustina is an ancient Roman temple in Rome, adapted to the church of San Lorenzo in Miranda. It stands in the Forum Romanum, on the Via Sacra, opposite the Regia."
+          },
+          "label_ja": {
+            "type": "literal",
+            "xml:lang": "ja",
+            "value": "アントニヌス・ピウスとファウスティナ神殿"
+          },
+          "comment_ja": {
+            "type": "literal",
+            "xml:lang": "ja",
+            "value": "アントニヌス・ピウスとファウスティナ神殿（ラテン語: Templum Antonini et Faustinae，イタリア語: Tempio di Antonino e Faustina）は古代ローマのフォルム・ロマヌムにあった神殿。"
+          },
+          "p": {
+            "type": "literal",
+            "value": "41.89213888888889 12.486688888888889"
+          },
+          "thumbnail": {
+            "type": "uri",
+            "value": "http://commons.wikimedia.org/wiki/Special:FilePath/Temple_of_Antoninus_and_Faustina_3D.jpg?width=300"
+          }
+        }
+      ]
+    }
+  }

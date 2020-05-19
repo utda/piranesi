@@ -1,0 +1,174 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0857/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Lato orientale dell'Arco",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0857"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2087-0857"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Lato orientale dell'Arco"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Arcus Titi"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[8] Arco di Tito"
+        },
+        {
+            "label": "photo_date",
+            "value": "2001. 7"
+        },
+        {
+            "label": "photographer",
+            "value": "Kazuko FUKUMURA"
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografato da nord."
+        },
+        {
+            "label": "Cronologia",
+            "value": "Cronologia: 82-90 d.C.."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Parte del monumento: la parte sud-est, veduta generale con l'iscrizione dedicatoria."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "Foro Romano"
+        },
+        {
+            "label": "sort",
+            "value": "1"
+        },
+        {
+            "label": "sort2",
+            "value": "17022m, 17023s,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "8"
+        },
+        {
+            "label": "file_n1",
+            "value": "17022"
+        },
+        {
+            "label": "main1",
+            "value": "m"
+        },
+        {
+            "label": "file_n2",
+            "value": "17023"
+        },
+        {
+            "label": "main2",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[8] Arco di Tito "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "0770"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "291"
+        },
+        {
+            "label": "巻",
+            "value": "17"
+        },
+        {
+            "label": "memo",
+            "value": "ティトゥス凱旋門"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "データ登録日のコピー",
+            "value": "2004-01-09 00:00:00"
+        },
+        {
+            "label": "備考",
+            "value": "DSCF0770"
+        },
+        {
+            "label": "撮影順",
+            "value": "0760"
+        },
+        {
+            "label": "旧map_no",
+            "value": "7"
+        }
+    ],
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0857/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://nakamura196.github.io/piranesi/photo/iiif/0857/canvas/1",
+                            "resource": {
+                                "@id": "https://nakamura196.github.io/piranesi/photo/l/0857.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://nakamura196.github.io/piranesi/photo/m/0857.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://nakamura196.github.io/piranesi/photo/m/0857.jpg",
+    "viewingDirection": "left-to-right"
+}

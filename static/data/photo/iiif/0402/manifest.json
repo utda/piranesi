@@ -1,0 +1,170 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0402/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Veduta del lato verso  Ponte Emilio,",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0402"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2086-0402"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Veduta del lato verso  Ponte Emilio,"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Insula Tiberina"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[29] Isola Tiberina"
+        },
+        {
+            "label": "photo_date",
+            "value": "2001. 7"
+        },
+        {
+            "label": "photographer",
+            "value": "Kazuko FUKUMURA"
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografato da sud-est."
+        },
+        {
+            "label": "Direzione dell'oggetto",
+            "value": "Antico luogo di culto dedicata al dio della medicina Esculapio, il cui serpente, portato a Roma da Epidauro per debellare la peste nel 293 a.C. saltando dalla nave che lo trasportava avrebbe indicato il luogo del tempio."
+        },
+        {
+            "label": "Cronologia",
+            "value": "Clonologia: Il culto di Esculapio/Asclepio era stato introdotto a Roma nel 291 a.C.."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Parte del monumento:  il lato settentorionale-orientale dell'isola, verso S. Bartolomeo e Ponte Emilio."
+        },
+        {
+            "label": "soggetto",
+            "value": "Antico luogo di culto dedicata al dio della medicina Esculapio, il cui serpente, portato a Roma da Epidauro per debellare la peste nel 293 a.C. saltando dalla nave che lo trasportava avrebbe indicato il luogo del tempio."
+        },
+        {
+            "label": "sort",
+            "value": "1"
+        },
+        {
+            "label": "sort2",
+            "value": "10014m, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "29"
+        },
+        {
+            "label": "file_n1",
+            "value": "10014"
+        },
+        {
+            "label": "main1",
+            "value": "m"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[29] Isola Tiberina "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "0308"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "207"
+        },
+        {
+            "label": "巻",
+            "value": "10"
+        },
+        {
+            "label": "memo",
+            "value": "Isola Tiberina<br>ティベリーナ島《ティベリス島》"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "データ登録日のコピー",
+            "value": "2004-01-09 00:00:00"
+        },
+        {
+            "label": "備考",
+            "value": "DSCF0308"
+        },
+        {
+            "label": "撮影順",
+            "value": "0348"
+        },
+        {
+            "label": "旧map_no",
+            "value": "31"
+        }
+    ],
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0402/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://nakamura196.github.io/piranesi/photo/iiif/0402/canvas/1",
+                            "resource": {
+                                "@id": "https://nakamura196.github.io/piranesi/photo/l/0402.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://nakamura196.github.io/piranesi/photo/m/0402.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://nakamura196.github.io/piranesi/photo/m/0402.jpg",
+    "viewingDirection": "left-to-right"
+}

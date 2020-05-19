@@ -1,0 +1,391 @@
+@charset "UTF-8";
+/*
+ * IIIF Curation Viewer v1.7
+ * http://codh.rois.ac.jp/software/iiif-curation-viewer/
+ *
+ * Copyright 2016 Center for Open Data in the Humanities, Research Organization of Information and Systems
+ * Released under the MIT license
+ *
+ * Core contributor: Jun HOMMA (@2SC1815J)
+ *
+ * Licenses of open source libraries, see acknowledgements.txt
+ */
+.container-custom {
+  padding:15px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, "Arial", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+
+/* 資料名 */
+#book_title {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+#book_title a {
+  color: #3F415E;
+  text-decoration: none;  
+}
+#book_title a:hover {
+  color: #3F415E;
+  text-decoration: underline;
+  opacity: .6;
+}
+
+/* 各種ナビと画像表示領域のコンテナ */
+#image_canvas_nav_container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* ページナビ */
+#page {
+  height: 30px;
+}
+#page_nav li a {
+  height: 30px;  
+}
+.nav_select {
+  border: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 18px;
+}
+.nav_select::-ms-expand {
+  display: none;
+}
+
+/* 情報表示 */
+.info_elem {
+  margin-bottom: 1em;
+}
+.info_logo {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+/* Bootstrap指定値の調整 */
+.pagination-custom-right,
+.pagination-custom {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+.pagination-custom-right {
+  margin-left: 4px !important;
+}
+.dropdown-custom {
+  position: static;
+}
+.dropdown-menu-custom {
+  color: #000000;
+  padding: 10px;
+  overflow: auto;
+  top: 32px;
+  z-index: 1001;
+}
+.modal-footer-custom {
+  padding-top: 0px;
+  border-top-width: 0px;
+}
+
+/* 画像表示領域 */
+#image_canvas {
+  height: 100%;
+  min-height: 800px;
+  width: 100%;
+}
+
+/* 画像表示領域両端のページ移動ボタン */
+#image_canvas_overlay_wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+#image_canvas_overlay_left,
+#image_canvas_overlay_right {
+  position: relative;
+  height: 50%;
+  width: 50px;
+  top: 25%;
+  background-color:#ffffff;
+  z-index: 1;
+}
+#image_canvas_overlay_left {
+  float: left;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#image_canvas_overlay_right {
+  float: right;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+a#image_canvas_overlay_left,
+a#image_canvas_overlay_right {
+  color: #999999;
+}
+.image_canvas_overlay_button_left,
+.image_canvas_overlay_button_right {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.8em;
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+}
+.clear {
+  clear:both;
+} 
+
+/* サムネイル一覧画面 */
+/* jPages */
+div#thumbnails ul#thumbnails_container { list-style: none; padding:0; margin: 20px 0 0 0;  }
+div#thumbnails ul#thumbnails_container li { display: inline-block; margin: 5px; zoom: 1; *display:inline; }
+div#thumbnails ul#thumbnails_container ll li img { vertical-align: bottom; width: 125px; height: 125px; }
+/* サムネイル一覧画面ページナビ */
+#thumbnails_nav {
+  margin: 10px 0;
+  padding-left: 0;
+  border-radius: 2px;
+  font-size: 1.4rem;
+}
+#thumbnails_nav a {
+  font-size: 12px;
+  cursor: pointer;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.5;
+  color: #2196f3;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+#thumbnails_nav a:hover {
+  background-color: #eee;
+  color: #0a6ebd;
+  border-color: #ddd;
+}
+#thumbnails_nav a.jp-previous { 
+  margin-left: 0;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+#thumbnails_nav a.jp-next { 
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+#thumbnails_nav a.jp-current, a.jp-current:hover {
+  color: #fff;
+  cursor: default;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+#thumbnails_nav a.jp-disabled, a.jp-disabled:hover {
+  color: #777;
+  cursor: not-allowed;
+  background-color: #fff;
+  border-color: #ddd;
+}
+#thumbnails_nav span {
+  margin: 0 5px;
+}
+/* サムネイルとラベル */
+a.thumbnail {
+  margin-bottom: 0;
+}
+a.thumbnail > img {
+  max-width: 200px;
+  max-height: 200px;
+}
+.thumbnail_label {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+/* ヘルプ画面 */
+.help_title {
+  margin-top: 0;
+}
+#help_contents {
+  font-size: 1.4rem;
+}
+
+/* キュレーションリスト画面 */
+#curation_list_dialog {
+  font-size: 1.4rem;
+}
+.curation_list_title {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.curation_list_ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.curation_list_li {
+  margin: 5px;
+  padding: 4px 5px 4px;
+  float: left;
+  width: 120px;
+  height: 100px;
+  text-align: center;
+  cursor: move;
+}
+.curation_list_li_close {
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.curation_list_li_content {
+  height: 90px;
+  overflow: hidden;
+  text-shadow: white 1px 1px 0px, white -1px 1px 0px, white 1px -1px 0px, white -1px -1px 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  white-space: nowrap;
+  position: relative;
+}
+.curation_list_li_content_label {
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+/* manifest drag and drop */
+.manifest_dragging {
+  background-color: #DDDDDD;
+}
+
+@media (min-width: 768px) {
+  #thumbnails_dialog {
+    width: 705px;
+  }
+  .dropdown-menu-custom {
+    width: 375px;
+  }
+}
+@media (min-width: 992px) {
+  #thumbnails_dialog {
+    width: 935px;
+  }
+  .dropdown-menu-custom {
+    width: 485px;
+  }
+}
+@media (min-width: 1200px) {
+  #thumbnails_dialog {
+    width: 1135px;
+  }
+  .dropdown-menu-custom {
+    width: 585px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-custom {
+    width: 100%;
+  }
+}
+
+@media print {
+  #page_nav,
+  #show_thumbnails,
+  #step_nav,
+  #cursor_date,
+  #timeline_latest,
+  #books_nav,
+  #page_orig_nav,
+  #curation_nav,
+  #image_download,
+  #info_nav,
+  #help_nav {
+    display: none;
+  }
+  .leaflet-control {
+    display: none;
+  }
+  .container-custom {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Leaflet.toolbar */
+.leaflet-touch .leaflet-toolbar-0 {
+  list-style: none;
+  padding-left: 0;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.65);
+  border: 2px solid rgba(0,0,0,0.2);
+  background-clip: padding-box;
+  border-radius: 4px;
+}
+.leaflet-touch .leaflet-toolbar-0 > li > .leaflet-toolbar-icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 0;
+  padding-right: 0;
+  border-right: 0;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ffffff;
+}
+
+/* L.Control.Credits */
+.leaflet-credits-control {
+  background-size: contain;
+  border-radius: 2px;
+  border-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+}
+
+/* Leaflet.draw */
+.leaflet-draw-toolbar-notop a:first-child {
+    border-top-right-radius: 4px;
+    border-top-left-radius: 0;
+}
+.leaflet-draw-toolbar-nobottom a:last-child {
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 0;
+}
+
+/* Leaflet.label */
+/* ref. .leaflet-draw-tooltip from Leaflet.draw */
+.leaflet-label-custom {
+  background: rgb(54, 54, 54);
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid transparent;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  color: #fff;
+  font: 12px/18px "Helvetica Neue", Arial, Helvetica, sans-serif;
+  margin-left: 8px;
+  margin-top: 3px;
+  padding: 4px 8px;
+}
+.leaflet-label-custom:before {
+  border-right: 6px solid black;
+  border-right-color: rgba(0, 0, 0, 0.5);
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  content: "";
+  top: 7px;
+  left: -7px;
+}
+
+/* IIIF Image API非対応リソースのサムネイル表示用 */
+.psuedo_iiif_thumbnail {
+  max-width: 200px;
+  max-height: 200px;
+  overflow: hidden;
+}
+.psuedo_iiif {
+  transform-origin: 0 0;
+}

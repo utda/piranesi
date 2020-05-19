@@ -1,0 +1,134 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/3001/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "3001",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "3001"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-0110-0001"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Arcus Dolabellae et Silani"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[66] Arco di Dolabella e Silano"
+        },
+        {
+            "label": "photo_date",
+            "value": "1999. 7-9"
+        },
+        {
+            "label": "photographer",
+            "value": "Paolo MONTI"
+        },
+        {
+            "label": "sort",
+            "value": "1"
+        },
+        {
+            "label": "sort2",
+            "value": "1043m, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma"
+        },
+        {
+            "label": "Edificio_i2",
+            "value": "[63] Arco di Nerone"
+        },
+        {
+            "label": "map_no",
+            "value": "66"
+        },
+        {
+            "label": "file_n1",
+            "value": "1043"
+        },
+        {
+            "label": "main1",
+            "value": "m"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[66] Arco di Dolabella e Silano [63] Arco di Nerone"
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "0000-0000-0110-0001"
+        },
+        {
+            "label": "縦横",
+            "value": "縦長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "19"
+        },
+        {
+            "label": "巻",
+            "value": "1"
+        },
+        {
+            "label": "memo",
+            "value": "ドラベッラとシラヌスの記念門"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "旧map_no",
+            "value": "22"
+        }
+    ],
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/3001/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://nakamura196.github.io/piranesi/photo/iiif/3001/canvas/1",
+                            "resource": {
+                                "@id": "https://nakamura196.github.io/piranesi/photo/l/3001.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://nakamura196.github.io/piranesi/photo/m/3001.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://nakamura196.github.io/piranesi/photo/m/3001.jpg",
+    "viewingDirection": "left-to-right"
+}

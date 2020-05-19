@@ -1,0 +1,106 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0262/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "0262",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0262"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2086-0262"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Mons Capitolinus"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[21] Monte Capitolino"
+        },
+        {
+            "label": "photo_date",
+            "value": "2001. 7"
+        },
+        {
+            "label": "photographer",
+            "value": "Kazuko FUKUMURA"
+        },
+        {
+            "label": "sort2",
+            "value": "17008s, 17009s,"
+        },
+        {
+            "label": "file_n1",
+            "value": "17008"
+        },
+        {
+            "label": "main1",
+            "value": "s"
+        },
+        {
+            "label": "file_n2",
+            "value": "17009"
+        },
+        {
+            "label": "main2",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[21] Monte Capitolino "
+        },
+        {
+            "label": "レコード番号",
+            "value": "2045"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "備考",
+            "value": "DSCF0162"
+        }
+    ],
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0262/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://nakamura196.github.io/piranesi/photo/iiif/0262/canvas/1",
+                            "resource": {
+                                "@id": "https://nakamura196.github.io/piranesi/photo/l/0262.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://nakamura196.github.io/piranesi/photo/m/0262.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://nakamura196.github.io/piranesi/photo/m/0262.jpg",
+    "viewingDirection": "left-to-right"
+}

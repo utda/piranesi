@@ -1,0 +1,118 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/3020/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "3020",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "3020"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0821-3301-0750-0075"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "Tempio di Athena (Pesto)"
+        },
+        {
+            "label": "photo_date",
+            "value": "2001.10.1"
+        },
+        {
+            "label": "photographer",
+            "value": "Takeo FUKAZAWA"
+        },
+        {
+            "label": "sort",
+            "value": "1"
+        },
+        {
+            "label": "sort2",
+            "value": "15019m, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Pesto"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Paestum"
+        },
+        {
+            "label": "file_n1",
+            "value": "15019"
+        },
+        {
+            "label": "main1",
+            "value": "m"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "Tempio di Athena (Pesto) "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "0821-3301-0750-0075"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "9"
+        },
+        {
+            "label": "巻",
+            "value": "15"
+        },
+        {
+            "label": "memo",
+            "value": "ヘラ神殿（アテナ神殿）"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-10-06 00:00:00"
+        }
+    ],
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/3020/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://nakamura196.github.io/piranesi/photo/iiif/3020/canvas/1",
+                            "resource": {
+                                "@id": "https://nakamura196.github.io/piranesi/photo/l/3020.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://nakamura196.github.io/piranesi/photo/m/3020.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://nakamura196.github.io/piranesi/photo/m/3020.jpg",
+    "viewingDirection": "left-to-right"
+}

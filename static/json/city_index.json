@@ -1,0 +1,167 @@
+[
+    {
+        "@id": "http://example.org/city_index",
+        "http://www.w3.org/2000/01/rdf-schema#label" : "Index of cities",
+        "http://purl.org/dc/terms/hasPart" : [
+            {
+                "@id": "http://example.org/remains",
+                "http://www.w3.org/2000/01/rdf-schema#label" : "Remains",
+                "http://purl.org/dc/terms/hasPart" : [
+                    {
+                        "@id": "http://dbpedia.org/resource/Agrigento",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Agrigento"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Lake_Albano",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Albano"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Ancona",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Ancona"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Anzio",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Anzio"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Aosta",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Aosta"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Athens",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Athens"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Avezzano",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Avvezzano"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Benevento",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Benevento"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Bovillae",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Boville (Frattocchie)"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Campello_sul_Clitunno",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Campello sul Clitunno"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Capua",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Capua"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Castel_Gandolfo",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Castel Gandolfo"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Chiusi",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Chiusi"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Cori,_Lazio",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Cori"
+                    },
+                    {
+                        "@id": "http://example.org/Cornazzano",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Cornazzano"
+                    },
+                    {
+                        "@id": "http://example.org/Corneto",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Corneto"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Ercolano",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Ercolano"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Frascati",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Frascati"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Naples",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Napoli"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Ostia_(Rome)",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Ostia"
+                    },
+                     {
+                        "@id": "http://dbpedia.org/resource/Padua",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Padova"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Palazzolo_Acreide",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Palazzolo"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Palestrina",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Palestrina"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Paestum",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Pesto"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Pompeii",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Pompei"
+                    }, {
+                        "@id": "http://dbpedia.org/resource/Posillipo",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Posillipo"
+                    }
+                    , {
+                        "@id": "http://dbpedia.org/resource/Pula",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Pula"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Rimini",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Rimini"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Rome",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Roma"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Siena",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Siena"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Stabiae",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Stabia"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Tivoli,_Lazio",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Tivoli"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Verona",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Verona"
+                    }
+                ]
+            },
+            {
+                "@id": "http://example.org/area",
+                "http://www.w3.org/2000/01/rdf-schema#label" : "Maps of areas",
+                "http://purl.org/dc/terms/hasPart" : [
+                    {
+                        "@id": "http://dbpedia.org/resource/Paestum",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Pesto",
+                        "http://example.org/slug" : "p_maps-pesto"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Pula,_Sardinia",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Pula",
+                        "http://example.org/slug" : "p_maps-pula"
+                    },
+                    {
+                        "@id": "http://dbpedia.org/resource/Hadrian's_Villa",
+                        "http://www.w3.org/2000/01/rdf-schema#label" : "Villa Adriana",
+                        "http://example.org/slug" : "p_maps-villaadriana"
+                    }
+                ]
+            }
+        ]
+    }
+    
+]

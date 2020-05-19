@@ -1,0 +1,94 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/1275/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "1275",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "1275"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2088-1275"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[71] Via Marmorata (presso il Tevere)"
+        },
+        {
+            "label": "photo_date",
+            "value": "2003. 9"
+        },
+        {
+            "label": "photographer",
+            "value": "Natsumi ARAKI"
+        },
+        {
+            "label": "sort2",
+            "value": "1039s, ,"
+        },
+        {
+            "label": "file_n1",
+            "value": "1039"
+        },
+        {
+            "label": "main1",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[71] Via Marmorata (presso il Tevere) "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "1039-3"
+        },
+        {
+            "label": "レコード番号",
+            "value": "2124"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-10-05 00:00:00"
+        }
+    ],
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/1275/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://nakamura196.github.io/piranesi/photo/iiif/1275/canvas/1",
+                            "resource": {
+                                "@id": "https://nakamura196.github.io/piranesi/photo/l/1275.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://nakamura196.github.io/piranesi/photo/m/1275.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://nakamura196.github.io/piranesi/photo/m/1275.jpg",
+    "viewingDirection": "left-to-right"
+}

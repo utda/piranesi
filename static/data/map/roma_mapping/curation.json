@@ -1,0 +1,51 @@
+{
+    "@context": [
+        "http://iiif.io/api/presentation/2/context.json",
+        "http://codh.rois.ac.jp/iiif/curation/1/context.json"
+    ],
+    "@type": "cr:Curation",
+    "@id": "http://mp.ex.nii.ac.jp/api/curation/json/3c8344e6-cf6a-47e5-b531-24d03640c9bb",
+    "label": "Curating list",
+    "selections": [
+        {
+            "@id": "http://mp.ex.nii.ac.jp/api/curation/json/3c8344e6-cf6a-47e5-b531-24d03640c9bb/range1",
+            "@type": "sc:Range",
+            "label": "Manual curation by IIIF Curation Viewer",
+            "members": [
+                {
+                    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0002/canvas/1#xywh=494,115,1,1",
+                    "@type": "sc:Canvas",
+                    "label": "1",
+                    "description": "",
+                    "metadata": [
+                        {
+                          "value": [
+                            {
+                              "on": "https://nakamura196.github.io/piranesi/photo/iiif/0002/canvas/1#xywh=494,115,1,1",
+                              "resource": {
+                                "chars": "<a target=\"_parent\" href=\"http://localhost:8004/compare?Edificio_IL=Camera sepolcrale dirimpetto alla Chiesa di S. Sebastiano fuori delle mura\">Camera sepolcrale dirimpetto alla Chiesa di S. Sebastiano fuori delle mura</a>",
+                                "@type": "cnt:ContentAsText",
+                                "marker": {
+                                  "@type": "dctypes:Image",
+                                  "@id": "http://codh.rois.ac.jp/edo-maps/icons/icon-1.png#xy=11,27"
+                                },
+                                "format": "text/html"
+                              },
+                              "@type": "oa:Annotation",
+                              "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0002/canvas/1#xywh=494,115,1,1",
+                              "motivation": "sc:painting"
+                            }
+                          ],
+                          "label": "Annotation"
+                        }
+                      ]
+                }
+            ],
+            "within": {
+                "@id": "https://raw.githubusercontent.com/nakamura196/testet/master/17206058f69307.json",
+                "@type": "sc:Manifest",
+                "label": "0002"
+            }
+        }
+    ]
+}

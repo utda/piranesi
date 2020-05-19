@@ -1,0 +1,174 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0252/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Un dei trofei marmorei proveniente dal Ninfeo",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0252"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2086-0252"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Un dei trofei marmorei proveniente dal Ninfeo"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Nymphaeum Severi Alexanderi"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[59] Ninfeo di Alessandro Severo"
+        },
+        {
+            "label": "photo_date",
+            "value": "2001. 7"
+        },
+        {
+            "label": "photographer",
+            "value": "Kazuko FUKUMURA"
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografato da Ovest"
+        },
+        {
+            "label": "Cronologia",
+            "value": "Scultura di et&#224; di Domiziano; trasferita nel 1589, sulla balaustra di piazza del Campidoglio."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Trofeo d'armi, marmoreo."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "Piazza Vittorio Emanuele"
+        },
+        {
+            "label": "soggetto",
+            "value": "Conosciuto col nome di \"Trofei di Mario\"."
+        },
+        {
+            "label": "sort2",
+            "value": "9022s, 8087s,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma"
+        },
+        {
+            "label": "Edificio_i2",
+            "value": "[21] Monte Capitolino"
+        },
+        {
+            "label": "Edificio_l2",
+            "value": "Mons Capitolinus"
+        },
+        {
+            "label": "map_no",
+            "value": "59"
+        },
+        {
+            "label": "file_n1",
+            "value": "9022"
+        },
+        {
+            "label": "main1",
+            "value": "s"
+        },
+        {
+            "label": "file_n2",
+            "value": "8087"
+        },
+        {
+            "label": "main2",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[59] Ninfeo di Alessandro Severo [21] Monte Capitolino"
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "0152"
+        },
+        {
+            "label": "縦横",
+            "value": "縦長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "988"
+        },
+        {
+            "label": "巻",
+            "value": "9"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "備考",
+            "value": "DSCF0152"
+        },
+        {
+            "label": "撮影順",
+            "value": "0226"
+        },
+        {
+            "label": "旧map_no",
+            "value": "69"
+        }
+    ],
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0252/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://nakamura196.github.io/piranesi/photo/iiif/0252/canvas/1",
+                            "resource": {
+                                "@id": "https://nakamura196.github.io/piranesi/photo/l/0252.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://nakamura196.github.io/piranesi/photo/m/0252.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://nakamura196.github.io/piranesi/photo/m/0252.jpg",
+    "viewingDirection": "left-to-right"
+}

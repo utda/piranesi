@@ -1,0 +1,118 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/1202/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "1202",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "1202"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2088-1202"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "Tomba di Mamia (Pompei)"
+        },
+        {
+            "label": "photo_date",
+            "value": "2003.9.26"
+        },
+        {
+            "label": "photographer",
+            "value": "Natsumi ARAKI"
+        },
+        {
+            "label": "sort2",
+            "value": "28006s, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Pompei"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Pompeii"
+        },
+        {
+            "label": "Edificio_i2",
+            "value": "Sepolcro degli Istacidii (Pompei)"
+        },
+        {
+            "label": "file_n1",
+            "value": "28006"
+        },
+        {
+            "label": "main1",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "Tomba di Mamia (Pompei) Sepolcro degli Istacidii (Pompei)"
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "28006-1"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "66"
+        },
+        {
+            "label": "巻",
+            "value": "28"
+        },
+        {
+            "label": "memo",
+            "value": "イスタキディウスの墓"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        }
+    ],
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/1202/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://nakamura196.github.io/piranesi/photo/iiif/1202/canvas/1",
+                            "resource": {
+                                "@id": "https://nakamura196.github.io/piranesi/photo/l/1202.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://nakamura196.github.io/piranesi/photo/m/1202.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://nakamura196.github.io/piranesi/photo/m/1202.jpg",
+    "viewingDirection": "left-to-right"
+}

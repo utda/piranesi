@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/*
+ * IIIF Curation Viewer - Firebase authentication plugin
+ * http://codh.rois.ac.jp/software/iiif-curation-viewer/
+ *
+ * Copyright 2017 Center for Open Data in the Humanities, Research Organization of Information and Systems
+ * Released under the MIT license
+ *
+ * Core contributor: Jun HOMMA (@2SC1815J)
+ */
+.navbar-text-custom-header-logout.open > a {
+  background-color: #ccc !important;
+}
+.navbar-text-custom-header-logout > .dropdown-menu {
+  margin-top: inherit !important;
+}
+
+/* firebaseui-web */
+#firebaseui-auth-container .mdl-shadow--2dp {
+  box-shadow: none;
+}
+#firebaseui-auth-container div.mdl-progress::before {
+  content: 'Authenticating...';
+  display: block;
+  margin-top: 5px;
+  text-align: center;
+}

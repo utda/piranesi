@@ -1,0 +1,162 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0874/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Il grande emiciclo ",
+    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0874"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2087-0874"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Il grande emiciclo "
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[19] Mercati traianei"
+        },
+        {
+            "label": "photo_date",
+            "value": "2001. 7"
+        },
+        {
+            "label": "photographer",
+            "value": "Kazuko FUKUMURA"
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografato da ovest-sud."
+        },
+        {
+            "label": "Cronologia",
+            "value": "Cronologia: 112 d.C.."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Parte del monumento: in primo piano compare il grande emiciclo che si apre al livello del Foro."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "Tra Via IV Novembre e via Alessandrina"
+        },
+        {
+            "label": "sort",
+            "value": "1"
+        },
+        {
+            "label": "sort2",
+            "value": "1051m, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "19"
+        },
+        {
+            "label": "file_n1",
+            "value": "1051"
+        },
+        {
+            "label": "main1",
+            "value": "m"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[19] Mercati traianei "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "0787"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "30"
+        },
+        {
+            "label": "巻",
+            "value": "1"
+        },
+        {
+            "label": "memo",
+            "value": "トラヤヌス帝の市場<br>Mercati traianei"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "データ登録日のコピー",
+            "value": "2003-12-26 00:00:00"
+        },
+        {
+            "label": "備考",
+            "value": "DSCF0787"
+        },
+        {
+            "label": "撮影順",
+            "value": "0777"
+        },
+        {
+            "label": "旧map_no",
+            "value": "19"
+        }
+    ],
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/0874/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://nakamura196.github.io/piranesi/photo/iiif/0874/canvas/1",
+                            "resource": {
+                                "@id": "https://nakamura196.github.io/piranesi/photo/l/0874.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://nakamura196.github.io/piranesi/photo/m/0874.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://nakamura196.github.io/piranesi/photo/m/0874.jpg",
+    "viewingDirection": "left-to-right"
+}
