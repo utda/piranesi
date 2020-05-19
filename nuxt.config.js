@@ -31,9 +31,9 @@ const {
 const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
-        router: {
+        /* router: {
           base: '/piranesi3/',
-        },
+        }, */
       }
     : {}
 
