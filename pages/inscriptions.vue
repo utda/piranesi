@@ -59,8 +59,8 @@ export default class Data extends Vue {
         id: '2020',
       },
       {
-        label: this.$i18n.locale === 'ja' ? '第2巻 第21葉' : 'Vol. 2 Page. 21',
-        id: '2021',
+        label: this.$i18n.locale === 'ja' ? '第2巻 第51葉' : 'Vol. 2 Page. 51',
+        id: '2051',
       },
       {
         label: this.$i18n.locale === 'ja' ? '第2巻 第53葉' : 'Vol. 2 Page. 53',

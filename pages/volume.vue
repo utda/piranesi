@@ -24,16 +24,18 @@
         <div class="pa-5">
           <v-row class="mb-5">
             <v-col class="py-0" cols="12" sm="8">
-              <v-row v-if="map[index1]">
-                <v-col class="py-0" cols="12" sm="12">
-                  <a :href="map[index1].url" target="_blank">
-                    {{ map[index1].label }}
-                  </a>
-                </v-col>
-                <v-col cols="12">
-                  <v-divider />
-                </v-col>
-              </v-row>
+              <template v-if="map[index1 + 1]">
+                <v-row v-for="(obj, index2) in map[index1 + 1]" :key="index2">
+                  <v-col class="py-0" cols="12" sm="12">
+                    <a :href="obj.url" target="_blank">
+                      {{ obj.label }} <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </v-col>
+                  <v-col cols="12">
+                    <v-divider />
+                  </v-col>
+                </v-row>
+              </template>
 
               <v-row
                 v-for="(collection2, index2) in collection1.collections"
@@ -127,11 +129,96 @@ export default class Volume extends Vue {
       })
 
     this.map = {
-      0: {
-        label: this.$t('序文'),
-        url:
-          'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/document/70c86f6a-084f-46c0-8a63-05e5d86aa3c3',
-      },
+      1: [
+        {
+          label: this.$t('序文'),
+          url:
+            'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/document/70c86f6a-084f-46c0-8a63-05e5d86aa3c3',
+        },
+      ],
+      2: [
+        {
+          label: this.$t('序文'),
+          url:
+            'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/document/75d8b931-d0e4-45af-94da-603a110e6d1f',
+        },
+      ],
+      3: [
+        {
+          label: this.$t('序文'),
+          url:
+            'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/document/5ff5e35e-1b66-41c4-8192-22c5ed1b3180',
+        },
+      ],
+      4: [
+        {
+          label: this.$t('序文'),
+          url:
+            'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/document/de4e7884-d02e-4234-8986-b86c0e58dc7e',
+        },
+        {
+          label: this.$t('Osservazioni'),
+          url:
+            'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/document/90aff229-9f07-4bbc-b4e7-98273853d85f',
+        },
+      ],
+      6: [
+        {
+          label: this.$t('序文 PARTE I'),
+          url:
+            'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/document/db8a8835-5f76-412b-921b-f7c78216ee05',
+        },
+        {
+          label: this.$t('PARTE II'),
+          url:
+            'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/document/d1c19d11-f5a6-40a3-b679-72f5011354c4',
+        },
+        {
+          label: this.$t('PARTE III'),
+          url:
+            'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/document/c46591ee-366c-40c5-a118-080c7488f629',
+        },
+      ],
+      7: [
+        {
+          label: this.$t('序文'),
+          url:
+            'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/document/a8eb6bb4-3c2e-4bb4-9897-8d97c46a2761',
+        },
+      ],
+      8: [
+        {
+          label: this.$t('序文 PARTE I'),
+          url:
+            'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/document/2a6d9499-023a-427b-a721-34d186185de0',
+        },
+        {
+          label: this.$t('PARTE II'),
+          url:
+            'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/document/7dc8ccc2-86fb-49ba-8407-15aa84b5fab1',
+        },
+      ],
+      17: [
+        {
+          label: this.$t('序文'),
+          url:
+            'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/document/b75cc64a-3dc7-40ac-956a-c08d5527c24f',
+        },
+      ],
+      21: [
+        {
+          label: this.$t('図版目録'),
+          url:
+            'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/document/37a42964-6a01-4cba-bcb9-28114af5ab75',
+        },
+      ],
+      23: [
+        {
+          label: this.$t('図版目録'),
+          url:
+            'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/document/fc52da49-a19d-49c0-9e20-7cf4b899b2f3',
+        },
+      ],
     }
   }
 

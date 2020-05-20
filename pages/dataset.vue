@@ -5,6 +5,12 @@
         {{ $t('data_set') }}
       </h2>
 
+      <p>
+        <template v-if="$i18n.locale == 'ja'">
+          本サイトの構築に利用しているデータの一覧です。
+        </template>
+      </p>
+
       <v-row>
         <v-col v-for="(data, index) in dataSet" :key="index" cols="12" sm="3">
           <v-card class="mx-auto" outlined>
@@ -86,16 +92,45 @@ export default class Data extends Vue {
         label: this.$t('Index of cities'),
         icon: this.baseUrl + '/img/rdf-logo.svg',
         description: '',
-        url: this.baseUrl + '/data/json/city_index.json',
+        url: this.baseUrl + '/json/city_index.json',
         related: [
           {
             label: this.$t('view_ld'),
             url:
               'https://www.kanzaki.com/works/2014/pub/ld-browser?u=' +
               this.baseUrl +
-              '/data/json/city_index.json',
+              '/json/city_index.json',
           },
         ],
+      },
+      {
+        label: this.$t('Maps of areas'),
+        icon: this.baseUrl + '/img/rdf-logo.svg',
+        description: '',
+        url: this.baseUrl + '/json/map.json',
+        related: [
+          {
+            label: this.$t('view_ld'),
+            url:
+              'https://www.kanzaki.com/works/2014/pub/ld-browser?u=' +
+              this.baseUrl +
+              '/json/map.json',
+          },
+        ],
+      },
+      {
+        label: this.$t('Index of all places'),
+        icon: this.baseUrl + '/img/json-logo.svg',
+        description: '',
+        url: this.baseUrl + '/json/edificio.json',
+        related: [],
+      },
+      {
+        label: this.$t('subject'),
+        icon: this.baseUrl + '/img/json-logo.svg',
+        description: '',
+        url: this.baseUrl + '/json/subject.json',
+        related: [],
       },
     ]
   }

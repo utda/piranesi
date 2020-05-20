@@ -103,7 +103,18 @@
                   </nuxt-link>
                   <template v-if="$i18n.locale === 'ja'">
                     <br />
-                    {{ $utils.formatArrayValue(data.series_JP) }}
+                    <nuxt-link
+                      :to="
+                        localePath({
+                          name: 'search',
+                          query: {
+                            'fc-series_JP': data.series_JP,
+                          },
+                        })
+                      "
+                    >
+                      {{ $utils.formatArrayValue(data.series_JP) }}
+                    </nuxt-link>
                   </template>
                 </v-col>
               </v-row>
@@ -147,9 +158,19 @@
                 <v-col cols="12" sm="2"
                   ><b>{{ $t('author_JP') }}</b></v-col
                 >
-                <v-col cols="12" sm="10">{{
-                  $utils.formatArrayValue(data.author_JP)
-                }}</v-col>
+                <v-col cols="12" sm="10">
+                  <nuxt-link
+                    :to="
+                      localePath({
+                        name: 'search',
+                        query: {
+                          'fc-author_JP': data.author_JP,
+                        },
+                      })
+                    "
+                    >{{ $utils.formatArrayValue(data.author_JP) }}</nuxt-link
+                  ></v-col
+                >
               </v-row>
               <v-row class="pb-5" dense>
                 <v-col cols="12" sm="2"

@@ -185,6 +185,7 @@
     "Photos" : "その他の写真",
 
     "series" : "シリーズ名",
+    "series_JP" : "シリーズ名（日本語）",
     "work" : "作品名",
     "image_no" : "画像番号",
 
@@ -244,8 +245,8 @@
 
     "list_of_prints" : "版画の一覧",
     "list_of_photo" : "写真の一覧",
-    "view_ia" : "IAで見る",
-    "view_ld" : "LD Browserで見る",
+    "view_ia" : "Image Annotatorで見る",
+    "view_ld" : "Linked Data Browserで見る",
 
     "opera" : "オペラ名",
 

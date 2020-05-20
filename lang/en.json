@@ -159,6 +159,7 @@
     "Photos" : "Other photos",
 
     "series" : "Series",
+    "series_JP" : "Series (Japanese)",
     "work" : "Title of the work",
     "image_no" : "Image ID",
 
@@ -218,8 +219,8 @@
 
     "list_of_prints" : "List of Prints",
     "list_of_photo" : "List of Photos",
-    "view_ia" : "View with IA",
-    "view_ld" : "View with LD Browser",
+    "view_ia" : "View with Image Annotator",
+    "view_ld" : "View with Linked Data Browser",
 
     "opera" : "Opera",
 

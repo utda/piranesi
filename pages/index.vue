@@ -23,7 +23,17 @@
             >https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/page/home</a
           >
           の画像を利用しています。本サイトは共用サーバが提供する機能を包含していますので、こちらのサイトを利用することをお勧めします。</template
-        ><template v-else> </template>
+        ><template v-else>
+          This site provides the fucntions developed by
+          <a
+            href="https://warp.ndl.go.jp/info:ndljp/pid/1016139/www.coe.l.u-tokyo.ac.jp:8080/piranesi.html"
+          >
+            https://warp.ndl.go.jp/info:ndljp/pid/1016139/www.coe.l.u-tokyo.ac.jp:8080/piranesi.html</a
+          >, and uses images provided by
+          <a href="https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/page/home"
+            >https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/page/home</a
+          >.
+        </template>
       </v-alert>
 
       <!--

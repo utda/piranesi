@@ -1,0 +1,692 @@
+[
+	{
+		"id": 1,
+		"name": "Archeological Objects",
+		"name_ja": "遺物",
+		"lv": 1,
+		"children": [
+			{
+				"id": 11,
+				"name": "Category",
+				"name_ja": "カテゴリ",
+				"lv": 2,
+				"children": [
+					{
+						"id": 111,
+						"name": "Altars",
+						"name_ja": "祭壇",
+						"n": 9,
+						"query": {
+							"q-subcategoria": "altars"
+						},
+						"link": true
+					},
+					{
+						"id": 112,
+						"name": "Architectural fragments",
+						"name_ja": "建築物の一部",
+						"children": [
+							{
+								"id": 1121,
+								"name": "Capitals",
+								"name_ja": "Capitals",
+								"n": 34,
+								"query": {
+									"q-subcategoria": "capitals"
+								},
+								"link": true
+							},
+							{
+								"id": 1122,
+								"name": "Caryatids",
+								"name_ja": "カリアティード",
+								"n": 1,
+								"uri": "https://ja.wikipedia.org/wiki/%E3%82%AB%E3%83%AA%E3%82%A2%E3%83%86%E3%82%A3%E3%83%BC%E3%83%89",
+								"query": {
+									"q-subcategoria": "caryatids"
+								},
+								"link": true
+							},
+							{
+								"id": 1123,
+								"name": "Column bases",
+								"name_ja": "柱脚部",
+								"n": 21,
+								"query": {
+									"q-subcategoria": "column bases"
+								},
+								"link": true
+							},
+							{
+								"id": 1124,
+								"name": "Cornices",
+								"name_ja": "コーニス",
+								"n": 17,
+								"uri": "https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%BC%E3%83%8B%E3%82%B9",
+								"query": {
+									"q-subcategoria": "cornices"
+								},
+								"link": true
+							},
+							{
+								"id": 1125,
+								"name": "Etruscan chariot of metal",
+								"name_ja": "金属製のエトルリア戦車",
+								"n": 1,
+								"query": {
+									"q-subcategoria": "etruscan chariot of metal"
+								},
+								"link": true
+							},
+							{
+								"id": 1126,
+								"name": "Friezes",
+								"name_ja": "フリーズ",
+								"n": 24,
+								"uri": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%83%AA%E3%83%BC%E3%82%BA_(%E5%BB%BA%E7%AF%89)",
+								"query": {
+									"q-subcategoria": "friezes"
+								},
+								"link": true
+							},
+							{
+								"id": 1127,
+								"name": "Marble table in the form of a circus",
+								"name_ja": "大理石製テーブル",
+								"n": 1,
+								"query": {
+									"q-subcategoria": "marble table in the form of a circus"
+								},
+								"link": true
+							},
+							{
+								"id": 1128,
+								"name": "Moldings",
+								"name_ja": "繰形",
+								"n": 5,
+								"uri": "https://ja.wikipedia.org/wiki/%E7%B9%B0%E5%BD%A2",
+								"query": {
+									"q-subcategoria": "moldings"
+								},
+								"link": true
+							},
+							{
+								"id": 1129,
+								"name": "Pilasters",
+								"name_ja": "付柱",
+								"n": 2,
+								"uri": "https://ja.wikipedia.org/wiki/%E4%BB%98%E6%9F%B1",
+								"query": {
+									"q-subcategoria": "pilasters"
+								},
+								"link": true
+							},
+							{
+								"id": 1130,
+								"name": "Tomb fragments",
+								"name_ja": "墓断片",
+								"n": 26,
+								"query": {
+									"q-subcategoria": "tomb fragments"
+								},
+								"link": true
+							},
+							{
+								"id": 1131,
+								"name": "Triremes",
+								"name_ja": "三段櫂船",
+								"n": 3,
+								"uri": "https://ja.wikipedia.org/wiki/%E4%B8%89%E6%AE%B5%E6%AB%82%E8%88%B9",
+								"query": {
+									"q-subcategoria": "triremes"
+								},
+								"link": true
+							},
+							{
+								"id": 1132,
+								"name": "Trophies",
+								"name_ja": "記念碑",
+								"n": 12,
+								"uri": "https://ja.wikipedia.org/wiki/%E3%83%88%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC",
+								"query": {
+									"q-subcategoria": "trophies"
+								},
+								"link": true
+							},
+							{
+								"id": 1133,
+								"name": "Vault",
+								"name_ja": "ヴォールト",
+								"n": 6,
+								"uri": "https://ja.wikipedia.org/wiki/%E3%83%B4%E3%82%A9%E3%83%BC%E3%83%AB%E3%83%88",
+								"query": {
+									"q-subcategoria": "vault"
+								},
+								"link": true
+							},
+							{
+								"id": 1134,
+								"name": "Other fragments",
+								"name_ja": "その他",
+								"n": 23,
+								"query": {
+									"q-subcategoria": "architectural fragments"
+								},
+								"link": true
+							}
+						]
+					},
+					{
+						"id": 113,
+						"name": "Caliber of water nozzles",
+						"name_ja": "水量調節のためのノズルの規格",
+						"n": 1,
+						"query": {
+							"q-subcategoria": "caliber of water nozzles"
+						},
+						"link": true
+					},
+					{
+						"id": 114,
+						"name": "Candelabra",
+						"name_ja": "燭台",
+						"n": 16,
+						"uri": "https://en.wikipedia.org/wiki/Candelabra",
+						"query": {
+							"q-subject": "archeological objects",
+							"q-subcategoria": "candelabra"
+						},
+						"link": true
+					},
+					{
+						"id": 115,
+						"name": "Chairs",
+						"name_ja": "椅子",
+						"n": 6,
+						"uri": "https://ja.wikipedia.org/wiki/%E6%A4%85%E5%AD%90",
+						"query": {
+							"q-subcategoria": "chairs"
+						},
+						"link": true
+					},
+					{
+						"id": 116,
+						"name": "Coins and medals",
+						"name_ja": "コインとメダル",
+						"query": {
+							"q-subcategoria": "coins and medals"
+						},
+						"link": true
+					},
+					{
+						"id": 117,
+						"name": "Inscriptions",
+						"name_ja": "碑文",
+						"n": 45,
+						"query": {
+							"q-subcategoria": "inscriptions"
+						},
+						"link": true
+					},
+					{
+						"id": 118,
+						"name": "Lamps",
+						"name_ja": "ランプ",
+						"query": {
+							"q-subcategoria": "lamps"
+						},
+						"n": 14,
+						"link": true
+					},
+					{
+						"id": 119,
+						"name": "Maps",
+						"name_ja": "地図",
+						"n": 8,
+						"query": {
+							"q-subcategoria": "maps"
+						},
+						"link": true,
+						"children": [
+							{
+								"id": 1191,
+								"name": "Indices of maps",
+								"n": 4,
+								"query": {
+									"q-subcategoria": "indices of a map"
+								},
+								"link": true
+							}
+						]
+					},
+					{
+						"id": 121,
+						"name": "Masks",
+						"name_ja": "仮面",
+						"n": 16,
+						"query": {
+							"q-subcategoria": "masks"
+						},
+						"link": true
+					},
+					{
+						"id": 122,
+						"name": "Monuments",
+						"name_ja": "記念碑",
+						"n": 4,
+						"query": {
+							"q-subcategoria": "monuments"
+						},
+						"link": true
+					},
+					{
+						"id": 123,
+						"name": "Pedestals",
+						"name_ja": "台",
+						"wiki": "https://en.wikipedia.org/wiki/Pedestal",
+						"query": {
+							"q-subcategoria": "pedestals"
+						},
+						"n": 33,
+						"link": true
+					},
+					{
+						"id": 124,
+						"name": "Reliefs",
+						"name_ja": "レリーフ",
+						"query": {
+							"q-subcategoria": "reliefs"
+						},
+						"n": 15,
+						"uri": "https://ja.wikipedia.org/wiki/%E3%83%AC%E3%83%AA%E3%83%BC%E3%83%95",
+						"link": true
+					},
+					{
+						"id": 125,
+						"name": "Sarcophagi",
+						"name_ja": "サルコファガス",
+						"uri": "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%83%AB%E3%82%B3%E3%83%95%E3%82%A1%E3%82%AC%E3%82%B9",
+						"link": true,
+						"query": {
+							"q-subcategoria": "sarcophagi"
+						},
+						"n": 20
+					},
+					{
+						"id": 126,
+						"name": "Statues",
+						"name_ja": "像",
+						"link": true,
+						"query": {
+							"q-subcategoria": "statues"
+						},
+						"n": 43
+					},
+					{
+						"id": 127,
+						"name": "Tripods",
+						"name_ja": "三脚",
+						"link": true,
+						"query": {
+							"q-subcategoria": "tripods"
+						},
+						"n": 14
+					},
+					{
+						"id": 128,
+						"name": "Urns",
+						"name_ja": "壺",
+						"link": true,
+						"query": {
+							"q-subcategoria": "urns"
+						},
+						"n": 33
+					},
+					{
+						"id": 129,
+						"name": "Utensils",
+						"name_ja": "家庭用品",
+						"link": true,
+						"query": {
+							"q-subcategoria": "utensils"
+						},
+						"n": 13
+					},
+					{
+						"id": 130,
+						"name": "Vase paintings",
+						"name_ja": "壺絵",
+						"link": true,
+						"query": {
+							"q-subcategoria": "vase paintings"
+						},
+						"n": 3
+					},
+					{
+						"id": 131,
+						"name": "Vases",
+						"name_ja": "容器",
+						"link": true,
+						"query": {
+							"q-subject": "archeological objects",
+							"q-subcategoria": "vases"
+						},
+						"n": 70
+					}
+				]
+			},
+			{
+				"id": 3,
+				"lv": 2,
+				"name": "Museum Collections",
+				"name_ja": "博物館コレクション",
+				"link": true,
+				"query": {
+					"q-conservazione": "mus"
+				},
+				"n": 76
+			}
+		]
+	},
+	{
+		"id": 4,
+		"name": "Architectures",
+		"name_ja": "建築物",
+		"lv": 1,
+		"children": [
+			{
+				"id": 401,
+				"lv": 2,
+				"name": "Diagrams",
+				"name_ja": "図",
+				"n": 7,
+				"query": {
+					"q-subject": "diagrams"
+				},
+				"link": true,
+				"children": [
+					{
+						"id": 4011,
+						"name": "Extraction diagrams",
+						"n": 6,
+						"query": {
+							"q-subcategoria": "extraction diagrams"
+						},
+						"link": true
+					}
+				]
+			},
+			{
+				"id": 402,
+				"lv": 2,
+				"name": "Details of construction",
+				"name_ja": "建築細部",
+				"link": true,
+				"query": {
+					"q-subject": "details of construction",
+					"q-subcategoria": "details of construction",
+					"advancedOr": true
+				},
+				"n": 25
+			},
+			{
+				"id": 403,
+				"lv": 2,
+				"name": "Elevations, Plans, Sections",
+				"name_ja": "立体図, 平面図, 断面図",
+				"link": true,
+				"n": 79,
+				"query": {
+					"q-subcategoria": "plans, elevations, sections"
+				}
+			},
+			{
+				"id": 404,
+				"lv": 2,
+				"name": "Reconstructions",
+				"name_ja": "復元",
+				"link": true,
+				"n": 25,
+				"query": {
+					"q-subcategoria": "reconstruction"
+				}
+			},
+			{
+				"id": 405,
+				"lv": 2,
+				"name": "Imaginary architectures",
+				"name_ja": "空想の建築",
+				"children": [
+					{
+						"id": 4051,
+						"name": "Architectural fantasies",
+						"name_ja": "建築想像図",
+						"link": true,
+						"n": 30,
+						"query": {
+							"q-subject": "architectural fantasies"
+						}
+					},
+					{
+						"id": 4052,
+						"name": "Imaginary architectural compositions",
+						"name_ja": "空想の建築構成物",
+						"n": 5,
+						"link": true,
+						"query": {
+							"q-subject": "imaginary architectural compositions"
+						}
+					},
+					{
+						"id": 4053,
+						"name": "Imaginary prisons",
+						"name_ja": "空想の牢獄",
+						"n": 16,
+						"link": true,
+						"query": {
+							"q-subcategoria": "imaginary prisons"
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"id": 5,
+		"name": "Capricci",
+		"name_ja": "奇想",
+		"lv": 1,
+		"link": true,
+		"n": 4,
+		"query": {
+			"q-subject": "capricci"
+		}
+	},
+	{
+		"id": 6,
+		"lv": 1,
+		"name": "Dedications",
+		"name_ja": "献辞",
+		"link": true,
+		"query": {
+			"q-subject": "dedications",
+			"q-subcategoria": "dedications",
+			"advancedOr": true
+		},
+		"n": 13
+	},
+	{
+		"id": 7,
+		"lv": 1,
+		"name": "Decorative designs",
+		"name_ja": "装飾",
+		"children": [
+			{
+				"id": 701,
+				"lv": 2,
+				"name": "Etruscan inventions",
+				"name_ja": "エトルリアの神殿",
+				"n": 1,
+				"query": {
+					"q-subject": "etruscan inventions"
+				},
+				"link": true
+			},
+			{
+				"id": 702,
+				"lv": 2,
+				"name": "Coaches and sedan chairs",
+				"n": 7,
+				"query": {
+					"q-subject": "coaches and sedan chairs"
+				},
+				"link": true
+			},
+			{
+				"id": 703,
+				"lv": 2,
+				"name": "Interior",
+				"name_ja": "インテリア",
+				"link": false,
+				"children": [
+					{
+						"id": 7031,
+						"name": "Candelabra",
+						"name_ja": "燭台",
+						"n": 6,
+						"query": {
+							"q-subject": "furniture",
+							"q-subcategoria": "candelabra"
+						},
+						"link": true
+					},
+					{
+						"id": 7032,
+						"name": "Chimneypieces",
+						"name_ja": "チムニーピース",
+						"n": 52,
+						"query": {
+							"q-subject": "chimneypieces"
+						},
+						"link": true
+					},
+					{
+						"id": 7033,
+						"name": "Clocks",
+						"name_ja": "時計",
+						"n": 10,
+						"query": {
+							"q-subcategoria": "clocks"
+						},
+						"link": true
+					},
+					{
+						"id": 7034,
+						"name": "Coffee pots",
+						"name_ja": "コーヒーポット",
+						"n": 1,
+						"query": {
+							"q-subcategoria": "coffeepots"
+						},
+						"link": true
+					},
+					{
+						"id": 7035,
+						"name": "Commodes",
+						"name_ja": "箪笥",
+						"n": 4,
+						"query": {
+							"q-subcategoria": "commodes"
+						},
+						"link": true
+					},
+					{
+						"id": 7036,
+						"name": "Console tables",
+						"name_ja": "コンソールテーブル",
+						"n": 7,
+						"query": {
+							"q-subcategoria": "console tables"
+						},
+						"link": true
+					},
+					{
+						"id": 7037,
+						"name": "Ornamental belt",
+						"name_ja": "装飾帯",
+						"n": 1,
+						"query": {
+							"q-subcategoria": "ornamental belt"
+						},
+						"link": true
+					},
+					{
+						"id": 7038,
+						"name": "Urns",
+						"name_ja": "壺",
+						"n": 1,
+						"query": {
+							"q-subject": "furniture",
+							"q-subcategoria": "urns"
+						},
+						"link": true
+					},
+					{
+						"id": 7039,
+						"name": "Vases",
+						"name_ja": "容器",
+						"n": 5,
+						"query": {
+							"q-subject": "furniture",
+							"q-subcategoria": "vases"
+						},
+						"link": true
+					}
+				]
+			},
+			{
+				"id": 704,
+				"lv": 2,
+				"name": "Shells",
+				"name_ja": "貝殻",
+				"n": 2,
+				"query": {
+					"q-subject": "shells"
+				},
+				"link": true
+			}
+		]
+	},
+	{
+		"id": 8,
+		"lv": 1,
+		"name": "Drawings by Guercino, Ghezzi and others",
+		"n": 86,
+		"link": true,
+		"query": {
+			"q-subject": "drawings by guercino, ghezzi and others"
+		}
+	},
+	{
+		"id": 9,
+		"lv": 1,
+		"name": "Maps",
+		"name_ja": "地図",
+		"link": true,
+		"n": 25,
+		"query": {
+			"q-subject": "maps"
+		}
+	},
+	{
+		"id": 10,
+		"lv": 1,
+		"name": "Title pages",
+		"name_ja": "扉ページ",
+		"n": 42,
+		"link": true,
+		"query": {
+			"q-subject": "title page"
+		}
+	}
+]

@@ -199,20 +199,29 @@ export default class search extends Vue {
   async main() {
     this.loadingFlag = true
     queryStore.setFacetLabels({
+      author: this.$t('author'),
+      author_JP: this.$t('author_JP'),
+      series: this.$t('series'),
+      series_JP: this.$t('series_JP'),
       volume: this.$t('volume'),
       subject: this.$t('subject'),
       subcategoria: this.$t('subcategoria'),
-      author: this.$t('author'),
+      Edificio_IL: this.$t('Edificio'),
+      conservazione: this.$t('conservazione'),
     })
 
     // hyoujino tame
     queryStore.setTermLabels({
+      Edificio_all: this.$t('Edificio'),
+      author: this.$t('author'),
+      author_JP: this.$t('author_JP'),
+      series: this.$t('series'),
+      series_JP: this.$t('series_JP'),
       volume: this.$t('volume'),
       subject: this.$t('subject'),
       subcategoria: this.$t('subcategoria'),
-      Edificio_all: this.$t('Edificio'),
+      Edificio_IL: this.$t('Edificio'),
       conservazione: this.$t('conservazione'),
-      author: this.$t('author'),
     })
 
     // 初期化
