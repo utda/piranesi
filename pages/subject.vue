@@ -3,7 +3,7 @@
     <v-container>
       <h2 class="my-5">{{ $t('subject_search') }}</h2>
 
-      <v-row>
+      <v-row v-if="items.length > 0">
         <v-col
           v-for="(obj, index) in [items.slice(0, 1), items.slice(1)]"
           :key="index"

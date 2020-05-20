@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="mb-5">
-      <v-img :aspect-ratio="16 / 9" src="img/ogp/home.jpg" height="600px">
+      <v-img src="img/ogp/home.jpg" height="600px">
         <v-row align="center" class="lightbox white--text pa-2 fill-height">
           <v-col>
             <h1 class="display-1 text-center">
