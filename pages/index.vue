@@ -1,6 +1,16 @@
 <template>
   <div>
     <section class="mb-5">
+      <v-img :aspect-ratio="16 / 9" src="img/ogp/home.jpg" height="600px">
+        <v-row align="center" class="lightbox white--text pa-2 fill-height">
+          <v-col>
+            <h1 class="display-1 text-center">
+              <b>{{ $t('piranesi_db') }}</b>
+            </h1>
+          </v-col>
+        </v-row>
+      </v-img>
+      <!-- 
       <v-parallax src="img/ogp/home.jpg" height="600">
         <v-layout column align-center justify-center class="white--text">
           <h1 class="white--text mb-2 display-1 text-center">
@@ -8,6 +18,7 @@
           </h1>
         </v-layout>
       </v-parallax>
+      -->
     </section>
 
     <v-container>
@@ -18,13 +29,13 @@
             href="https://warp.ndl.go.jp/info:ndljp/pid/1016139/www.coe.l.u-tokyo.ac.jp:8080/piranesi.html"
             >https://warp.ndl.go.jp/info:ndljp/pid/1016139/www.coe.l.u-tokyo.ac.jp:8080/piranesi.html</a
           >
-          で提供されていた機能を再現したものです。また、東京大学学術資産等共用サーバで公開されているサイト
+          で提供されていた機能を再構築したものです。また、東京大学学術資産等共用サーバで公開されているサイト「ピラネージ画像データベース（以下、簡易版）」
           <a href="https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/page/home"
             >https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/page/home</a
           >
-          の画像を利用しています。本サイトは共用サーバが提供する機能を包含していますので、こちらのサイトを利用することをお勧めします。</template
+          の画像を利用しています。本サイトは簡易版サイトが提供する機能を包含していますので、こちらの拡張版サイトを利用されることをお勧めします。</template
         ><template v-else>
-          This site provides the fucntions developed by
+          This site is the reconstruction of
           <a
             href="https://warp.ndl.go.jp/info:ndljp/pid/1016139/www.coe.l.u-tokyo.ac.jp:8080/piranesi.html"
           >
