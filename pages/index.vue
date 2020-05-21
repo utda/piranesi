@@ -29,11 +29,11 @@
             href="https://warp.ndl.go.jp/info:ndljp/pid/1016139/www.coe.l.u-tokyo.ac.jp:8080/piranesi.html"
             >https://warp.ndl.go.jp/info:ndljp/pid/1016139/www.coe.l.u-tokyo.ac.jp:8080/piranesi.html</a
           >
-          で提供されていた機能を再構築したものです。また、東京大学学術資産等共用サーバで公開されているサイト「ピラネージ画像データベース（以下、簡易版）」
+          で提供されていた機能を再構築したものです。また、東京大学学術資産等共用サーバで公開されているサイト「ピラネージ画像データベース（以下、シンプル版）」
           <a href="https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/page/home"
             >https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/page/home</a
           >
-          の画像を利用しています。本サイトは簡易版サイトが提供する機能を包含していますので、こちらの拡張版サイトを利用されることをお勧めします。</template
+          の画像を利用しています。本サイトはシンプル版サイトが提供する機能を包含していますので、こちらの拡張版サイトを利用されることをお勧めします。</template
         ><template v-else>
           This site is the reconstruction of
           <a

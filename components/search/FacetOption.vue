@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-expansion-panels :value="0">
+    <v-expansion-panels :value="0" dense>
       <v-expansion-panel>
         <v-expansion-panel-header class="grey lighten-2">{{
           label
@@ -34,6 +34,7 @@
               <v-list-item
                 v-if="index < thres || flag"
                 :key="'bucket_' + index"
+                dense
               >
                 <v-list-item-action>
                   <v-checkbox
@@ -55,6 +56,7 @@
                   <v-btn
                     v-show="!bucket.value"
                     icon
+                    x-small
                     @click="
                       remove({
                         label: 'fc-' + term,

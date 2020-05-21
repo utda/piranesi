@@ -12,7 +12,7 @@
           prepend-inner-icon="search"
           clearable
           clear-icon="mdi-close-circle"
-          @keyup.enter="search"
+          @keydown.enter="trigger"
         ></v-text-field>
       </v-col>
       <v-col cols="12" sm="3">
@@ -346,6 +346,13 @@ import { Vue, Component } from 'nuxt-property-decorator'
 
 @Component({})
 export default class SearchForm extends Vue {
+  trigger(event: any) {
+    // 日本語入力中のEnterキー操作は無効にする
+    if (event.keyCode !== 13) return
+
+    this.search()
+  }
+
   keywordStr: string = ''
   keywords: string[] = []
 
@@ -354,11 +361,11 @@ export default class SearchForm extends Vue {
   search() {
     const keywordStr = this.keywordStr
 
-    // const keywords = this.$utils.splitKeyword(keywordStr)
+    const keywords = this.$utils.splitKeyword(keywordStr)
 
     // push 処理
     const query: any = Object.assign({}, this.$route.query)
-    query.keyword = keywordStr // keywords
+    query.keyword = keywords
     query.from = 0
 
     this.$router.push(

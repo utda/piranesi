@@ -4,34 +4,36 @@
 
     <div style="background-color: #eeeeee;">
       <v-container class="pt-5">
-        <v-row no-gutters>
+        <v-row no-gutters align="center">
           <v-col cols="12" sm="5">
             <h3 class="my-5">{{ total.toLocaleString() }}{{ $t('hits') }}</h3>
           </v-col>
           <v-col cols="12" sm="7">
             <v-row dense>
-              <v-col cols="12" sm="3">
-                <v-select
-                  v-model="sort"
-                  :items="computedItemsSort"
-                  :label="$t('Sort by')"
-                  @change="setSort"
-                ></v-select>
-              </v-col>
+              <template v-if="layout !== 'stats'">
+                <v-col cols="12" sm="3">
+                  <v-select
+                    v-model="sort"
+                    :items="computedItemsSort"
+                    :label="$t('Sort by')"
+                    @change="setSort"
+                  ></v-select>
+                </v-col>
 
-              <v-col cols="12" sm="3" dense>
-                <v-select
-                  v-model="size"
-                  :items="[
-                    { value: 20, text: '20' },
-                    { value: 50, text: '50' },
-                    { value: 100, text: '100' },
-                    { value: 500, text: '500' },
-                  ]"
-                  :label="$t('items_per_page')"
-                  @change="setSize"
-                ></v-select>
-              </v-col>
+                <v-col cols="12" sm="3" dense>
+                  <v-select
+                    v-model="size"
+                    :items="[
+                      { value: 20, text: '20' },
+                      { value: 50, text: '50' },
+                      { value: 100, text: '100' },
+                      { value: 500, text: '500' },
+                    ]"
+                    :label="$t('items_per_page')"
+                    @change="setSize"
+                  ></v-select>
+                </v-col>
+              </template>
 
               <v-col cols="12" sm="3">
                 <v-select

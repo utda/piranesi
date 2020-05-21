@@ -162,6 +162,7 @@
       <v-text-field
         v-show="!isMobile()"
         v-model="keywordStr"
+        background-color="grey lighten-2"
         class="mr-2"
         filled
         rounded
@@ -173,16 +174,31 @@
         clear-icon="mdi-close-circle"
         append-icon="mdi-dots-vertical"
         @click:append="dialog = !dialog"
-        @keyup.enter="search"
+        @keydown.enter="trigger"
       ></v-text-field>
 
       <v-btn v-show="isMobile()" icon @click="dialog = !dialog">
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
 
-      <v-btn :to="switchLocalePath($i18n.locale == 'ja' ? 'en' : 'ja')" icon>
-        <v-icon>mdi-translate</v-icon>
-      </v-btn>
+      <v-menu offset-y>
+        <template v-slot:activator="{ on }">
+          <v-btn depressed btn v-on="on">
+            <v-icon class="mr-2">mdi-translate</v-icon>
+            {{ $i18n.locale == 'ja' ? '日本語' : 'English' }}
+            <v-icon class="ml-2">mdi-menu-down</v-icon>
+          </v-btn>
+        </template>
+
+        <v-list>
+          <v-list-item :to="switchLocalePath('ja')">
+            <v-list-item-title>日本語</v-list-item-title>
+          </v-list-item>
+          <v-list-item :to="switchLocalePath('en')">
+            <v-list-item-title>English</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
     </v-app-bar>
 
     <v-dialog v-model="dialog" scrollable>
@@ -506,6 +522,13 @@ import { Vue, Component, Watch } from 'nuxt-property-decorator'
 
 @Component
 export default class Header extends Vue {
+  trigger(event: any) {
+    // 日本語入力中のEnterキー操作は無効にする
+    if (event.keyCode !== 13) return
+
+    this.search()
+  }
+
   width: number = window.innerWidth
   height: number = window.innerHeight
 
@@ -563,11 +586,11 @@ export default class Header extends Vue {
   search() {
     const keywordStr = this.keywordStr
 
-    // const keywords = this.$utils.splitKeyword(keywordStr)
+    const keywords = this.$utils.splitKeyword(keywordStr)
 
     // push 処理
     const query: any = Object.assign({}, this.$route.query)
-    query.keyword = keywordStr // keywords
+    query.keyword = keywords
     query.from = 0
 
     this.$router.push(
