@@ -59,4 +59,10 @@ export default class LayoutDefault extends Vue {
 .v-btn {
   text-transform: none !important;
 }
+.link-orange {
+  color: #e64a19;
+}
+body {
+  word-break: break-word;
+}
 </style>

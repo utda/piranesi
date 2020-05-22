@@ -1,6 +1,15 @@
 <template>
   <div>
     <v-navigation-drawer v-model="drawer" :temporary="true" app>
+      <v-list-item>
+        <v-list-item-content>
+          <v-list-item-title class="title">
+            {{ $t('piranesi_db') }}
+          </v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+
+      <v-divider></v-divider>
       <v-list>
         <v-list-item :to="localePath('index')" link>
           <v-list-item-action>
@@ -151,17 +160,9 @@
       </v-toolbar-title>
       <v-spacer></v-spacer>
 
-      <!-- solo 
-      
-      filled
-      
-      flat
-      
-      -->
-
       <v-text-field
-        v-show="!isMobile()"
         v-model="keywordStr"
+        single-line
         background-color="grey lighten-2"
         class="mr-2"
         filled
@@ -169,24 +170,23 @@
         dense
         hide-details
         :label="$t('search_works')"
-        prepend-inner-icon="search"
         clearable
         clear-icon="mdi-close-circle"
-        append-icon="mdi-dots-vertical"
-        @click:append="dialog = !dialog"
+        append-icon="search"
+        @click:append="search"
         @keydown.enter="trigger"
       ></v-text-field>
 
-      <v-btn v-show="isMobile()" icon @click="dialog = !dialog">
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
+      <v-spacer></v-spacer>
 
       <v-menu offset-y>
         <template v-slot:activator="{ on }">
           <v-btn depressed btn v-on="on">
             <v-icon class="mr-2">mdi-translate</v-icon>
-            {{ $i18n.locale == 'ja' ? '日本語' : 'English' }}
-            <v-icon class="ml-2">mdi-menu-down</v-icon>
+            <template v-if="!isMobile()">
+              {{ $i18n.locale == 'ja' ? '日本語' : 'English' }}
+              <v-icon class="ml-2">mdi-menu-down</v-icon>
+            </template>
           </v-btn>
         </template>
 
@@ -200,6 +200,8 @@
         </v-list>
       </v-menu>
     </v-app-bar>
+
+    <!-- 
 
     <v-dialog v-model="dialog" scrollable>
       <v-card>
@@ -231,8 +233,6 @@
                 ></v-select>
               </v-col>
             </v-row>
-
-            <!-- -->
 
             <v-sheet class="pa-2 mb-5" color="grey lighten-3">
               {{ $t('Field') }}
@@ -501,9 +501,8 @@
               </v-col>
             </v-row>
 
-            <!-- -->
+       
           </v-container>
-          <!-- <small>*indicates required field</small> -->
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
@@ -514,6 +513,8 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
+
+    -->
   </div>
 </template>
 
@@ -584,7 +585,11 @@ export default class Header extends Vue {
   }
 
   search() {
-    const keywordStr = this.keywordStr
+    let keywordStr = this.keywordStr
+
+    if (!keywordStr) {
+      keywordStr = ''
+    }
 
     const keywords = this.$utils.splitKeyword(keywordStr)
 
@@ -603,6 +608,7 @@ export default class Header extends Vue {
     )
   }
 
+  /*
   advancedSearch() {
     const advanced = this.advanced
     const query: any = Object.assign({}, this.$route.query)
@@ -619,8 +625,11 @@ export default class Header extends Vue {
 
     const keywordStr = this.keywordStr
 
-    // const keywords = this.$utils.splitKeyword(keywordStr)
-    query.keyword = keywordStr // keywords
+    if (keywordStr) {
+      const keywords = this.$utils.splitKeyword(keywordStr)
+      query.keyword = keywords
+    }
+
     query.from = 0
 
     this.$router.push(
@@ -634,6 +643,7 @@ export default class Header extends Vue {
 
     this.dialog = false
   }
+  */
 
   isMobile() {
     if (

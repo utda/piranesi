@@ -59,7 +59,7 @@ const manifestIcon = 'img/icons/icon-512.png'
 
 module.exports = {
   server: {
-    port: 8004, // デフォルト: 3000
+    port: 8007, // デフォルト: 3000
     host: '0.0.0.0', // デフォルト: localhost
   },
   ...routerBase,

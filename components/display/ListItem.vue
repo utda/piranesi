@@ -55,7 +55,7 @@
           <div class="text-right mt-2">
             <v-btn v-if="item.manifest" icon>
               <a :href="item.manifest">
-                <v-img
+                <img
                   contain
                   height="24px"
                   :src="baseUrl + '/img/iiif-logo.svg'"
@@ -81,10 +81,12 @@
 <script lang="ts">
 import { Vue, Prop, Component } from 'nuxt-property-decorator'
 import ResultOption from '~/components/display/ResultOption.vue'
+import ShareButtons from '~/components/common/ShareButtons.vue'
 
 @Component({
   components: {
     ResultOption,
+    ShareButtons,
   },
 })
 export default class ListItem extends Vue {

@@ -2,54 +2,38 @@
   <div>
     <v-expansion-panels :value="0" dense>
       <v-expansion-panel>
-        <v-expansion-panel-header class="grey lighten-2">{{
-          label
-        }}</v-expansion-panel-header>
+        <v-expansion-panel-header class="grey lighten-2"
+          ><h3>
+            {{ label }}
+            <small>({{ buckets.length }})</small>
+          </h3></v-expansion-panel-header
+        >
         <v-expansion-panel-content>
-          <v-list>
-            <!-- 
-              <v-list-item
-                v-for="(bucket, index) in buckets"
-                :key="'bucket_' + index"
-              >
-                <v-list-item-action>
-                  <v-checkbox
-                    v-model="bucket.value"
-                    color="primary"
-                    @change="change('fc-' + term, bucket.key)"
-                  ></v-checkbox>
-                </v-list-item-action>
-
-                <v-list-item-content>
-                  {{ bucket.key }}
-                </v-list-item-content>
-
-                <v-list-item-action>
-                  <v-chip>{{ bucket.doc_count }}</v-chip>
-                </v-list-item-action>
-              </v-list-item>
-            -->
-
+          <v-list dense>
             <template v-for="(bucket, index) in buckets">
               <v-list-item
                 v-if="index < thres || flag"
                 :key="'bucket_' + index"
                 dense
+                class="my-0 py-0"
               >
-                <v-list-item-action>
+                <v-list-item-content
+                  style="word-break: break-word;"
+                  class="my-0 py-0"
+                >
                   <v-checkbox
                     v-model="bucket.value"
+                    class="my-0 py-0 mt-1 ml-1"
+                    dense
+                    x-small
                     color="primary"
+                    :label="bucket.key"
                     @change="change('fc-' + term, bucket.key)"
                   ></v-checkbox>
-                </v-list-item-action>
-
-                <v-list-item-content class="mr-5">
-                  {{ bucket.key }}
                 </v-list-item-content>
 
                 <v-list-item-action>
-                  {{ bucket.doc_count }}
+                  {{ bucket.doc_count.toLocaleString() }}
                 </v-list-item-action>
 
                 <v-list-item-action>
@@ -317,5 +301,11 @@ export default class facetoption extends Vue {
 <style>
 .v-expansion-panel-content__wrap {
   padding: 0;
+}
+.v-input__control {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 </style>

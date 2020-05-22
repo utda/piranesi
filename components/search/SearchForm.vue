@@ -1,22 +1,25 @@
 <template>
   <v-container class="pt-5">
-    <v-row>
-      <v-col cols="12" sm="9">
+    <v-row align="center">
+      <v-col cols="12" sm="8">
         <v-text-field
           v-model="keywordStr"
           class="mr-2"
           filled
+          background-color="grey lighten-2"
+          rounded
           dense
           hide-details
           :label="$t('search_works')"
-          prepend-inner-icon="search"
           clearable
           clear-icon="mdi-close-circle"
+          append-icon="search"
+          @click:append="search"
           @keydown.enter="trigger"
         ></v-text-field>
       </v-col>
-      <v-col cols="12" sm="3">
-        <v-btn color="primary" class="mr-4 my-2" @click="search">
+      <v-col cols="12" sm="4">
+        <v-btn color="primary" class="mr-2" @click="search">
           {{ $t('search') }}
         </v-btn>
         <v-btn @click="dialog = !dialog">
@@ -359,7 +362,11 @@ export default class SearchForm extends Vue {
   dialog: boolean = false
 
   search() {
-    const keywordStr = this.keywordStr
+    let keywordStr = this.keywordStr
+
+    if (!keywordStr) {
+      keywordStr = ''
+    }
 
     const keywords = this.$utils.splitKeyword(keywordStr)
 

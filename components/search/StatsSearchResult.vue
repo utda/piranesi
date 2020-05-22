@@ -1,11 +1,11 @@
 <template>
   <div>
-    <template v-for="(label, index) in facetLabels">
+    <template v-for="(label, index) in facetLabels_">
       <v-card
         v-if="
-          aggregations[index] &&
-          aggregations[index].buckets &&
-          aggregations[index].buckets.length > 0
+          aggregations_[index] &&
+          aggregations_[index].buckets &&
+          aggregations_[index].buckets.length > 0
         "
         :key="index"
         no-body
@@ -16,7 +16,7 @@
           <Chart
             :height="400"
             class="mb-4"
-            :buckets="aggregations[index].buckets"
+            :buckets="aggregations_[index].buckets"
           ></Chart>
         </div>
       </v-card>
@@ -37,7 +37,7 @@ export default class statssearchresult extends Vue {
   @Prop({
     required: true,
     default() {
-      return []
+      return {}
     },
   })
   aggregations!: any
@@ -48,5 +48,13 @@ export default class statssearchresult extends Vue {
     },
   })
   facetLabels!: string[]
+
+  get aggregations_() {
+    return this.aggregations
+  }
+
+  get facetLabels_() {
+    return this.facetLabels
+  }
 }
 </script>

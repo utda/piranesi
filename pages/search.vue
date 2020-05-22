@@ -90,15 +90,20 @@
 
     <v-container v-show="!loadingFlag" class="mt-5">
       <v-row>
-        <v-col cols="12" :sm="facetFlag ? 9 : 12" order-sm="12">
+        <v-col cols="12" :sm="facetFlag ? 8 : 12" order-sm="12">
           <h3 class="mb-5">
-            <i
-              v-if="!facetFlag"
-              style="cursor: pointer;"
-              :title="$t('open_facets')"
-              class="fas fa-bars mr-2"
-              @click="setFacetFlag(!facetFlag)"
-            ></i>
+            <v-tooltip bottom>
+              <template v-slot:activator="{ on }">
+                <i
+                  v-show="!facetFlag"
+                  style="cursor: pointer;"
+                  class="far fa-caret-square-right mr-2"
+                  v-on="on"
+                  @click="setFacetFlag(facetFlag)"
+                ></i>
+              </template>
+              <span>{{ $t('open_facets') }}</span>
+            </v-tooltip>
             {{ $t('search_result') }}
           </h3>
 
@@ -132,16 +137,21 @@
           </template>
         </v-col>
 
-        <v-col v-show="facetFlag" :sm="3" order-sm="1">
+        <v-col v-show="facetFlag" :sm="4" order-sm="1">
           <template v-if="total > 0">
             <h3 class="mb-5">
-              <i
-                v-if="facetFlag"
-                style="cursor: pointer;"
-                :title="$t('close_facets')"
-                class="fas fa-bars mr-2"
-                @click="setFacetFlag(!facetFlag)"
-              ></i>
+              <v-tooltip bottom>
+                <template v-slot:activator="{ on }">
+                  <i
+                    v-show="facetFlag"
+                    style="cursor: pointer;"
+                    class="far fa-caret-square-left mr-2"
+                    v-on="on"
+                    @click="setFacetFlag(!facetFlag)"
+                  ></i>
+                </template>
+                <span>{{ $t('close_facets') }}</span>
+              </v-tooltip>
               {{ $t('refine_your_search') }}
             </h3>
 
@@ -317,9 +327,8 @@ export default class search extends Vue {
     ) {
       this.setFacetFlag()
     } else if (
-      (currentValue === 'grid' ||
-        currentValue === 'list' ||
-        currentValue === 'table') &&
+      currentValue !== 'image' &&
+      currentValue !== 'stats' &&
       !this.facetFlag
     ) {
       this.setFacetFlag()
