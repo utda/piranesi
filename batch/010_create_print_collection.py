@@ -33,8 +33,14 @@ def read_excel(path):
             value = df.iloc[j, i]
 
             if not pd.isnull(value) and value != 0:
+                
+                label = map[i]
+
+                if label == "検索フィールド":
+                    continue
+
                 data[int(id)].append({
-                    "label": map[i],
+                    "label": label,
                     "value": html.unescape(str(value))
                 })
 
@@ -121,8 +127,6 @@ collections = []
 
 with open('data/vols.json') as f:
     df = json.load(f)
-
-print(df)
 
 for obj in df:
     label = obj["label"]
