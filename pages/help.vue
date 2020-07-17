@@ -263,5 +263,11 @@ import { Vue, Component } from 'nuxt-property-decorator'
 @Component
 export default class Help extends Vue {
   baseUrl: any = process.env.BASE_URL
+
+  head() {
+    return {
+      title: this.$t('help'),
+    }
+  }
 }
 </script>

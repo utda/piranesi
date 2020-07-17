@@ -10,7 +10,7 @@
           <v-spacer></v-spacer>
           <v-text-field
             v-model="search"
-            append-icon="search"
+            append-icon="mdi-magnify"
             :label="$t('search')"
             single-line
             hide-details
@@ -48,7 +48,26 @@ export default class Volumes extends Vue {
 
   arr: any[] = []
 
-  async created() {
+  head() {
+    return {
+      title: this.$t('concordance'),
+    }
+  }
+
+  async fetch(context: any) {
+    const store = context.store
+    const state = store.state
+
+    if (state.index == null) {
+      const index = await context.app.$searchUtils.createIndexFromIIIFCollection(
+        'https://piranesi.dl.itc.u-tokyo.ac.jp/data/print/iiif/top2.json'
+      )
+      store.commit('setIndex', index.index)
+      store.commit('setData', index.data)
+    }
+  }
+
+  created() {
     this.headers = [
       { text: this.$t('kamei_no'), value: 'Kamei_no' },
       { text: 'F.D', value: 'FD_no' },
@@ -60,9 +79,7 @@ export default class Volumes extends Vue {
       { text: this.$t('machida'), value: 'Machida_no' },
     ]
 
-    const result = await this.$searchUtils.createIndexFromIIIFCollection(
-      'https://raw.githubusercontent.com/nakamura196/piranesi/master/docs/print/iiif/top.json'
-    )
+    const result = this.$store.state
 
     const dataAll = result.data
 

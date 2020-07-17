@@ -229,9 +229,11 @@
     "J. W. Ely" : "J. W. Ely",
 
     "序文" : "PREFAZIONE",
+    "図版目録" : "図版目録",
 
     "thumbnail" : "Thumbnail",
     "table" : "Table",
-    "graph" : "Graph"
-
+    "graph" : "Graph",
+    "search_query" : "Filter",
+    "clear" : "Clear"
   }

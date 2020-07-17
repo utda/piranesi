@@ -1,10 +1,16 @@
 <template>
   <no-ssr>
     <l-map :zoom="zoom" :center="center" style="z-index: 0;">
+      <l-control-layers position="topright"></l-control-layers>
       <l-tile-layer
-        url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
-      ></l-tile-layer>
-
+        v-for="tileProvider in tileProviders"
+        :key="tileProvider.name"
+        :name="tileProvider.name"
+        :visible="tileProvider.visible"
+        :url="tileProvider.url"
+        :attribution="tileProvider.attribution"
+        layer-type="base"
+      />
       <l-marker-cluster>
         <template v-for="(marker, index) in markers">
           <l-marker :key="index" :lat-lng="marker.latlng">
@@ -82,6 +88,23 @@ export default class Map extends Vue {
     default: [35.681489, 139.767136],
   })
   center!: number[]
+
+  tileProviders: any[] = [
+    {
+      name: 'OpenStreetMap',
+      visible: true,
+      attribution:
+        '&copy; <a target="_blank" href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+      url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+    },
+    {
+      name: 'OpenTopoMap',
+      visible: false,
+      url: 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
+      attribution:
+        'Map data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)',
+    },
+  ]
 
   staticAnchor: number[] = [16, 37]
 }

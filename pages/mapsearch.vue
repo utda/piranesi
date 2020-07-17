@@ -565,7 +565,6 @@ export default class Search extends Vue {
 
   head() {
     return {
-      titleTemplate: null,
       title: this.$t('rome_map'),
     }
   }

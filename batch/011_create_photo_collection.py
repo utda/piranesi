@@ -43,6 +43,8 @@ def read_excel(path):
 path = "data/photo3.xlsx"
 data1 = read_excel(path)
 
+uri_prefix = "https://piranesi.dl.itc.u-tokyo.ac.jp"
+
 manifests = []
 
 for key in data1:
@@ -57,12 +59,12 @@ for key in data1:
 
     photo_no = key
 
-    prefix = "https://nakamura196.github.io/piranesi/photo/iiif/"+photo_no
+    prefix = uri_prefix + "/data/photo/iiif/"+photo_no
     uri = prefix+"/manifest.json"
 
     canvas = prefix+"/canvas/1"
 
-    img_prefix = "https://nakamura196.github.io/piranesi/photo"
+    img_prefix = uri_prefix + "/data/photo"
 
     manifest = {
         "@context": "http://iiif.io/api/presentation/2/context.json",
@@ -71,9 +73,10 @@ for key in data1:
         "label": label,
         "metadata": metadata,
         "viewingDirection": "left-to-right",
-        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
         "attribution": "東京大学 The University of Tokyo, JAPAN",
         "thumbnail": img_prefix+"/m/"+photo_no+".jpg",
+        "related" : uri_prefix  + "/photo/" + photo_no,
         "sequences": [
             {
                 "@type": "sc:Sequence",
@@ -110,7 +113,7 @@ for key in data1:
         ]
     }
 
-    dir = "../docs/photo/iiif/"+photo_no
+    dir = "../static/data/photo/iiif/"+photo_no
     os.makedirs(dir, exist_ok=True)
 
     manifests.append(
@@ -131,14 +134,14 @@ for key in data1:
 
 collection = {
   "@context": "http://iiif.io/api/presentation/2/context.json",
-  "@id": "https://nakamura196.github.io/piranesi/photo/iiif/top.json",
+  "@id": uri_prefix + "/data/photo/iiif/top.json",
   "label": "ピラネージ関連写真",
   "@type": "sc:Collection",
   "manifests": manifests,
   "vhint": "use-thumb",
 }
 
-with open("../docs/photo/iiif/top.json", 'w') as f:
+with open("../static/data/photo/iiif/top.json", 'w') as f:
     json.dump(collection, f, ensure_ascii=False, indent=4,
     sort_keys=True, separators=(',', ': '))
 

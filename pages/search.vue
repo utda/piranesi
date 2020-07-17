@@ -2,132 +2,106 @@
   <div>
     <SearchForm />
 
-    <div style="background-color: #eeeeee;">
-      <v-container class="pt-5">
-        <v-row no-gutters align="center">
-          <v-col cols="12" sm="5">
-            <h3 class="my-5">{{ total.toLocaleString() }}{{ $t('hits') }}</h3>
-          </v-col>
-          <v-col cols="12" sm="7">
-            <v-row dense>
-              <template v-if="layout !== 'stats'">
-                <v-col cols="12" sm="3">
-                  <v-select
-                    v-model="sort"
-                    :items="computedItemsSort"
-                    :label="$t('Sort by')"
-                    @change="setSort"
-                  ></v-select>
-                </v-col>
-
-                <v-col cols="12" sm="3" dense>
-                  <v-select
-                    v-model="size"
-                    :items="[
-                      { value: 20, text: '20' },
-                      { value: 50, text: '50' },
-                      { value: 100, text: '100' },
-                      { value: 500, text: '500' },
-                    ]"
-                    :label="$t('items_per_page')"
-                    @change="setSize"
-                  ></v-select>
-                </v-col>
-              </template>
-
-              <v-col cols="12" sm="3">
-                <v-select
-                  v-model="layout"
-                  :items="[
-                    { value: 'grid', text: $t('grid') },
-                    { value: 'list', text: $t('list') },
-                    { value: 'image', text: $t('thumbnail') },
-                    {
-                      text: $t('table'),
-                      value: 'table',
-                    },
-                    {
-                      text: $t('graph'),
-                      value: 'stats',
-                    },
-                  ]"
-                  :label="$t('layout')"
-                ></v-select>
-              </v-col>
-
-              <v-col
-                v-if="layout === 'grid' || layout === 'image'"
-                cols="12"
-                sm="3"
-              >
-                <v-select
-                  v-model="col"
-                  :label="$t('col')"
-                  :items="[
-                    { value: 3, text: '3' },
-                    { value: 4, text: '4' },
-                    { value: 6, text: '6' },
-                    { value: 12, text: '12' },
-                  ]"
-                  @change="setCol"
-                ></v-select>
-              </v-col>
-            </v-row>
-          </v-col>
-        </v-row>
-      </v-container>
-
+    <v-sheet color="grey lighten-3">
       <SearchFilter />
-    </div>
+    </v-sheet>
 
-    <div v-show="loadingFlag" class="text-center pa-10">
-      <v-progress-circular
-        :size="50"
-        color="primary"
-        indeterminate
-      ></v-progress-circular>
-    </div>
+    <v-container fluid>
+      <v-row dense>
+        <v-col class="py-0 my-0" cols="12" sm="6" lg="8">
+          <h2 class="my-2" style="vertical-align: middle;">
+            {{ $t('search_result') }}: {{ total.toLocaleString()
+            }}{{ $t('hits') }}
+          </h2>
+        </v-col>
+        <v-col class="py-0 my-0" cols="12" sm="6" lg="4">
+          <v-row dense>
+            <template v-if="layout_ !== 'stats'">
+              <v-col class="py-0 my-0" cols="12" sm="3">
+                <v-select
+                  v-model="sort"
+                  :items="computedItemsSort"
+                  :label="$t('Sort by')"
+                  @change="setSort"
+                ></v-select>
+              </v-col>
+              <v-col class="py-0 my-0" cols="12" sm="3">
+                <v-select
+                  v-model="size"
+                  :items="[
+                    { value: 24, text: '24' },
+                    { value: 60, text: '60' },
+                    { value: 120, text: '120' },
+                    { value: 512, text: '512' },
+                  ]"
+                  :label="$t('items_per_page')"
+                  @change="setSize"
+                ></v-select>
+              </v-col>
+            </template>
+            <v-col class="py-0 my-0" cols="12" sm="3">
+              <v-select
+                v-model="layout_"
+                :items="layouts"
+                :label="$t('layout')"
+              ></v-select>
+            </v-col>
+            <!-- && !mobileFlag -->
+            <v-col
+              v-show="
+                (layout_ === 'grid' || layout_ === 'image') &&
+                $vuetify.breakpoint.name != 'xs'
+              "
+              cols="12"
+              sm="3"
+              class="py-0 my-0"
+            >
+              <v-select
+                v-model="col"
+                :label="$t('col')"
+                :items="[
+                  { value: 1, text: '1' },
+                  { value: 2, text: '2' },
+                  { value: 3, text: '3' },
+                  { value: 4, text: '4' },
+                  { value: 6, text: '6' },
+                  { value: 12, text: '12' },
+                ]"
+              ></v-select>
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
 
-    <v-container v-show="!loadingFlag" class="mt-5">
       <v-row>
-        <v-col cols="12" :sm="facetFlag ? 8 : 12" order-sm="12">
-          <h3 class="mb-5">
-            <v-tooltip bottom>
-              <template v-slot:activator="{ on }">
-                <i
-                  v-show="!facetFlag"
-                  style="cursor: pointer;"
-                  class="far fa-caret-square-right mr-2"
-                  v-on="on"
-                  @click="setFacetFlag(facetFlag)"
-                ></i>
-              </template>
-              <span>{{ $t('open_facets') }}</span>
-            </v-tooltip>
-            {{ $t('search_result') }}
-          </h3>
+        <v-col
+          cols="12"
+          :sm="facetFlag ? 8 : 12"
+          :md="facetFlag ? 9 : 12"
+          order-sm="12"
+        >
+          <v-row v-if="false" no-gutters align="center">
+            <!--
+            <v-col cols="12" sm="4"> </v-col> -->
+            <!-- sm="8" -->
+            <v-col cols="12" :sm="8" :lg="6" align="center"> </v-col>
+          </v-row>
 
           <template v-if="total > 0">
-            <div class="text-center">
+            <div class="text-center my-5">
               <v-pagination
-                v-show="layout !== 'stats'"
+                v-show="layout_ !== 'stats' && layout_ !== 'map'"
                 v-model="currentPage"
                 :length="paginationLength"
                 :total-visible="7"
                 @input="setCurrentPage"
               ></v-pagination>
             </div>
+            <SearchResult />
 
-            <SearchResult
-              v-if="results.hits"
-              :results="results.hits.hits"
-              :query="$route.query"
-              class="my-5"
-            />
-
-            <div class="text-center">
+            <div class="text-center my-5">
               <v-pagination
-                v-show="layout !== 'stats'"
+                v-show="layout_ !== 'stats' && layout_ !== 'map'"
                 v-model="currentPage"
                 :length="paginationLength"
                 :total-visible="7"
@@ -137,25 +111,25 @@
           </template>
         </v-col>
 
-        <v-col v-show="facetFlag" :sm="4" order-sm="1">
+        <v-col :sm="4" :md="3" order-sm="1">
           <template v-if="total > 0">
-            <h3 class="mb-5">
+            <h3 class="mb-0">
               <v-tooltip bottom>
                 <template v-slot:activator="{ on }">
-                  <i
-                    v-show="facetFlag"
-                    style="cursor: pointer;"
-                    class="far fa-caret-square-left mr-2"
-                    v-on="on"
-                    @click="setFacetFlag(!facetFlag)"
-                  ></i>
+                  <v-icon v-on="on" @click="facetFlag = !facetFlag">{{
+                    facetFlag
+                      ? 'mdi-arrow-collapse-left'
+                      : 'mdi-arrow-collapse-right'
+                  }}</v-icon>
                 </template>
-                <span>{{ $t('close_facets') }}</span>
+                <span>{{
+                  facetFlag ? $t('close_facets') : $t('open_facets')
+                }}</span>
               </v-tooltip>
               {{ $t('refine_your_search') }}
             </h3>
-
-            <FacetSearchOptions :tmp="results" />
+            <FacetSearchOptions v-show="facetFlag" class="mt-5" />
+            <!-- v-if="results.aggregations"  -->
           </template>
         </v-col>
       </v-row>
@@ -170,7 +144,7 @@ import SearchResult from '~/components/search/SearchResult.vue'
 import SearchFilter from '~/components/search/filter.vue'
 import FacetSearchOptions from '~/components/search/FacetSearchOptions.vue'
 
-import { queryStore, dataStore } from '~/store'
+// import { queryStore, dataStore } from '~/store'
 
 const SORT_LABELS = JSON.stringify(['_title'])
 
@@ -181,109 +155,163 @@ const SORT_LABELS = JSON.stringify(['_title'])
     SearchFilter,
     FacetSearchOptions,
   },
+  watchQuery: true,
 })
 export default class search extends Vue {
+  head() {
+    return {
+      title: this.$t('search'),
+    }
+  }
+
   loadingFlag: boolean = false
 
   // ソート項目
   itemsSort: string[] = JSON.parse(SORT_LABELS)
 
-  currentPage: number = 1
-
-  layout: string = ''
-
-  col: number = -1
-
-  size: number = -1
-
-  sort: string = ''
-
-  results: any = {} // ページで分けた数
-
-  get paginationLength() {
-    return Math.ceil(this.total / this.size)
+  get results() {
+    return this.$store.state.result.hits.hits
   }
 
-  created() {
-    this.main()
+  get layouts() {
+    const layouts: any[] = [
+      { value: 'grid', text: this.$t('grid') },
+      { value: 'list', text: this.$t('list') },
+      { value: 'image', text: this.$t('thumbnail') },
+      { value: 'table', text: this.$t('table') },
+      { value: 'stats', text: this.$t('graph') },
+    ]
+
+    return layouts
   }
 
-  async main() {
-    this.loadingFlag = true
-    queryStore.setFacetLabels({
-      author: this.$t('author'),
-      author_JP: this.$t('author_JP'),
-      series: this.$t('series'),
-      series_JP: this.$t('series_JP'),
-      volume: this.$t('volume'),
-      subject: this.$t('subject'),
-      subcategoria: this.$t('subcategoria'),
-      Edificio_IL: this.$t('Edificio'),
-      conservazione: this.$t('conservazione'),
-    })
+  get currentPage() {
+    return this.$store.state.currentPage
+  }
 
-    // hyoujino tame
-    queryStore.setTermLabels({
-      Edificio_all: this.$t('Edificio'),
-      author: this.$t('author'),
-      author_JP: this.$t('author_JP'),
-      series: this.$t('series'),
-      series_JP: this.$t('series_JP'),
-      volume: this.$t('volume'),
-      subject: this.$t('subject'),
-      subcategoria: this.$t('subcategoria'),
-      Edificio_IL: this.$t('Edificio'),
-      conservazione: this.$t('conservazione'),
-    })
+  set currentPage(value) {
+    this.$store.commit('setCurrentPage', value)
+  }
 
-    // 初期化
-    queryStore.init()
+  get layout_() {
+    return this.$store.state.layout
+  }
 
-    // get パラメータに基づいてクエリを作成する
-    const esQuery = this.$searchUtils.createQuery(
-      this.$route.query,
-      queryStore.query
+  set layout_(value) {
+    this.$store.commit('setLayout', value)
+  }
+
+  get col() {
+    return this.$store.state.col
+  }
+
+  set col(value) {
+    this.$store.commit('setCol', value)
+  }
+
+  get size() {
+    return this.$store.state.size
+  }
+
+  set size(value) {
+    this.$store.commit('setSize', value)
+  }
+
+  get sort() {
+    return this.$store.state.sort
+  }
+
+  set sort(value) {
+    this.$store.commit('setSort', value)
+  }
+
+  get facetFlag() {
+    return this.$store.state.facetFlag
+  }
+
+  set facetFlag(value) {
+    this.$store.commit('setFacetFlag', value)
+  }
+
+  async fetch(context: any) {
+    const store = context.store
+    const state = store.state
+
+    if (Object.keys(state.facetLabels)) {
+      const facetLabels = {
+        author: 'author',
+        author_JP: 'author_JP',
+        series: 'series',
+        series_JP: 'series_JP',
+        volume: 'volume',
+        subject: 'subject',
+        subcategoria: 'subcategoria',
+        Edificio_IL: 'Edificio',
+        conservazione: 'conservazione',
+      }
+
+      const facetFlags = Object.keys(facetLabels)
+
+      store.commit('setFacetLabels', facetLabels)
+      store.commit('setFacetFlags', facetFlags)
+
+      // ファセット項目
+      /*
+        const facetLabels: any = process.env.FACETS_LABELS
+        console.log({ facetLabels })
+        store.commit('setFacetLabels', JSON.parse(facetLabels))
+        const facetFlags: any = process.env.FACETS_FLAGS
+        store.commit('setFacetFlags', JSON.parse(facetFlags))
+        */
+    }
+
+    if (state.index == null) {
+      const index = await context.app.$searchUtils.createIndexFromIIIFCollection(
+        'https://piranesi.dl.itc.u-tokyo.ac.jp/data/print/iiif/top2.json'
+      )
+      store.commit('setIndex', index.index)
+      store.commit('setData', index.data)
+    }
+
+    const routeQuery = context.query
+    const esQuery = context.app.$searchUtils.createQuery(routeQuery, state)
+    store.commit('setQuery', esQuery)
+
+    const result = context.app.$searchUtils.search(
+      store.state.index,
+      store.state.data,
+      store.state.query
     )
 
-    dataStore.setQuery(esQuery)
+    context.store.commit('setResult', result)
 
-    const routeQuery: any = this.$route.query
+    // --------------- ここまで elatic search ---------------
 
-    const sort: string = routeQuery.sort
-    if (sort) {
-      queryStore.setSort(sort)
-    }
-    this.sort = queryStore.query.sort
-
-    //
-    const currentPage: number = esQuery.from / esQuery.size + 1
-    queryStore.setCurrentPage(currentPage)
-    this.currentPage = currentPage
-
-    //
-    queryStore.setSize(esQuery.size)
-    this.size = esQuery.size
-
-    // 非クエリ
-    // これらは初期化されない
-    this.layout = queryStore.query.layout
-    this.col = queryStore.query.col
-
-    //
+    store.commit('init')
 
     const id: string = routeQuery.id
     if (id) {
-      queryStore.setId(this.$utils.convert2arr(id))
+      store.commit('setId', id)
     }
 
     const image: string = routeQuery.image
     if (image) {
-      queryStore.setImage(this.$utils.convert2arr(image))
+      store.commit('setImage', image)
+    }
+
+    const after: string = routeQuery.after
+    if (after) {
+      store.commit('setAfter', after)
+    }
+
+    const before: string = routeQuery.before
+    if (before) {
+      store.commit('setBefore', before)
     }
 
     const keywords: any = routeQuery.keyword
     if (keywords) {
-      queryStore.setKeywords(this.$utils.convert2arr(keywords))
+      store.commit('setKeyword', keywords)
     }
 
     for (const key in routeQuery) {
@@ -291,54 +319,64 @@ export default class search extends Vue {
       for (let t = 0; t < types.length; t++) {
         const type = types[t]
         if (key.includes(type + '-')) {
-          queryStore.setAdvanced({
+          store.commit('setAdvanced', {
             label: key,
-            values: this.$utils.convert2arr(routeQuery[key]),
+            values: routeQuery[key],
             type,
           })
         }
       }
     }
 
-    if (!dataStore.data.all.data) {
-      const result = await this.$searchUtils.createIndexFromIIIFCollection(
-        'https://raw.githubusercontent.com/nakamura196/piranesi/master/docs/print/iiif/top.json'
-      )
-      dataStore.setIndex(result.index)
-      dataStore.setData(result.data)
+    const sort: any = routeQuery.sort
+    if (sort) {
+      store.commit('setSort', sort)
     }
 
-    const result = this.$searchUtils.search2(dataStore.data.all)
-    dataStore.setResult(result)
+    const from: any = routeQuery.from
+    if (from) {
+      store.commit('setFrom', Number(from))
+    }
 
-    this.results = result
-    console.log({ esQuery, result })
-    window.scrollTo(0, 0)
-    this.loadingFlag = false
+    const size: any = routeQuery.size
+    if (size) {
+      store.commit('setSize', Number(size))
+    }
+
+    const currentPage = state.from / state.size + 1
+    store.commit('setCurrentPage', currentPage)
+
+    const layout: any = routeQuery.layout
+    if (layout) {
+      store.commit('setLayout', layout)
+    }
+
+    const col: any = routeQuery.col
+    if (col) {
+      store.commit('setCol', Number(col))
+    }
+
+    if (process.browser) {
+      window.scrollTo(0, 0)
+    }
   }
 
   // ------ Watch -------
 
-  @Watch('layout')
-  watchLayout(currentValue: any) {
+  @Watch('layout_')
+  watchLayout(currentValue: string): void {
     if (
       (currentValue === 'image' || currentValue === 'stats') &&
       this.facetFlag
     ) {
-      this.setFacetFlag()
+      this.facetFlag = !this.facetFlag
     } else if (
       currentValue !== 'image' &&
       currentValue !== 'stats' &&
       !this.facetFlag
     ) {
-      this.setFacetFlag()
+      this.facetFlag = !this.facetFlag
     }
-    queryStore.setLayout(currentValue)
-  }
-
-  @Watch('$route')
-  watchRoute() {
-    this.main()
   }
 
   // ------ 関数 -------
@@ -349,10 +387,6 @@ export default class search extends Vue {
       query.from = (this.currentPage - 1) * this.size
       this.updateQuery(query)
     }
-  }
-
-  setCol() {
-    queryStore.setCol(this.col)
   }
 
   setSize() {
@@ -380,18 +414,17 @@ export default class search extends Vue {
     )
   }
 
-  setFacetFlag() {
-    queryStore.setFacetFlag(!this.facetFlag)
+  get total(): number {
+    const result = this.$store.state.result
+    if (result.hits) {
+      return result.hits.total.value
+    } else {
+      return 0
+    }
   }
 
-  // ------ Computed --------
-
-  get facetFlag(): boolean {
-    return queryStore.query.facetFlag
-  }
-
-  get total() {
-    return this.results.hits ? this.results.hits.total.value : 0
+  get paginationLength() {
+    return Math.ceil(this.total / this.size)
   }
 
   get computedItemsSort() {

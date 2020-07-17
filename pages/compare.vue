@@ -134,8 +134,6 @@ import axios from 'axios'
 // import searchResult from '~/components/ui/searchResult.vue'
 import CardItem from '~/components/display/CardItem.vue'
 
-import { dataStore } from '~/store'
-
 @Component({
   components: {
     // searchResult
@@ -149,6 +147,12 @@ export default class Volumes extends Vue {
   latin: string = ''
 
   fileNoMap: any = {}
+
+  head() {
+    return {
+      title: this.$t('compare'),
+    }
+  }
 
   created() {
     this.init()
@@ -189,12 +193,18 @@ export default class Volumes extends Vue {
   }
 
   async getPhoto() {
-    const result = await this.$searchUtils.createIndexFromIIIFCollection(
-      'https://raw.githubusercontent.com/nakamura196/piranesi/master/docs/photo/iiif/top.json'
-    )
+    const store = this.$store
+    const state = store.state
+    if (state.index4Photo == null) {
+      const index = await this.$searchUtils.createIndexFromIIIFCollection(
+        'https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/top.json'
+      )
+      store.commit('setIndex4Photo', index.index)
+      store.commit('setData4Photo', index.data)
+    }
 
-    const index = result.index
-    const dataAll = result.data
+    const index = state.index4Photo
+    const dataAll = state.data4Photo
 
     const ids: string[] = []
 
@@ -258,18 +268,18 @@ export default class Volumes extends Vue {
   }
 
   async getPrint(fileNoMap: any) {
-    if (!dataStore.data.all.data) {
-      const result = await this.$searchUtils.createIndexFromIIIFCollection(
-        'https://raw.githubusercontent.com/nakamura196/piranesi/master/docs/print/iiif/top.json'
+    const store = this.$store
+    const state = store.state
+    if (state.index == null) {
+      const index = await this.$searchUtils.createIndexFromIIIFCollection(
+        'https://piranesi.dl.itc.u-tokyo.ac.jp/data/print/iiif/top2.json'
       )
-      dataStore.setIndex(result.index)
-      dataStore.setData(result.data)
+      store.commit('setIndex', index.index)
+      store.commit('setData', index.data)
     }
 
-    const result = dataStore.data.all
-
-    const data: any = result.data
-    const index: any = result.index
+    const data: any = state.data
+    const index: any = state.index
 
     const ids: string[] = []
 

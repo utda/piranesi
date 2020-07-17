@@ -56,6 +56,12 @@ export default class Data extends Vue {
   title: string = ''
   dataSet: any[] = []
 
+  head() {
+    return {
+      title: this.$t('data_set'),
+    }
+  }
+
   mounted() {
     this.dataSet = [
       {

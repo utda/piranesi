@@ -13,7 +13,7 @@
           :label="$t('search_works')"
           clearable
           clear-icon="mdi-close-circle"
-          append-icon="search"
+          append-icon="mdi-magnify"
           @click:append="search"
           @keydown.enter="trigger"
         ></v-text-field>

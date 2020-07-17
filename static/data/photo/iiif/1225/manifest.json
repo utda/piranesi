@@ -1,10 +1,10 @@
 {
     "@context": "http://iiif.io/api/presentation/2/context.json",
-    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/1225/manifest.json",
+    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/1225/manifest.json",
     "@type": "sc:Manifest",
     "attribution": "東京大学 The University of Tokyo, JAPAN",
     "label": "1225",
-    "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+    "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
     "metadata": [
         {
             "label": "photo_no",
@@ -75,21 +75,22 @@
             "value": "2005-03-28 00:00:00"
         }
     ],
+    "related": "https://piranesi.dl.itc.u-tokyo.ac.jp/photo/1225",
     "sequences": [
         {
             "@type": "sc:Sequence",
             "canvases": [
                 {
-                    "@id": "https://nakamura196.github.io/piranesi/photo/iiif/1225/canvas/1",
+                    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/1225/canvas/1",
                     "@type": "sc:Canvas",
                     "height": 3006,
                     "images": [
                         {
                             "@type": "oa:Annotation",
                             "motivation": "sc:painting",
-                            "on": "https://nakamura196.github.io/piranesi/photo/iiif/1225/canvas/1",
+                            "on": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/1225/canvas/1",
                             "resource": {
-                                "@id": "https://nakamura196.github.io/piranesi/photo/l/1225.jpg",
+                                "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/l/1225.jpg",
                                 "@type": "dctypes:Image",
                                 "format": "image/jpeg",
                                 "height": 3006,
@@ -99,7 +100,7 @@
                     ],
                     "label": "1",
                     "thumbnail": {
-                        "@id": "https://nakamura196.github.io/piranesi/photo/m/1225.jpg",
+                        "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/1225.jpg",
                         "@type": "dctypes:Image",
                         "format": "image/jpeg"
                     },
@@ -109,6 +110,6 @@
             "viewingHint": "individuals"
         }
     ],
-    "thumbnail": "https://nakamura196.github.io/piranesi/photo/m/1225.jpg",
+    "thumbnail": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/1225.jpg",
     "viewingDirection": "left-to-right"
 }

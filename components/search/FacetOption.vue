@@ -1,44 +1,44 @@
 <template>
-  <div>
-    <v-expansion-panels :value="0" dense>
-      <v-expansion-panel>
-        <v-expansion-panel-header class="grey lighten-2"
-          ><h3>
-            {{ label }}
-            <small>({{ buckets.length }})</small>
-          </h3></v-expansion-panel-header
-        >
-        <v-expansion-panel-content>
-          <v-list dense>
+  <v-expansion-panels
+    v-if="buckets.length > 0 || getArray('-').length > 0"
+    :value="openFlag ? 0 : null"
+  >
+    <v-expansion-panel>
+      <v-expansion-panel-header class="grey lighten-2"
+        ><h3>
+          <!-- {{ label.startsWith('_') ? $t(label.slice(1)) : $t(label) }} -->
+          {{ label.startsWith('_') ? $t(label.slice(1)) : $t(label) }}
+          <small>({{ message }})</small>
+        </h3></v-expansion-panel-header
+      >
+      <v-expansion-panel-content>
+        <v-list dense>
+          <div style="max-height: 400px;" class="overflow-y-auto">
             <template v-for="(bucket, index) in buckets">
-              <v-list-item
-                v-if="index < thres || flag"
-                :key="'bucket_' + index"
-                dense
-                class="my-0 py-0"
-              >
+              <v-list-item :key="'bucket_' + index">
                 <v-list-item-content
-                  style="word-break: break-word;"
                   class="my-0 py-0"
+                  style="word-break: break-word;"
                 >
                   <v-checkbox
-                    v-model="bucket.value"
-                    class="my-0 py-0 mt-1 ml-1"
+                    v-model="values[index]"
+                    class="mb-0 mt-1 ml-1 py-0"
+                    align="center"
                     dense
                     x-small
                     color="primary"
-                    :label="bucket.key"
+                    :label="term == 'jp' ? $t(bucket.key) : bucket.key"
                     @change="change('fc-' + term, bucket.key)"
                   ></v-checkbox>
                 </v-list-item-content>
 
-                <v-list-item-action>
-                  {{ bucket.doc_count.toLocaleString() }}
-                </v-list-item-action>
+                <v-list-item-action class="my-0 py-0">{{
+                  bucket.doc_count.toLocaleString()
+                }}</v-list-item-action>
 
-                <v-list-item-action>
+                <v-list-item-action class="my-0 py-0">
                   <v-btn
-                    v-show="!bucket.value"
+                    v-show="!values[index]"
                     icon
                     x-small
                     @click="
@@ -56,130 +56,52 @@
 
               <v-divider :key="`divider-${index}`"></v-divider>
             </template>
-
-            <!-- NOT -->
-
-            <template v-for="(bucket, index) in getArray('-')">
-              <v-list-item
-                :key="index"
-                @click="
-                  add({
-                    label: 'fc-' + term,
-                    values: ['-' + bucket],
-                    type: 'fc',
-                  })
-                "
-              >
-                <v-list-item-action>
-                  <v-icon color="red darken-3">mdi-checkbox-blank</v-icon>
-                </v-list-item-action>
-                <v-list-item-content>
-                  {{ bucket }}
-                </v-list-item-content>
-              </v-list-item>
-
-              <v-divider :key="`divider-not-${index}`"></v-divider>
-            </template>
-
-            <v-list-item>
-              <v-list-item-action>
-                <!-- small  -->
-                <v-btn color="primary" @click="updateQuery()">{{
-                  $t('update')
-                }}</v-btn>
-              </v-list-item-action>
-
-              <v-list-item-content></v-list-item-content>
-
-              <v-list-item-action>
-                {{
-                  !flag && buckets.length > thres
-                    ? $i18n.locale == 'ja'
-                      ? '残りの' + (buckets.length - thres) + '件を表示'
-                      : 'Show Remaing ' + (buckets.length - thres)
-                    : ''
-                }}
-              </v-list-item-action>
-
-              <v-list-item-action>
-                <v-btn
-                  v-show="!flag && buckets.length > thres"
-                  icon
-                  @click="flag = !flag"
-                >
-                  <v-icon color="grey lighten-1">
-                    {{
-                      !flag && buckets.length > thres
-                        ? 'mdi-chevron-down'
-                        : 'mdi-chevron-up'
-                    }}
-                  </v-icon>
-                </v-btn>
-              </v-list-item-action>
-            </v-list-item>
-          </v-list>
-        </v-expansion-panel-content>
-      </v-expansion-panel>
-    </v-expansion-panels>
-
-    <!-- 注意 -->
-    <!-- <v-btn icon>{{ bucket.doc_count }}</v-btn> -->
-    <!-- 
-    <v-expansion-panels :value="0" class="mt-10">
-      <v-expansion-panel>
-        <v-expansion-panel-header class="grey lighten-2">{{
-          label
-        }}</v-expansion-panel-header>
-        <v-expansion-panel-content>
-          <div style="max-height: 400px; overflow-y: auto;" class="my2-5">
-            
-            <v-list-item-group multiple>
-              <v-list-item
-                v-for="(bucket, index) in buckets"
-                :key="'bucket_' + index"
-              >
-                <v-list-item-action>
-                  <v-checkbox
-                    v-model="bucket.value"
-                    color="primary"
-                    @change="change('fc-' + term, bucket.key)"
-                  ></v-checkbox>
-                </v-list-item-action>
-
-                <v-list-item-content>
-                  {{ bucket.key }}
-                </v-list-item-content>
-
-                <v-list-item-action>
-                  <v-chip>{{ bucket.doc_count }}</v-chip>
-                  
-                </v-list-item-action>
-              </v-list-item>
-            </v-list-item-group>
           </div>
 
-          <v-divider />
+          <!-- NOT -->
 
-          <v-btn small color="primary" @click="updateQuery()">{{
-            $t('update')
-          }}</v-btn>
-        </v-expansion-panel-content>
-      </v-expansion-panel>
-    </v-expansion-panels>
+          <template v-for="(bucket, index) in getArray('-')">
+            <v-divider :key="`divider-not-${index}`"></v-divider>
+            <v-list-item
+              :key="index"
+              @click="
+                add({
+                  label: 'fc-' + term,
+                  values: ['-' + bucket],
+                  type: 'fc',
+                })
+              "
+            >
+              <v-list-item-action>
+                <v-icon color="red darken-3">mdi-minus-box</v-icon>
+              </v-list-item-action>
+              <v-list-item-content>
+                {{ term == 'jp' ? $t(bucket) : bucket }}
+              </v-list-item-content>
+            </v-list-item>
 
-    -->
-  </div>
+            <v-divider :key="`divider-not2-${index}`"></v-divider>
+          </template>
+
+          <v-list-item>
+            <v-list-item-action>
+              <!-- small  -->
+              <v-btn color="primary" @click="updateQuery()">{{
+                $t('update')
+              }}</v-btn>
+            </v-list-item-action>
+          </v-list-item>
+        </v-list>
+      </v-expansion-panel-content>
+    </v-expansion-panel>
+  </v-expansion-panels>
 </template>
 
 <script lang="ts">
 import { Vue, Prop, Watch, Component } from 'nuxt-property-decorator'
-import { queryStore, dataStore } from '~/store'
 
 @Component
-export default class facetoption extends Vue {
-  thres: number = 10
-  flag: boolean = false
-
+export default class FacetOption extends Vue {
   @Prop({
     default: '',
     required: true,
@@ -193,73 +115,77 @@ export default class facetoption extends Vue {
   term!: string
 
   @Prop({
+    required: true,
     default() {
-      return {}
+      return []
     },
   })
-  tmp!: any
-
-  buckets: any[] = []
-  query: any = null
+  buckets: any
 
   created() {
     this.main()
   }
 
-  @Watch('tmp')
-  watchTmp() {
+  @Watch('buckets')
+  watchBuckets() {
     this.main()
   }
 
-  main() {
-    if (dataStore) {
-      this.buckets = dataStore.data.all.result.aggregations[this.term].buckets
+  values: boolean[] = []
 
-      // 選択済みの値設定
-      for (let i = 0; i < this.buckets.length; i++) {
-        const bucket = this.buckets[i]
-        bucket.value = this.checked('fc-' + this.term, bucket.key)
-      }
-      this.query = dataStore.data.all.query
+  main() {
+    const values: boolean[] = []
+    // 選択済みの値設定
+    for (let i = 0; i < this.buckets.length; i++) {
+      const bucket = this.buckets[i]
+      values.push(this.checked('fc-' + this.term, bucket.key))
     }
+
+    this.values = values
   }
 
-  openFlag: boolean = /*
-    this.query && this.query.facetsFlag[this.label]
-      ? this.query.facetsFlag[this.label]
-      : false */ true
+  openFlag: boolean = !!(
+    this.$store.state.facetFlags[this.term] ||
+    this.getArray('-').length > 0 ||
+    this.getArray('+').length > 0
+  )
 
-  /*
-  setFacetsFlag() {
-    queryStore.setFacetsFlag({ label: this.label, value: !this.openFlag })
+  get facetFlags() {
+    return this.$store.state.facetFlags
+  }
+
+  changeFacetFlags() {
+    this.$store.commit('changeFacetFlags', {
+      label: this.term,
+      value: !this.openFlag,
+    })
     this.openFlag = !this.openFlag
   }
-  */
 
   getArray(type: string): string[] {
-    const term = 'fc-' + this.term
-    if (!queryStore.query.advanced.fc) {
+    const label = 'fc-' + this.term
+    if (!this.$store.state.advanced.fc) {
       return []
     }
-    if (queryStore.query.advanced.fc[term]) {
-      return queryStore.query.advanced.fc[term][type]
+    if (this.$store.state.advanced.fc[label]) {
+      return this.$store.state.advanced.fc[label][type]
     } else {
       return []
     }
   }
 
   // 完成
-  change(term: string, value: string) {
-    const obj = queryStore.query.advanced.fc[term]
+  change(label: string, value: string) {
+    const obj = this.$store.state.advanced.fc[label]
     if (obj && obj['+'].includes(value)) {
-      queryStore.removeAdvanced({
-        label: term,
+      this.$store.commit('removeAdvanced', {
+        label,
         values: [value],
         type: 'fc',
       })
     } else {
-      queryStore.setAdvanced({
-        label: term,
+      this.$store.commit('setAdvanced', {
+        label,
         values: [value],
         type: 'fc',
       })
@@ -267,17 +193,18 @@ export default class facetoption extends Vue {
   }
 
   remove(data: { [keyword: string]: string }) {
-    queryStore.setAdvanced(data)
+    this.$store.commit('setAdvanced', data)
     this.updateQuery()
   }
 
   add(data: { [keyword: string]: string }) {
-    queryStore.removeAdvanced(data)
+    this.$store.commit('removeAdvanced', data)
     this.updateQuery()
   }
 
   updateQuery() {
-    const query = this.$utils.getSearchQueryFromQueryStore(queryStore.query)
+    const query = this.$utils.getSearchQueryFromQueryStore(this.$store.state)
+    query.from = 0
     this.$router.push(
       this.localePath({
         name: 'search',
@@ -288,24 +215,28 @@ export default class facetoption extends Vue {
     )
   }
 
-  checked(term: string, value: string): boolean {
-    const obj = queryStore.query.advanced.fc[term]
+  checked(label: string, value: string) {
+    const obj = this.$store.state.advanced.fc[label]
     if (obj && obj['+'].includes(value)) {
       return true
     } else {
       return false
     }
   }
+
+  get message() {
+    const size: number = this.buckets.length
+    let prefix: string = ''
+    const suffix: string = this.$i18n.locale === 'ja' ? '件' : ''
+    if (size === 50) {
+      prefix = this.$i18n.locale === 'ja' ? '上位' : 'Top '
+    }
+    return prefix + size.toLocaleString() + suffix
+  }
 }
 </script>
 <style>
 .v-expansion-panel-content__wrap {
-  padding: 0;
-}
-.v-input__control {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+  padding: 0 !important;
 }
 </style>

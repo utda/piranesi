@@ -94,7 +94,7 @@
     "Altars" : "祭壇",
     "Photo by" : "撮影者",
     "Description by" : "執筆者",
-    "Localizzazione moderna": "現在の場所",
+    "Localizzazione moderna": "現代の場所",
     "Cronologia" : "時代",
     "Parte dell'oggetto" : "説明",
     "Didascalia" : "キャプション",
@@ -162,9 +162,9 @@
 
     "signatute" : "署名",
 
-    "prints_and_photos" : "版画と現在の写真",
+    "prints_and_photos" : "版画と現代の写真",
 
-    "present_photos" : "現在の写真",
+    "present_photos" : "現代の写真",
 
     "move_to_comp" : "版画と写真の閲覧画面に遷移します。",
     "move_to_search" : "検索画面に遷移します。",
@@ -255,9 +255,13 @@
     "J. W. Ely" : "J. W. Ely",
 
     "序文" : "序文",
+    "図版目録" : "図版目録",
 
     "thumbnail" : "サムネイル",
     "table" : "テーブル",
-    "graph" : "グラフ"
+    "graph" : "グラフ",
+
+    "search_query" : "フィルタ",
+    "clear" : "クリア"
 
   }

@@ -1,5 +1,15 @@
 import axios from 'axios'
-// /plugins/logger.ts
+
+function convert2arr(value: any): string[] {
+  let values: string[] = []
+  if (!Array.isArray(value)) {
+    values = [value]
+  } else {
+    values = value
+  }
+  return values
+}
+
 export class SearchUtils {
   createQuery(routeQuery: any, config: any): any {
     const fcs = Object.keys(config.facetLabels) // JSON.parse(process.env.FACETS_LABELS)
@@ -97,7 +107,6 @@ export class SearchUtils {
         }
       } else if (ops.keyword) {
         // or 検索
-        console.log('keywordOr')
       } else {
         const shouldPhase = []
 
@@ -157,8 +166,6 @@ export class SearchUtils {
           values = value
         }
 
-        console.log({ values })
-
         const pluses: string[] = []
         const minuses: string[] = []
 
@@ -170,8 +177,6 @@ export class SearchUtils {
             pluses.push(value)
           }
         }
-
-        console.log({ minuses, pluses })
 
         // minuses
         for (let j = 0; j < minuses.length; j++) {
@@ -546,26 +551,6 @@ export class SearchUtils {
     return result
   }
 
-  search2(all: any) {
-    const indexes = this.filter(all.index, all.data, all.query)
-    let dataFiltered = this.getDataFiltered(indexes, all.data)
-    const facets = this.createFacets(all.index, indexes, all.query.aggs)
-    dataFiltered = this.sortData(all.query.sort, dataFiltered)
-    const results = this.getResult(dataFiltered, all.query.from, all.query.size)
-    const result: any = {
-      aggregations: facets,
-      hits: {
-        hits: results,
-        total: {
-          relation: all.query.sort,
-          value: dataFiltered.length,
-        },
-      },
-    }
-
-    return result
-  }
-
   filter(index: any, dataAll: any[], query: any) {
     const indexAll = []
     for (let i = 0; i < dataAll.length; i++) {
@@ -573,6 +558,10 @@ export class SearchUtils {
     }
 
     // const methods: string[] = ['should', 'must', 'must_not']
+
+    if (!query.query) {
+      return indexAll
+    }
 
     const filters: any[] = query.query.bool
 
@@ -615,8 +604,6 @@ export class SearchUtils {
           }
         }
 
-        console.log({ type, typedObj, typedResult })
-
         if (type !== 'should') {
           mustIndexes = new Set(
             [...mustIndexes].filter((e) => typedResult.has(e))
@@ -631,8 +618,6 @@ export class SearchUtils {
     if (flags.should && !flags.must && !flags.filter && !flags.must_not) {
       mustIndexes = new Set([])
     }
-
-    console.log({ mustIndexes, shouldIndexes })
 
     const intersection = new Set([...mustIndexes, ...shouldIndexes])
 
@@ -720,16 +705,23 @@ export class SearchUtils {
 
     for (const label in queryAggs) {
       const obj = queryAggs[label].terms
-      let size = Number(obj.size)
+      let size = obj.size ? Number(obj.size) : -1
       const field = obj.field.replace('.keyword', '')
       const map = index[field]
 
       const mapNew: any = {}
       for (const value in map) {
-        const intersection = new Set(
-          [...new Set(indexes)].filter((e) => new Set(map[value]).has(e))
-        )
-        const docCount = intersection.size
+        const intersection = []
+        const values = map[value]
+
+        for (let i = 0; i < values.length; i++) {
+          if (indexes.includes(values[i])) {
+            intersection.push(values[i])
+          }
+        }
+
+        const docCount = intersection.length
+
         if (docCount > 0) {
           mapNew[value] = docCount
         }
@@ -748,7 +740,7 @@ export class SearchUtils {
         return 0
       })
 
-      if (size > arr.length) {
+      if (size === -1 || size > arr.length) {
         size = arr.length
       }
 
@@ -771,11 +763,15 @@ export class SearchUtils {
   }
 
   sortData(sort: any, dataFiltered: any): any {
-    console.log({ sort })
-    /*
-    const tmp = sort.split(':')
-    let field: string = tmp[0]
-    const type: string = tmp[1]
+    const sortObj: any = convert2arr(sort)[0]
+
+    if (!sortObj) {
+      return dataFiltered
+    }
+    let field = Object.keys(sortObj)[0]
+    const type: string = sortObj[field].order
+
+    field = field.replace('.keyword', '')
 
     let ascFlg = true
     if (type === 'desc') {
@@ -789,16 +785,20 @@ export class SearchUtils {
       v2 *= -1
     }
 
-    if (!dataFiltered[field]) {
-      field = '_title'
-    }
-
-    dataFiltered.sort(function(a: any, b: any) {
+    dataFiltered.sort(function (a: any, b: any) {
+      /*
+      if (!a._source[field] || !b._source[field]) {
+        return 0
+      }
+      */
+      // console.log(a._source[field], b._source[field])
+      if (!a._source[field]) return v1
+      if (!b._source[field]) return v2
       if (a._source[field][0] > b._source[field][0]) return v1
       if (a._source[field][0] < b._source[field][0]) return v2
       return 0
     })
-    */
+
     return dataFiltered
   }
 

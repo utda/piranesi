@@ -14,7 +14,6 @@
 
 <script lang="ts">
 import { Vue, Prop, Component } from 'nuxt-property-decorator'
-import { queryStore } from '~/store'
 
 @Component({
   components: {},
@@ -38,23 +37,6 @@ export default class cardItem extends Vue {
     default: false,
   })
   horizontal!: boolean
-
-  removeItem(id: string, type: string) {
-    if (type === 'id') {
-      queryStore.removeId([id])
-    } else {
-      queryStore.removeImage([id])
-    }
-
-    this.$router.push(
-      this.localePath({
-        name: 'search',
-        query: this.$utils.getSearchQueryFromQueryStore(queryStore.query),
-      }),
-      () => {},
-      () => {}
-    )
-  }
 
   get plate() {
     return (

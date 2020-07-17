@@ -5,13 +5,13 @@
         :key="index"
         :item="$utils.item2CardItem(value, query, index, '', $i18n.locale)"
       />
-      <v-divider :key="'hr-' + index" class="my-3" />
+      <v-divider :key="'hr-' + index" class="mb-4" />
     </template>
   </div>
 </template>
 
 <script lang="ts">
-import { Vue, Prop, Component } from 'nuxt-property-decorator'
+import { Vue, Component } from 'nuxt-property-decorator'
 import ListItem from '~/components/display/ListItem.vue'
 
 @Component({
@@ -19,20 +19,13 @@ import ListItem from '~/components/display/ListItem.vue'
     ListItem,
   },
 })
-export default class listsearchresult extends Vue {
-  @Prop({
-    required: true,
-    default() {
-      return []
-    },
-  })
-  results!: any[]
+export default class ListSearchResult extends Vue {
+  get results() {
+    return this.$store.state.result.hits.hits
+  }
 
-  @Prop({
-    default() {
-      return {}
-    },
-  })
-  query!: any
+  get query() {
+    return this.$store.state.query
+  }
 }
 </script>

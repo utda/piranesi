@@ -92,18 +92,6 @@ module.exports = {
   workbox: {
     runtimeCaching: [
       {
-        urlPattern: '^https://fonts.(?:googleapis|gstatic).com/(.*)',
-        handler: 'cacheFirst',
-      },
-      {
-        urlPattern: 'https://cdn.jsdelivr.net/.*',
-        handler: 'cacheFirst',
-      },
-      {
-        urlPattern: 'https://cdn.materialdesignicons.com/.*',
-        handler: 'cacheFirst',
-      },
-      {
         urlPattern: baseDir + '.*',
         handler: 'staleWhileRevalidate',
         strategyOptions: {
@@ -177,17 +165,6 @@ module.exports = {
       },
     ],
     link: [
-      // fonts
-      {
-        rel: 'stylesheet',
-        href:
-          'https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/css/yakuhanmp.min.css',
-      },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=Noto+Serif+JP:400,700&subset=japanese',
-      },
       {
         rel: 'icon',
         sizes: '16x16',
@@ -285,19 +262,6 @@ module.exports = {
         rel: 'apple-touch-startup-image'
       },
       */
-      {
-        rel: 'stylesheet',
-        href:
-          'https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css',
-      },
-      {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Material+Icons',
-      },
-      {
-        rel: 'stylesheet',
-        href: 'https://use.fontawesome.com/releases/v5.0.13/css/all.css',
-      },
     ],
   },
   manifest: {
@@ -316,7 +280,7 @@ module.exports = {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: 'red' },
+  loading: { color: '#E64A19', height: '5px' },
   /*
    ** Global CSS
    */

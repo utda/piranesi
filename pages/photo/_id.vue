@@ -27,7 +27,10 @@
         class="mb-5"
       ></iframe>
 
-      <div class="my-5 text-center">
+      <v-sheet
+        class="grey lighten-3 py-5 px-3 py-3 text-center mb-5"
+        style="background-color: #f9f6f0;"
+      >
         <v-btn icon class="mr-2">
           <a :href="manifest">
             <v-img
@@ -47,16 +50,17 @@
             />
           </a>
         </v-btn>
+
         <v-btn icon>
-          <v-menu open-on-hover top offset-y>
+          <v-menu top offset-y>
             <template v-slot:activator="{ on }">
               <v-icon v-on="on">mdi-share-variant</v-icon>
             </template>
 
-            <ShareButtons :url="url" :title="title" />
+            <ShareButtons :url="url" :title="title" :manifest="manifest" />
           </v-menu>
         </v-btn>
-      </div>
+      </v-sheet>
 
       <div class="text-right">
         <p>
@@ -156,7 +160,6 @@ export default class Volumes extends Vue {
   title: string = ''
   arr: any[] = []
   index: number = 0
-
   fileNo: string = ''
 
   url: string = ''
@@ -169,10 +172,33 @@ export default class Volumes extends Vue {
     }
   }
 
-  async mounted() {
-    const result = await this.$searchUtils.createIndexFromIIIFCollection(
-      'https://raw.githubusercontent.com/nakamura196/piranesi/master/docs/photo/iiif/top.json'
+  async fetch(context: any) {
+    const store = context.store
+    const state = store.state
+
+    if (state.index4Photo == null) {
+      const index = await context.app.$searchUtils.createIndexFromIIIFCollection(
+        'https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/top.json'
+      )
+      store.commit('setIndex4Photo', index.index)
+      store.commit('setData4Photo', index.data)
+    }
+
+    const routeQuery = context.query
+    const esQuery = context.app.$searchUtils.createQuery(routeQuery, state)
+    store.commit('setQuery', esQuery)
+
+    const result = context.app.$searchUtils.search(
+      store.state.index,
+      store.state.data,
+      store.state.query
     )
+
+    context.store.commit('setResult', result)
+  }
+
+  mounted() {
+    const result = this.$store.state
 
     const photoId: string = this.$route.params.id ? this.$route.params.id : ''
 
@@ -183,11 +209,11 @@ export default class Volumes extends Vue {
 
     const ids = []
 
-    const dataAll = result.data
+    const dataAll = result.data4Photo
 
     const arr = []
 
-    const index = result.index
+    const index = result.index4Photo
 
     if (fileNo != null) {
       // this.title = this.$t('photo')

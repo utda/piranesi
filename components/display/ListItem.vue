@@ -1,18 +1,13 @@
 <template>
   <v-row>
-    <v-col cols="12" sm="3">
-      <nuxt-link class="mv-4" :to="localePath(item.path)">
+    <v-col cols="12" sm="3" class="mb-4">
+      <nuxt-link :to="localePath(item.path)">
         <v-img
           :src="item.image"
           contain
           style="height: 200px;"
           class="grey lighten-2"
         ></v-img>
-        <!-- 
-        <div
-          style="height: 150px; display: flex; background-color: lightgray;"
-        ></div>
-        -->
       </nuxt-link>
     </v-col>
     <v-col cols="12" sm="9">
@@ -53,24 +48,7 @@
           </div>
 
           <div class="text-right mt-2">
-            <v-btn v-if="item.manifest" icon>
-              <a :href="item.manifest">
-                <img
-                  contain
-                  height="24px"
-                  :src="baseUrl + '/img/iiif-logo.svg'"
-                />
-              </a>
-            </v-btn>
-            <v-btn icon>
-              <v-menu open-on-hover top offset-y>
-                <template v-slot:activator="{ on }">
-                  <v-icon v-on="on">mdi-share-variant</v-icon>
-                </template>
-
-                <ShareButtons :url="item.url" :title="item.label" />
-              </v-menu>
-            </v-btn>
+            <ResultOption :item="item" />
           </div>
         </v-col>
       </v-row>
@@ -81,12 +59,10 @@
 <script lang="ts">
 import { Vue, Prop, Component } from 'nuxt-property-decorator'
 import ResultOption from '~/components/display/ResultOption.vue'
-import ShareButtons from '~/components/common/ShareButtons.vue'
 
 @Component({
   components: {
     ResultOption,
-    ShareButtons,
   },
 })
 export default class ListItem extends Vue {

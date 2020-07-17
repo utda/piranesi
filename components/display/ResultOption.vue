@@ -1,5 +1,22 @@
 <template>
   <span>
+    <v-btn v-if="item.manifest" icon :href="item.manifest">
+      <img height="24px" :src="baseUrl + '/img/iiif-logo.svg'" />
+    </v-btn>
+
+    <v-btn icon>
+      <v-menu top offset-y>
+        <template v-slot:activator="{ on }">
+          <v-icon v-on="on">mdi-share-variant</v-icon>
+        </template>
+
+        <ShareButtons
+          :url="item.url"
+          :title="item.label"
+          :manifest="item.manifest ? item.manifest : ''"
+        />
+      </v-menu>
+    </v-btn>
     <!-- 
     <a v-if="manifest" :href="manifest" target="_blank" style="color: #ca4316;">
       <img
@@ -49,14 +66,16 @@
 
 <script lang="ts">
 import { Vue, Prop, Component } from 'nuxt-property-decorator'
-// import ShareButtons from '~/components/common/ShareButtons.vue'
+import ShareButtons from '~/components/common/ShareButtons.vue'
 
 @Component({
   components: {
-    // ShareButtons
+    ShareButtons,
   },
 })
 export default class resultoption extends Vue {
+  baseUrl: any = process.env.BASE_URL
+
   SIMILAR_IMAGES_FLAG: boolean = process.env.SIMILAR_IMAGES_FLAG === 'true'
 
   /*

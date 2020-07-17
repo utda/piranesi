@@ -68,7 +68,6 @@ export default class Volumes extends Vue {
   baseUrl: any = process.env.BASE_URL
   head() {
     return {
-      titleTemplate: null,
       title: this.$t('subject_search'),
     }
   }

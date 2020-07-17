@@ -33,12 +33,35 @@ export default class Search extends Vue {
   data: any = {}
   title: string = ''
 
-  async created() {
+  async fetch(context: any) {
+    const store = context.store
+    const state = store.state
+
+    if (state.index == null) {
+      const index = await context.app.$searchUtils.createIndexFromIIIFCollection(
+        'https://piranesi.dl.itc.u-tokyo.ac.jp/data/print/iiif/top2.json'
+      )
+      store.commit('setIndex', index.index)
+      store.commit('setData', index.data)
+    }
+
+    const routeQuery = context.query
+    const esQuery = context.app.$searchUtils.createQuery(routeQuery, state)
+    store.commit('setQuery', esQuery)
+
+    const result = context.app.$searchUtils.search(
+      store.state.index,
+      store.state.data,
+      store.state.query
+    )
+
+    context.store.commit('setResult', result)
+  }
+
+  created() {
     const mapNo = this.$route.params.id
 
-    const data = await this.$searchUtils.createIndexFromIIIFCollection(
-      'https://raw.githubusercontent.com/nakamura196/piranesi/master/docs/print/iiif/top.json'
-    )
+    const data = this.$store.state
 
     const index = data.index
     const dataAll = data.results

@@ -9,9 +9,8 @@
 </template>
 
 <script lang="ts">
-import { Vue, Prop, Component } from 'nuxt-property-decorator'
+import { Vue, Component } from 'nuxt-property-decorator'
 import CardItem from '~/components/display/CardItem.vue'
-import { queryStore } from '~/store'
 
 @Component({
   components: {
@@ -20,23 +19,15 @@ import { queryStore } from '~/store'
 })
 export default class GridSearchResult extends Vue {
   get col() {
-    const col: number = queryStore ? queryStore.query.col : 3
-    return 12 / col
+    return 12 / this.$store.state.col
   }
 
-  @Prop({
-    required: true,
-    default() {
-      return []
-    },
-  })
-  results!: any
+  get results() {
+    return this.$store.state.result.hits.hits
+  }
 
-  @Prop({
-    default() {
-      return {}
-    },
-  })
-  query!: any
+  get query() {
+    return this.$store.state.query
+  }
 }
 </script>

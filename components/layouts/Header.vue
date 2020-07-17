@@ -90,9 +90,7 @@
             <v-icon>mdi-book</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <span
-              >{{ $t('about') }} <i class="fas fa-external-link-alt"></i
-            ></span>
+            <span>{{ $t('about') }} <v-icon>mdi-open-in-new</v-icon></span>
           </v-list-item-content>
         </v-list-item>
 
@@ -105,9 +103,7 @@
             <v-icon>mdi-information</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <span
-              >{{ $t('legend') }} <i class="fas fa-external-link-alt"></i
-            ></span>
+            <span>{{ $t('legend') }} <v-icon>mdi-open-in-new</v-icon></span>
           </v-list-item-content>
         </v-list-item>
 
@@ -120,9 +116,7 @@
             <v-icon>mdi-information</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <span
-              >{{ $t('license') }} <i class="fas fa-external-link-alt"></i
-            ></span>
+            <span>{{ $t('license') }} <v-icon>mdi-open-in-new</v-icon></span>
           </v-list-item-content>
         </v-list-item>
 
@@ -140,9 +134,7 @@
             <v-icon>mdi-view-list</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <span
-              >{{ $t('sitemap') }} <i class="fas fa-external-link-alt"></i
-            ></span>
+            <span>{{ $t('sitemap') }} <v-icon>mdi-open-in-new</v-icon></span>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -172,7 +164,7 @@
         :label="$t('search_works')"
         clearable
         clear-icon="mdi-close-circle"
-        append-icon="search"
+        append-icon="mdi-magnify"
         @click:append="search"
         @keydown.enter="trigger"
       ></v-text-field>

@@ -9,6 +9,8 @@ import argparse
 import json
 import html
 
+prefix = "https://piranesi.dl.itc.u-tokyo.ac.jp"
+
 def read_excel(path):
     df = pd.read_excel(path, sheet_name=0, header=None, index_col=None)
 
@@ -115,19 +117,6 @@ for key in data2:
         "metadata" : metadata
         })
 
-    '''
-    manifests.append(
-        {
-        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/"+uuid+"/manifest",
-        "@type": "sc:Manifest",
-        "label": str(key),
-        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
-        "thumbnail": data2[key]["thumbnail"],
-        "metadata" : metadata
-        }
-    )
-    '''
-
 collections = []
 
 with open('data/vols.json') as f:
@@ -158,27 +147,15 @@ for obj in df:
         "collections": colls # map[vol]
     })
 
-'''
-for vol in map:
-    collections.append({
-        # "@context": "http://iiif.io/api/presentation/2/context.json",
-        # "@id": "https://nakamura196.github.io/piranesi/print/iiif/vol.json",
-        "label": vol,
-        # "@type": "sc:Collection",
-        # "vhint": "use-thumb",
-        "manifests": map[vol]
-    })
-'''
-
 collection = {
   "@context": "http://iiif.io/api/presentation/2/context.json",
-  "@id": "https://nakamura196.github.io/piranesi/print/iiif/top.json",
+  "@id": prefix + "/data/print/iiif/top.json",
   "label": "ピラネージ版画集",
   "@type": "sc:Collection",
   "vhint": "use-thumb",
   "collections": collections
 }
 
-with open("../docs/print/iiif/top2.json", 'w') as f:
+with open("../static/data/print/iiif/top.json", 'w') as f:
     json.dump(collection, f, ensure_ascii=False, indent=4,
     sort_keys=True, separators=(',', ': '))

@@ -258,7 +258,10 @@
             </v-list-item>
           </v-card>
 
-          <div class="my-5 text-center">
+          <v-sheet
+            class="grey lighten-3 py-5 px-3 py-3 text-center"
+            style="background-color: #f9f6f0;"
+          >
             <v-btn v-if="manifest" icon class="mr-2">
               <a :href="manifest">
                 <v-img
@@ -278,16 +281,14 @@
                 />
               </a>
             </v-btn>
-            <v-btn icon>
-              <v-menu open-on-hover top offset-y>
-                <template v-slot:activator="{ on }">
-                  <v-icon v-on="on">mdi-share-variant</v-icon>
-                </template>
+          </v-sheet>
 
-                <ShareButtons :url="url" :title="data.title" />
-              </v-menu>
-            </v-btn>
-          </div>
+          <v-sheet
+            class="grey lighten-3 py-5 px-3 py-3 mt-4"
+            style="background-color: #f9f6f0;"
+          >
+            <ShareButtons :url="url" :title="data.title" :manifest="manifest" />
+          </v-sheet>
         </v-col>
       </v-row>
 
@@ -564,8 +565,6 @@ import { Vue, Component } from 'nuxt-property-decorator'
 import sheet from '~/components/common/Sheet.vue'
 import ShareButtons from '~/components/common/ShareButtons.vue'
 
-import { dataStore } from '~/store'
-
 @Component({
   components: {
     ShareButtons,
@@ -591,33 +590,39 @@ export default class Search extends Vue {
     }
   }
 
-  async created() {
-    // this.title = ''
+  async fetch(context: any) {
+    const store = context.store
+    const state = store.state
 
+    if (state.index == null) {
+      const index = await context.app.$searchUtils.createIndexFromIIIFCollection(
+        'https://piranesi.dl.itc.u-tokyo.ac.jp/data/print/iiif/top2.json'
+      )
+      store.commit('setIndex', index.index)
+      store.commit('setData', index.data)
+    }
+
+    const routeQuery = context.query
+    const esQuery = context.app.$searchUtils.createQuery(routeQuery, state)
+    store.commit('setQuery', esQuery)
+
+    const result = context.app.$searchUtils.search(
+      store.state.index,
+      store.state.data,
+      store.state.query
+    )
+
+    context.store.commit('setResult', result)
+  }
+
+  created() {
     const fileNo: string = this.$route.params.id
     this.fileNo = fileNo
 
-    let result: any = {}
+    const n = this.$store.state.index.file_no[fileNo][0]
 
-    if (dataStore && dataStore.data.all.index) {
-      // eslint-disable-next-line
-      console.log('-- store --')
-      result = dataStore.data.all
-    } else {
-      // eslint-disable-next-line
-      console.log('-- ajax --')
-      result = await this.$searchUtils.createIndexFromIIIFCollection(
-        'https://raw.githubusercontent.com/nakamura196/piranesi/master/docs/print/iiif/top.json'
-      )
-    }
+    const obj = this.$store.state.data[n]
 
-    const index = result.index
-    const dataAll = result.data
-    const n = index.file_no[fileNo][0]
-
-    const obj = dataAll[n]
-    // eslint-disable-next-line
-    //console.log({ obj })
     this.data = obj._source
 
     this.manifest = obj._id

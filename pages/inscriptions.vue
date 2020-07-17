@@ -39,7 +39,6 @@ export default class Data extends Vue {
 
   head() {
     return {
-      titleTemplate: null,
       title: this.$t('latin_inscriptions'),
     }
   }

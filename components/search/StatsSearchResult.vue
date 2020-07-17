@@ -1,22 +1,25 @@
 <template>
   <div>
-    <template v-for="(label, index) in facetLabels_">
+    <template v-for="(value, label) in facetLabels">
       <v-card
         v-if="
-          aggregations_[index] &&
-          aggregations_[index].buckets &&
-          aggregations_[index].buckets.length > 0
+          aggregations[label] &&
+          aggregations[label].buckets &&
+          aggregations[label].buckets.length > 0
         "
-        :key="index"
+        :key="label"
         no-body
         class="mb-10"
       >
-        <v-card-title class="grey lighten-2">{{ label }}</v-card-title>
+        <v-card-title class="grey lighten-2">{{
+          value.startsWith('_') ? $t(value.slice(1)) : $t(value)
+        }}</v-card-title>
+
         <div class="pa-5">
           <Chart
-            :height="400"
+            :height="200"
             class="mb-4"
-            :buckets="aggregations_[index].buckets"
+            :buckets="aggregations[label].buckets"
           ></Chart>
         </div>
       </v-card>
@@ -25,7 +28,7 @@
 </template>
 
 <script lang="ts">
-import { Vue, Prop, Component } from 'nuxt-property-decorator'
+import { Vue, Component } from 'nuxt-property-decorator'
 import Chart from '~/components/search/TestChart.vue'
 
 @Component({
@@ -33,28 +36,13 @@ import Chart from '~/components/search/TestChart.vue'
     Chart,
   },
 })
-export default class statssearchresult extends Vue {
-  @Prop({
-    required: true,
-    default() {
-      return {}
-    },
-  })
-  aggregations!: any
-
-  @Prop({
-    default() {
-      return []
-    },
-  })
-  facetLabels!: string[]
-
-  get aggregations_() {
-    return this.aggregations
+export default class StatsSearchResult extends Vue {
+  get aggregations() {
+    return this.$store.state.result.aggregations
   }
 
-  get facetLabels_() {
-    return this.facetLabels
+  get facetLabels() {
+    return this.$store.state.facetLabels
   }
 }
 </script>

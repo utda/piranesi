@@ -14,7 +14,7 @@
       </div>
 
       <v-card
-        v-for="(collection1, index1) in data.collections"
+        v-for="(collection1, index1) in result4print.collections"
         :key="index1"
         class="mb-10"
       >
@@ -25,10 +25,15 @@
           <v-row class="mb-5">
             <v-col class="py-0" cols="12" sm="8">
               <template v-if="map[index1 + 1]">
-                <v-row v-for="(obj, index2) in map[index1 + 1]" :key="index2">
+                <v-row
+                  v-for="(obj, index2) in map[index1 + 1]"
+                  :key="index2 + '-1'"
+                >
                   <v-col class="py-0" cols="12" sm="12">
                     <a :href="obj.url" target="_blank">
-                      {{ obj.label }} <i class="fas fa-external-link-alt"></i>
+                      <span
+                        >{{ obj.label }} <v-icon>mdi-open-in-new</v-icon></span
+                      >
                     </a>
                   </v-col>
                   <v-col cols="12">
@@ -39,7 +44,7 @@
 
               <v-row
                 v-for="(collection2, index2) in collection1.collections"
-                :key="index2"
+                :key="index2 + '-2'"
                 class="mb-5"
               >
                 <v-col class="py-0" cols="12" sm="2">
@@ -105,17 +110,46 @@
 
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator'
-import axios from 'axios'
+// import axios from 'axios'
 
 @Component
 export default class Volume extends Vue {
+  head() {
+    return {
+      title: this.$t('browse'),
+    }
+  }
+
   loadingFlag: boolean = false
   title: string = ''
-  data: any = {}
+  // data: any = {}
 
   map: any = {}
 
+  async fetch(context: any) {
+    const store = context.store
+    const state = store.state
+
+    if (state.collection == null) {
+      const index = await context.$axios
+        .get('https://piranesi.dl.itc.u-tokyo.ac.jp/data/print/iiif/top2.json')
+        .then((res: any) => {
+          return res.data
+        })
+        .catch((error: any) => {
+          return error
+        })
+
+      store.commit('setCollection', index)
+    }
+  }
+
+  get result4print(): any {
+    return this.$store.state.collection
+  }
+
   mounted() {
+    /*
     this.loadingFlag = true
     axios
       .get(
@@ -124,9 +158,11 @@ export default class Volume extends Vue {
       .then((response) => {
         const data = response.data
         // console.log({ data })
-        this.data = data
+        // this.data = data
+        console.log({ data })
         this.loadingFlag = false
       })
+      */
 
     this.map = {
       1: [
@@ -157,24 +193,24 @@ export default class Volume extends Vue {
             'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/document/de4e7884-d02e-4234-8986-b86c0e58dc7e',
         },
         {
-          label: this.$t('Osservazioni'),
+          label: 'Osservazioni',
           url:
             'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/document/90aff229-9f07-4bbc-b4e7-98273853d85f',
         },
       ],
       6: [
         {
-          label: this.$t('序文 PARTE I'),
+          label: this.$t('序文') + ' PARTE I',
           url:
             'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/document/db8a8835-5f76-412b-921b-f7c78216ee05',
         },
         {
-          label: this.$t('PARTE II'),
+          label: 'PARTE II',
           url:
             'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/document/d1c19d11-f5a6-40a3-b679-72f5011354c4',
         },
         {
-          label: this.$t('PARTE III'),
+          label: 'PARTE III',
           url:
             'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/document/c46591ee-366c-40c5-a118-080c7488f629',
         },
@@ -188,12 +224,12 @@ export default class Volume extends Vue {
       ],
       8: [
         {
-          label: this.$t('序文 PARTE I'),
+          label: this.$t('序文') + ' PARTE I',
           url:
             'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/document/2a6d9499-023a-427b-a721-34d186185de0',
         },
         {
-          label: this.$t('PARTE II'),
+          label: 'PARTE II',
           url:
             'https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/document/7dc8ccc2-86fb-49ba-8407-15aa84b5fab1',
         },
