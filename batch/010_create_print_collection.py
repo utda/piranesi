@@ -157,5 +157,4 @@ collection = {
 }
 
 with open("../static/data/print/iiif/top.json", 'w') as f:
-    json.dump(collection, f, ensure_ascii=False, indent=4,
-    sort_keys=True, separators=(',', ': '))
+    json.dump(collection, f)
