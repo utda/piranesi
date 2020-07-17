@@ -68,14 +68,14 @@ export default class Data extends Vue {
         label: this.$t('list_of_prints'),
         icon: this.baseUrl + '/img/iiif-logo.svg',
         description: '',
-        url: this.baseUrl + '/data/print/iiif/top2.json',
+        url: this.baseUrl + '/data/print/iiif/top.json',
         related: [
           {
             label: this.$t('view_ia'),
             url:
               'https://www.kanzaki.com/works/2016/pub/image-annotator?u=' +
               this.baseUrl +
-              '/data/print/iiif/top2.json',
+              '/data/print/iiif/top.json',
           },
         ],
       },

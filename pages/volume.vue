@@ -132,7 +132,7 @@ export default class Volume extends Vue {
 
     if (state.collection == null) {
       const index = await context.$axios
-        .get('https://piranesi.dl.itc.u-tokyo.ac.jp/data/print/iiif/top2.json')
+        .get('https://piranesi.dl.itc.u-tokyo.ac.jp/data/print/iiif/top.json')
         .then((res: any) => {
           return res.data
         })

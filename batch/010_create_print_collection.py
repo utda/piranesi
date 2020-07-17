@@ -112,7 +112,7 @@ for key in data2:
         "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/"+uuid+"/manifest",
         "@type": "sc:Manifest",
         "label": title,
-        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
         "thumbnail": data2[key]["thumbnail"],
         "metadata" : metadata
         })

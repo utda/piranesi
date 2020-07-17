@@ -596,7 +596,7 @@ export default class Search extends Vue {
 
     if (state.index == null) {
       const index = await context.app.$searchUtils.createIndexFromIIIFCollection(
-        'https://piranesi.dl.itc.u-tokyo.ac.jp/data/print/iiif/top2.json'
+        'https://piranesi.dl.itc.u-tokyo.ac.jp/data/print/iiif/top.json'
       )
       store.commit('setIndex', index.index)
       store.commit('setData', index.data)
@@ -637,7 +637,7 @@ export default class Search extends Vue {
 
   async checkPhoto(): Promise<void> {
     const result = await this.$searchUtils.createIndexFromIIIFCollection(
-      'https://raw.githubusercontent.com/nakamura196/piranesi/master/docs/photo/iiif/top.json'
+      'https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/top.json'
     )
     const ids = []
 

@@ -169,13 +169,27 @@
           </v-col>
         </v-row>
       </div>
-      <p v-else>
-        『ピラネージ版画集』には，18世紀イタリアの著名な建築家・版画家ジョヴァ
-        ンニ・バッティスタ・ピラネージ（Giovanni Battista Piranesi,1720
-        ～1778年）が制作した銅版画940点，息子のフランチェスコ・ピラネージ（Francesco
-        Piranesi,
-        1758～1810年）が制作した版画269点，その他の作家による作品231点が収録されています。
-      </p>
+      <div v-else>
+        <v-row class="mb-5">
+          <v-col cols="12" sm="6">
+            <h2 class="mt-5">Collaborators</h2>
+            <ul class="mt-4">
+              <li>
+                Masanori Aoyagi (Professor Emeritus, The University of Tokyo)
+              </li>
+              <li>Takashi Iizuka (The National Museum of Western Art)</li>
+              <li>Reishi Kusaka (The National Museum of Western Art)</li>
+              <li>Hirosi Huzioka (Institute for Advanced Studies on Asia）</li>
+            </ul>
+          </v-col>
+          <v-col cols="12" sm="6">
+            <h2 class="mt-5">News</h2>
+            <ul class="mt-4">
+              <li>2020-07-XX: The system was opened to the public.</li>
+            </ul>
+          </v-col>
+        </v-row>
+      </div>
     </v-container>
   </div>
 </template>

@@ -60,7 +60,7 @@ export default class Volumes extends Vue {
 
     if (state.index == null) {
       const index = await context.app.$searchUtils.createIndexFromIIIFCollection(
-        'https://piranesi.dl.itc.u-tokyo.ac.jp/data/print/iiif/top2.json'
+        'https://piranesi.dl.itc.u-tokyo.ac.jp/data/print/iiif/top.json'
       )
       store.commit('setIndex', index.index)
       store.commit('setData', index.data)
