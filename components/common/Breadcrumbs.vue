@@ -18,11 +18,19 @@ export default class Breadcrumbs extends Vue {
   // data: any = {}
 
   async created() {
-    if (this.id !== '' && this.id != null) {
-      const result = await this.$searchUtils.createIndexFromIIIFCollection(
-        'https://raw.githubusercontent.com/nakamura196/piranesi/master/docs/print/iiif/top.json'
-      )
+    const store = this.$store
+    const state = store.state
 
+    if (state.index == null) {
+      const index = await this.$searchUtils.createIndexFromIIIFCollection(
+        'https://piranesi.dl.itc.u-tokyo.ac.jp/data/print/iiif/top.json'
+      )
+      store.commit('setIndex', index.index)
+      store.commit('setData', index.data)
+    }
+
+    if (this.id !== '' && this.id != null) {
+      const result = this.$store.state
       const index = result.index
       const dataAll = result.data
       const n = index.file_no[this.id][0]

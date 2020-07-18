@@ -48,9 +48,7 @@
                   </template>
                   -->
                 </template>
-                <v-chip v-if="item.n" class="mx-2">
-                  {{ $t(item.n) }}
-                </v-chip>
+                <span v-if="item.n" class="mx-2"> ({{ item.n }}) </span>
               </component>
             </template>
           </v-treeview>

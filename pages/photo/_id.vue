@@ -114,13 +114,19 @@
           <v-row>
             <template v-for="(item, key) in arr">
               <v-col v-if="key != index" :key="key" cols="6" sm="4">
-                <v-card class="mb-5" @click="index = key">
+                <v-card
+                  class="mb-5"
+                  @click="
+                    index = key
+                    goTop()
+                  "
+                >
                   <v-img
                     :contain="true"
                     class="mt-2"
                     height="200px"
                     :src="
-                      'https://nakamura196.github.io/piranesi/photo/m/' +
+                      'https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/' +
                       $utils.formatArrayValue(item._source.photo_no) +
                       '.jpg'
                     "
@@ -157,12 +163,9 @@ import ShareButtons from '~/components/common/ShareButtons.vue'
 export default class Volumes extends Vue {
   baseUrl: any = process.env.BASE_URL
 
-  title: string = ''
   arr: any[] = []
   index: number = 0
   fileNo: string = ''
-
-  url: string = ''
 
   data: any = {}
 
@@ -189,8 +192,8 @@ export default class Volumes extends Vue {
     store.commit('setQuery', esQuery)
 
     const result = context.app.$searchUtils.search(
-      store.state.index,
-      store.state.data,
+      store.state.index4Photo,
+      store.state.data4Photo,
       store.state.query
     )
 
@@ -240,8 +243,6 @@ export default class Volumes extends Vue {
 
       this.data = obj
       this.fileNo = this.$utils.formatArrayValue(obj._source.file_n1)
-      this.title = this.$utils.formatArrayValue(obj._source.title)
-      this.url = this.url = process.env.BASE_URL + '/photo/' + this.fileNo
     }
 
     // めもめも
@@ -265,6 +266,27 @@ export default class Volumes extends Vue {
     return this.arr[this.index]._id
   }
 
+  get currentId() {
+    if (this.arr.length === 0) {
+      return ''
+    }
+    return this.$utils.formatArrayValue(this.arr[this.index]._source.photo_no)
+  }
+
+  get url() {
+    if (this.arr.length === 0) {
+      return ''
+    }
+    return process.env.BASE_URL + '/photo/' + this.currentId
+  }
+
+  get title() {
+    if (this.arr.length === 0) {
+      return ''
+    }
+    return this.$utils.formatArrayValue(this.arr[this.index]._source._title)
+  }
+
   get uv() {
     const url =
       /*
@@ -276,7 +298,7 @@ export default class Volumes extends Vue {
 
   dwnJson() {
     // 保存するJSONファイルの名前
-    const fileName = this.fileNo + '.json'
+    const fileName = this.currentId + '.json'
 
     // データをJSON形式の文字列に変換する。
     const data = JSON.stringify(this.data, null, '\t')
@@ -292,6 +314,12 @@ export default class Volumes extends Vue {
 
     // ファイルを保存する。
     link.click()
+  }
+
+  goTop() {
+    if (process.browser) {
+      window.scrollTo(0, 0)
+    }
   }
 }
 </script>

@@ -50,7 +50,7 @@
             ><v-icon>mdi-star</v-icon></v-btn
           >
         </template>
-        <span>{{ $t('IIIF pocket') }}</span>
+        <span>{{ 'IIIF pocket' }}</span>
       </v-tooltip>
     </v-card-actions>
   </v-card>
@@ -96,16 +96,22 @@ export default class ShareButtons extends Vue {
 
   get twitterUrl() {
     return (
-      'https://twitter.com/intent/tweet?url=' + this.url + '&text=' + this.title
+      'https://twitter.com/intent/tweet?url=' +
+      encodeURIComponent(this.url) +
+      '&text=' +
+      this.title
     )
   }
 
   get facebookUrl() {
-    return 'https://www.facebook.com/sharer/sharer.php?u=' + this.url
+    return (
+      'https://www.facebook.com/sharer/sharer.php?u=' +
+      encodeURIComponent(this.url)
+    )
   }
 
   get pocketUrl() {
-    return 'http://getpocket.com/edit?url=' + this.url
+    return 'http://getpocket.com/edit?url=' + encodeURIComponent(this.url)
   }
 
   get googleUrl() {

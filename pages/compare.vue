@@ -150,7 +150,7 @@ export default class Volumes extends Vue {
 
   head() {
     return {
-      title: this.$t('compare'),
+      title: 'Compare',
     }
   }
 
