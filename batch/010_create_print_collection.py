@@ -67,12 +67,44 @@ def read_excel2(path):
 
     return map
 
+def read_csv(path):
+    df = pd.read_csv(path, header=None, index_col=None)
+
+    r_count = len(df.index)
+    c_count = len(df.columns)
+
+    data = {}
+
+    for j in range(1, r_count):
+        uuid = df.iloc[j, 0]
+
+        data[uuid] = {}
+
+        for i in range(1, c_count):
+            field = df.iloc[0, i]
+
+            field = field.replace("dcterms:title", "title")
+            field = field.replace("pi:hf_desc", "HF_desc")
+            field = field.replace("pi:we_title", "WE_title")
+            field = field.replace("pi:", "")
+
+            value = df.iloc[j, i]
+
+            if value != "" and not pd.isnull(value):
+                data[uuid][field] = value
+
+        
+
+    return data
+
 
 path = "data/sougouwebcp.xlsx"
 data1 = read_excel(path)
 
 # print(data1)
 data2 = read_excel2("data/data.xlsx")
+
+data3 = read_csv("iizuka/data/omeka.csv")
 
 manifests = []
 
@@ -90,8 +122,11 @@ for key in data2:
 
     for obj in metadata:
         label = obj["label"]
-        value = obj["value"]
 
+        if uuid in data3 and label in data3[uuid]:
+            obj["value"] = data3[uuid][label]
+
+        value = obj["value"]
 
         if label == "volume":
             volume = value
@@ -161,4 +196,5 @@ collection = {
 }
 
 with open("../static/data/print/iiif/top.json", 'w') as f:
-    json.dump(collection, f)
+    json.dump(collection, f, ensure_ascii=False, indent=4,
+    sort_keys=True, separators=(',', ': '))
