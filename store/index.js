@@ -203,6 +203,22 @@ export const mutations = {
       advanced[label][type] = arr.filter((item) => item !== value)
     }
   },
+  removeAdvanced(state, data) {
+    const label = data.label
+    const values = data.values
+    const type = data.type
+    const advanced = state.advanced[type]
+    for (let i = 0; i < values.length; i++) {
+      let value = values[i]
+      let method = '+'
+      if (value.startsWith('-')) {
+        value = value.slice(1)
+        method = '-'
+      }
+      const arr = advanced[label][method]
+      advanced[label][method] = arr.filter((item) => item !== value)
+    }
+  },
   // changeかセットか
   changeFacetFlags(state, data) {
     state.facetFlags[data.label] = data.value
