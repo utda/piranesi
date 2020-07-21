@@ -90,8 +90,11 @@
             <v-icon>mdi-book</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <span>{{ $t('about') }} <v-icon>mdi-open-in-new</v-icon></span>
+            <span>{{ $t('about') }}</span>
           </v-list-item-content>
+          <v-list-item-action>
+            <v-icon>mdi-open-in-new</v-icon>
+          </v-list-item-action>
         </v-list-item>
 
         <v-list-item
@@ -103,8 +106,11 @@
             <v-icon>mdi-information</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <span>{{ $t('legend') }} <v-icon>mdi-open-in-new</v-icon></span>
+            <span>{{ $t('legend') }}</span>
           </v-list-item-content>
+          <v-list-item-action>
+            <v-icon>mdi-open-in-new</v-icon>
+          </v-list-item-action>
         </v-list-item>
 
         <v-list-item
@@ -116,8 +122,11 @@
             <v-icon>mdi-information</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <span>{{ $t('license') }} <v-icon>mdi-open-in-new</v-icon></span>
+            <span>{{ $t('license') }}</span>
           </v-list-item-content>
+          <v-list-item-action>
+            <v-icon>mdi-open-in-new</v-icon>
+          </v-list-item-action>
         </v-list-item>
 
         <v-list-item :to="localePath('dataset')" link>
@@ -129,6 +138,7 @@
           </v-list-item-content>
         </v-list-item>
 
+        <!--
         <v-list-item href="/sitemap.xml" link target="_blank">
           <v-list-item-action>
             <v-icon>mdi-view-list</v-icon>
@@ -137,6 +147,7 @@
             <span>{{ $t('sitemap') }} <v-icon>mdi-open-in-new</v-icon></span>
           </v-list-item-content>
         </v-list-item>
+        -->
       </v-list>
     </v-navigation-drawer>
 
