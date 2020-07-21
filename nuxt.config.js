@@ -49,8 +49,8 @@ const siteDesc = process.env.projectDescriptionJa
 const siteKeywords = process.env.projectKeywords
 
 // images
-const iconImages = baseDir + 'img/icons/'
-const ogpImages = baseDir + 'img/ogp/' // cdnPath + 'img/ogp/'
+const iconImages = basePath + 'img/icons/'
+const ogpImages = basePath + 'img/ogp/' // cdnPath + 'img/ogp/'
 
 // pwa
 const shortName = process.env.SHORT_NAME
