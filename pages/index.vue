@@ -163,14 +163,14 @@
             <ul>
               <li>青柳正規（東京大学名誉教授）</li>
               <li>飯塚隆（国立西洋美術館）</li>
-              <li>日下芝（国立西洋美術館）</li>
+              <li>日下芝</li>
               <li>藤岡洋（東京大学東洋文化研究所）</li>
             </ul>
           </v-col>
           <v-col cols="12" sm="6">
             <h2 class="mt-5">お知らせ</h2>
             <ul class="mt-4">
-              <li>2020-07-XX: システムを公開しました。</li>
+              <li>2020-07-21: システムを公開しました。</li>
             </ul>
           </v-col>
         </v-row>
@@ -184,14 +184,14 @@
                 Masanori Aoyagi (Professor Emeritus, The University of Tokyo)
               </li>
               <li>Takashi Iizuka (The National Museum of Western Art)</li>
-              <li>Reishi Kusaka (The National Museum of Western Art)</li>
+              <li>Reishi Kusaka</li>
               <li>Hirosi Huzioka (Institute for Advanced Studies on Asia）</li>
             </ul>
           </v-col>
           <v-col cols="12" sm="6">
             <h2 class="mt-5">News</h2>
             <ul class="mt-4">
-              <li>2020-07-XX: The system was opened to the public.</li>
+              <li>2020-07-21: The system was opened to the public.</li>
             </ul>
           </v-col>
         </v-row>
