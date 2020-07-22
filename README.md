@@ -1,24 +1,5 @@
-# test
+# ピラネージ画像データベース（拡張版）
 
-sls deploy --stage dev --cdnPath https://dev-umesao.cultural.jp
+https://piranesi.dl.itc.u-tokyo.ac.jp
 
-> My top-notch Nuxt.js project
-
-## Build Setup
-
-``` bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+本サイトは、COE「象形文化の継承と創成に関する研究」により提供されていたデータベース https://warp.ndl.go.jp/info:ndljp/pid/1016139/www.coe.l.u-tokyo.ac.jp:8080/piranesi.html を引き継ぎ、当時提供されていた機能を再構築したものです。
