@@ -1,0 +1,179 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/1012/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Veduta del lato occidentale  della Porta",
+    "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "1012"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2087-1012"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Veduta del lato occidentale  della Porta"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Porta Praenestina "
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[62] Porta Maggiore"
+        },
+        {
+            "label": "photo_date",
+            "value": "2001. 7"
+        },
+        {
+            "label": "photographer",
+            "value": "Kazuko FUKUMURA"
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografato da ovest-nord."
+        },
+        {
+            "label": "Direzione dell'oggetto",
+            "value": "Direzione dell'oggetto: La parte occidentale  della Porta,"
+        },
+        {
+            "label": "Cronologia",
+            "value": "Cronologia: 52 d.C.."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Parte del monumento: la parte occidentale  della Porta; la faccia lato interno."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "Piazza di Porta Maggiore"
+        },
+        {
+            "label": "soggetto",
+            "value": "Immediamente fuori della Porta Maggiore, &#232; il sepolcro Eurisace."
+        },
+        {
+            "label": "sort2",
+            "value": "16052s, 1028s,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "62"
+        },
+        {
+            "label": "file_n1",
+            "value": "16052"
+        },
+        {
+            "label": "main1",
+            "value": "s"
+        },
+        {
+            "label": "file_n2",
+            "value": "1028"
+        },
+        {
+            "label": "main2",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[62] Porta Maggiore "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "0925"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "306"
+        },
+        {
+            "label": "巻",
+            "value": "16"
+        },
+        {
+            "label": "memo",
+            "value": "アニオ・ノウス水道［新アニオ水道］およびクラウディウス水道の水道橋修復の際にティトゥス帝によって設けられた記念建造物〔マッジョーレ門〕"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "データ登録日のコピー",
+            "value": "2003-12-26 00:00:00"
+        },
+        {
+            "label": "備考",
+            "value": "DSCF0925"
+        },
+        {
+            "label": "撮影順",
+            "value": "0868"
+        },
+        {
+            "label": "旧map_no",
+            "value": "73"
+        }
+    ],
+    "related": "https://piranesi.dl.itc.u-tokyo.ac.jp/photo/1012",
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/1012/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/1012/canvas/1",
+                            "resource": {
+                                "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/l/1012.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/1012.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/1012.jpg",
+    "viewingDirection": "left-to-right"
+}

@@ -1,0 +1,123 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/d0102122/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "d0102122",
+    "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "d0102122"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "d0102122"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Stadium Palatium"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[5] Stadio (c. d.)"
+        },
+        {
+            "label": "photo_date",
+            "value": "2001. 2. 7"
+        },
+        {
+            "label": "photographer",
+            "value": "Takashi IIZUKA"
+        },
+        {
+            "label": "sort2",
+            "value": "1065s, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "114"
+        },
+        {
+            "label": "file_n1",
+            "value": "1065"
+        },
+        {
+            "label": "main1",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[5] Stadio (c. d.) "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "d0102122"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "30"
+        },
+        {
+            "label": "巻",
+            "value": "1"
+        },
+        {
+            "label": "memo",
+            "value": "実際はパラティヌスのスタディウム［競技場］もしくはヒッポドロムス［競馬場］に附随する遺構"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "旧map_no",
+            "value": "5"
+        }
+    ],
+    "related": "https://piranesi.dl.itc.u-tokyo.ac.jp/photo/d0102122",
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/d0102122/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/d0102122/canvas/1",
+                            "resource": {
+                                "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/l/d0102122.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/d0102122.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/d0102122.jpg",
+    "viewingDirection": "left-to-right"
+}

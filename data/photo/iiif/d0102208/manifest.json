@@ -1,0 +1,115 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/d0102208/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "d0102208",
+    "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "d0102208"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "d0102208"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[71] Via Marmorata (presso il Tevere)"
+        },
+        {
+            "label": "photo_date",
+            "value": "2001. 2. 11"
+        },
+        {
+            "label": "photographer",
+            "value": "Takashi IIZUKA"
+        },
+        {
+            "label": "sort2",
+            "value": "1039s, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "71"
+        },
+        {
+            "label": "file_n1",
+            "value": "1039"
+        },
+        {
+            "label": "main1",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[71] Via Marmorata (presso il Tevere) "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "d0102208"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "29"
+        },
+        {
+            "label": "巻",
+            "value": "1"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-10-05 00:00:00"
+        }
+    ],
+    "related": "https://piranesi.dl.itc.u-tokyo.ac.jp/photo/d0102208",
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/d0102208/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/d0102208/canvas/1",
+                            "resource": {
+                                "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/l/d0102208.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/d0102208.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/d0102208.jpg",
+    "viewingDirection": "left-to-right"
+}

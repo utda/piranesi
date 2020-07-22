@@ -1,0 +1,143 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0039/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Veduta del angolo della Chiesa ",
+    "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0039"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2075-0039"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Veduta del angolo della Chiesa "
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Triopius"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[74] Triopio di Erode Attico"
+        },
+        {
+            "label": "photo_date",
+            "value": "2002"
+        },
+        {
+            "label": "photographer",
+            "value": "Giuseppe STUTO"
+        },
+        {
+            "label": "Cronologia",
+            "value": "Cronologia: chiesa costruita nel X sec. probabilimente sul tempio( tempio di Cerere e Faustina) costruito nel 2 sec. d.C., e restaurata nel 1634."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Probabile adattamento di un tempio costruito da Erode Attico nel Pago Triopio."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "Via della Caffarella"
+        },
+        {
+            "label": "sort2",
+            "value": "6017s, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma, Subrubio"
+        },
+        {
+            "label": "map_no",
+            "value": "74"
+        },
+        {
+            "label": "file_n1",
+            "value": "6017"
+        },
+        {
+            "label": "main1",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[74] Triopio di Erode Attico "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "16063_03"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "976"
+        },
+        {
+            "label": "巻",
+            "value": "6"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-10-05 00:00:00"
+        },
+        {
+            "label": "旧map_no",
+            "value": "95"
+        }
+    ],
+    "related": "https://piranesi.dl.itc.u-tokyo.ac.jp/photo/0039",
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0039/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0039/canvas/1",
+                            "resource": {
+                                "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/l/0039.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0039.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0039.jpg",
+    "viewingDirection": "left-to-right"
+}

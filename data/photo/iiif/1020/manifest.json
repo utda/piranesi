@@ -1,0 +1,163 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/1020/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "La parte esterna della Porta",
+    "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "1020"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2087-1020"
+        },
+        {
+            "label": "Didascalia",
+            "value": "La parte esterna della Porta"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Porta Praenestina "
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[62] Porta Maggiore"
+        },
+        {
+            "label": "photo_date",
+            "value": "2001. 7"
+        },
+        {
+            "label": "photographer",
+            "value": "Kazuko FUKUMURA"
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografata da sud."
+        },
+        {
+            "label": "Cronologia",
+            "value": "Cronologia: 52 d.C.."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Parte del monumento:  la parte orientale, faccia verso la campagna."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "Piazza di Porta Maggiore"
+        },
+        {
+            "label": "sort2",
+            "value": "1028s, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "62"
+        },
+        {
+            "label": "file_n1",
+            "value": "1028"
+        },
+        {
+            "label": "main1",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[62] Porta Maggiore "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "28_02"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "20"
+        },
+        {
+            "label": "巻",
+            "value": "1"
+        },
+        {
+            "label": "memo",
+            "value": "別方向から見たマッジョーレ門《プラエネステ門》"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "データ登録日のコピー",
+            "value": "2003-12-26 00:00:00"
+        },
+        {
+            "label": "備考",
+            "value": "DSCF0933"
+        },
+        {
+            "label": "撮影順",
+            "value": "0876"
+        },
+        {
+            "label": "旧map_no",
+            "value": "73"
+        }
+    ],
+    "related": "https://piranesi.dl.itc.u-tokyo.ac.jp/photo/1020",
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/1020/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/1020/canvas/1",
+                            "resource": {
+                                "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/l/1020.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/1020.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/1020.jpg",
+    "viewingDirection": "left-to-right"
+}

@@ -1,0 +1,115 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/1237/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "1237",
+    "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "1237"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2088-1237"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "Edifizi presa dalla Porta di Ercolano  (Pompei)"
+        },
+        {
+            "label": "photo_date",
+            "value": "2003.9.27"
+        },
+        {
+            "label": "photographer",
+            "value": "Natsumi ARAKI"
+        },
+        {
+            "label": "sort2",
+            "value": "27010s, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Pompei"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Pompeii"
+        },
+        {
+            "label": "file_n1",
+            "value": "27010"
+        },
+        {
+            "label": "main1",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "Edifizi presa dalla Porta di Ercolano  (Pompei) "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "27010-3"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "58"
+        },
+        {
+            "label": "巻",
+            "value": "27"
+        },
+        {
+            "label": "memo",
+            "value": "エルコラーノ門付近"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        }
+    ],
+    "related": "https://piranesi.dl.itc.u-tokyo.ac.jp/photo/1237",
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/1237/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/1237/canvas/1",
+                            "resource": {
+                                "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/l/1237.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/1237.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/1237.jpg",
+    "viewingDirection": "left-to-right"
+}

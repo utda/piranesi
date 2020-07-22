@@ -1,0 +1,167 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0241/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Veduta del lato verso il Foro dell'Arco di Settimio Severo.",
+    "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0241"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2086-0241"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Veduta del lato verso il Foro dell'Arco di Settimio Severo."
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Columna Phocae"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[11] Colonna di Foca"
+        },
+        {
+            "label": "photo_date",
+            "value": "2001. 7"
+        },
+        {
+            "label": "photographer",
+            "value": "Kazuko FUKUMURA"
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografato da sud."
+        },
+        {
+            "label": "Cronologia",
+            "value": "Cronologia: 203 d.C.."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Parte del monumento: colonna di Foca, Arco di Settimio SeveroÅCe Ss. Martina e Luca."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "Foro Romano"
+        },
+        {
+            "label": "sort",
+            "value": "1"
+        },
+        {
+            "label": "sort2",
+            "value": "17016m, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma"
+        },
+        {
+            "label": "Edificio_i2",
+            "value": "[14] Arco di Settimio Severo"
+        },
+        {
+            "label": "Edificio_l2",
+            "value": "Arcus Septimii Severi "
+        },
+        {
+            "label": "map_no",
+            "value": "11"
+        },
+        {
+            "label": "file_n1",
+            "value": "17016"
+        },
+        {
+            "label": "main1",
+            "value": "m"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[11] Colonna di Foca [14] Arco di Settimio Severo"
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "0140"
+        },
+        {
+            "label": "レコード番号",
+            "value": "338"
+        },
+        {
+            "label": "巻",
+            "value": "17"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "データ登録日のコピー",
+            "value": "2003-12-26 00:00:00"
+        },
+        {
+            "label": "備考",
+            "value": "DSCF0140"
+        },
+        {
+            "label": "撮影順",
+            "value": "0216"
+        },
+        {
+            "label": "旧map_no",
+            "value": "13"
+        }
+    ],
+    "related": "https://piranesi.dl.itc.u-tokyo.ac.jp/photo/0241",
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0241/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0241/canvas/1",
+                            "resource": {
+                                "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/l/0241.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0241.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0241.jpg",
+    "viewingDirection": "left-to-right"
+}

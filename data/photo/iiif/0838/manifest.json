@@ -1,0 +1,163 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0838/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Veduta della facciata principale",
+    "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0838"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2087-0838"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Veduta della facciata principale"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[108] Basilica di S. Maria Maggiore"
+        },
+        {
+            "label": "photo_date",
+            "value": "2001. 7"
+        },
+        {
+            "label": "photographer",
+            "value": "Kazuko FUKUMURA"
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografata da est."
+        },
+        {
+            "label": "Direzione dell'oggetto",
+            "value": "La facciata realizzata nel 1743 da Ferdinando Fuga."
+        },
+        {
+            "label": "Cronologia",
+            "value": "Cronologia: Vsec., opera di papa Sisto III(432 d.C.)."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Parte del monumento: parte sud-est della basilica, la facciata principale."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "Piazza di Santa Maria Maggiore"
+        },
+        {
+            "label": "soggetto",
+            "value": "La facciata realizzata nel 1743 da Ferdinando Fuga."
+        },
+        {
+            "label": "sort2",
+            "value": "16018s, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "110"
+        },
+        {
+            "label": "file_n1",
+            "value": "16018"
+        },
+        {
+            "label": "main1",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[108] Basilica di S. Maria Maggiore "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "0751"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "160"
+        },
+        {
+            "label": "巻",
+            "value": "16"
+        },
+        {
+            "label": "memo",
+            "value": "S.M.Maggiore大聖堂"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "データ登録日のコピー",
+            "value": "2004-01-09 00:00:00"
+        },
+        {
+            "label": "備考",
+            "value": "DSCF0751"
+        },
+        {
+            "label": "撮影順",
+            "value": "0741"
+        },
+        {
+            "label": "旧map_no",
+            "value": "67"
+        }
+    ],
+    "related": "https://piranesi.dl.itc.u-tokyo.ac.jp/photo/0838",
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0838/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0838/canvas/1",
+                            "resource": {
+                                "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/l/0838.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0838.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0838.jpg",
+    "viewingDirection": "left-to-right"
+}

@@ -1,0 +1,171 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0885/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Statua rinasimentale sovrastante",
+    "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0885"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2087-0885"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Statua rinasimentale sovrastante"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Columna Traiani"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[20] Colonna Traiana"
+        },
+        {
+            "label": "photo_date",
+            "value": "2001. 7"
+        },
+        {
+            "label": "photographer",
+            "value": "Kazuko FUKUMURA"
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografata da nord."
+        },
+        {
+            "label": "Direzione dell'oggetto",
+            "value": "La statua di Traiano, che coronava la Colonna, scomparsa nel Medioevo, fu sostituita con una statua di San Pietro all'epoca di SistoV."
+        },
+        {
+            "label": "Cronologia",
+            "value": "Cronologia: et&#224; di Sisto V(1585-1590)."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Parte del monumento: la sutatua di S. Pietro."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "Tra Via di S. Eufemia e Via dei Fori Imperiali"
+        },
+        {
+            "label": "soggetto",
+            "value": "La statua di Traiano, che coronava la Colonna, scomparsa nel Medioevo, fu sostituita con una statua di San Pietro all'epoca di SistoV."
+        },
+        {
+            "label": "sort",
+            "value": "1"
+        },
+        {
+            "label": "sort2",
+            "value": "14003m, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "20"
+        },
+        {
+            "label": "file_n1",
+            "value": "14003"
+        },
+        {
+            "label": "main1",
+            "value": "m"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[20] Colonna Traiana "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "0798"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "397"
+        },
+        {
+            "label": "巻",
+            "value": "14"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "データ登録日のコピー",
+            "value": "2003-12-26 00:00:00"
+        },
+        {
+            "label": "備考",
+            "value": "DSCF0798"
+        },
+        {
+            "label": "撮影順",
+            "value": "0788"
+        },
+        {
+            "label": "旧map_no",
+            "value": "20"
+        }
+    ],
+    "related": "https://piranesi.dl.itc.u-tokyo.ac.jp/photo/0885",
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0885/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0885/canvas/1",
+                            "resource": {
+                                "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/l/0885.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0885.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0885.jpg",
+    "viewingDirection": "left-to-right"
+}

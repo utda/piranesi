@@ -1,0 +1,159 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0036/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Veduta della Fontana e della Chiesa di S. Maria della Vittoria",
+    "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0036"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2075-0036"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Veduta della Fontana e della Chiesa di S. Maria della Vittoria"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[124] Acqua Felice (Castello)"
+        },
+        {
+            "label": "photo_date",
+            "value": "2002"
+        },
+        {
+            "label": "photographer",
+            "value": "Giuseppe STUTO "
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografata da sud."
+        },
+        {
+            "label": "Cronologia",
+            "value": "Cronologia: fontana: 1585-87., costruita come la mostra dell'acqua felice, ex Acqua Alessandrina captata nel 226 d.C., chiesa:1608-20.."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Parte del monumento: fontana e facciata della chiesa."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "Piazza S. Bernardo"
+        },
+        {
+            "label": "soggetto",
+            "value": "Opera di Domenico Fontana e volont&#224; di SistoV."
+        },
+        {
+            "label": "sort",
+            "value": "1"
+        },
+        {
+            "label": "sort2",
+            "value": "16038m, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma"
+        },
+        {
+            "label": "Edificio_i2",
+            "value": "Acqua Felice"
+        },
+        {
+            "label": "map_no",
+            "value": "126"
+        },
+        {
+            "label": "file_n1",
+            "value": "16038"
+        },
+        {
+            "label": "main1",
+            "value": "m"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[124] Acqua Felice (Castello) Acqua Felice"
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "16038_02"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "1017"
+        },
+        {
+            "label": "巻",
+            "value": "16"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-10-05 00:00:00"
+        },
+        {
+            "label": "データ登録日のコピー",
+            "value": "2004-01-13 00:00:00"
+        },
+        {
+            "label": "旧map_no",
+            "value": "59"
+        }
+    ],
+    "related": "https://piranesi.dl.itc.u-tokyo.ac.jp/photo/0036",
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0036/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0036/canvas/1",
+                            "resource": {
+                                "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/l/0036.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0036.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0036.jpg",
+    "viewingDirection": "left-to-right"
+}

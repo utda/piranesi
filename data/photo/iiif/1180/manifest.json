@@ -1,0 +1,167 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/1180/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Veduta ingrandita del portico",
+    "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "1180"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2087-1180"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Veduta ingrandita del portico"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Basilica laurentiana et Pelagiana"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[109] Basilica di S. Lorenzo fuori le Mura"
+        },
+        {
+            "label": "photo_date",
+            "value": "2001. 7"
+        },
+        {
+            "label": "photographer",
+            "value": "Kazuko FUKUMURA"
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografata da sud-ovest."
+        },
+        {
+            "label": "Direzione dell'oggetto",
+            "value": "Il portico duecentesco, opera di Andrea Vassalletto."
+        },
+        {
+            "label": "Cronologia",
+            "value": "Cronologia: eretta da PalagioII(578-90) sul luogo di una Basilica Constantiniana, SistoIII(432-440) vi aggiunse una basilica annessa: rifacimento di OnorioIII(1216-27), restauro del 1949."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Parte del monumento: la parte facciata principale."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "Piazzale di S. Lorenzo"
+        },
+        {
+            "label": "soggetto",
+            "value": "Il portico duecentesco, opera di Andrea Vassalletto."
+        },
+        {
+            "label": "sort2",
+            "value": "16022s, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "111"
+        },
+        {
+            "label": "file_n1",
+            "value": "16022"
+        },
+        {
+            "label": "main1",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[109] Basilica di S. Lorenzo fuori le Mura "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "1093"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "180"
+        },
+        {
+            "label": "巻",
+            "value": "16"
+        },
+        {
+            "label": "memo",
+            "value": "サン・ロレンツォ・フオリ・レ・ムーラ聖堂"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "データ登録日のコピー",
+            "value": "2004-01-05 00:00:00"
+        },
+        {
+            "label": "備考",
+            "value": "DSCF1093"
+        },
+        {
+            "label": "撮影順",
+            "value": "1037"
+        },
+        {
+            "label": "旧map_no",
+            "value": "64"
+        }
+    ],
+    "related": "https://piranesi.dl.itc.u-tokyo.ac.jp/photo/1180",
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/1180/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/1180/canvas/1",
+                            "resource": {
+                                "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/l/1180.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/1180.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/1180.jpg",
+    "viewingDirection": "left-to-right"
+}

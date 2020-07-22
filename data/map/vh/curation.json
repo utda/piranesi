@@ -1,0 +1,99 @@
+{
+  "@context": [
+    "http://iiif.io/api/presentation/2/context.json",
+    "http://codh.rois.ac.jp/iiif/curation/1/context.json"
+  ],
+  "@type": "cr:Curation",
+  "@id": "http://mp.ex.nii.ac.jp/api/curation/json/8f83a317-53fb-4dc0-88f0-3cbd9fbdae92",
+  "label": "Curating list",
+  "selections": [
+    {
+      "@id": "http://mp.ex.nii.ac.jp/api/curation/json/8f83a317-53fb-4dc0-88f0-3cbd9fbdae92/range1",
+      "@type": "sc:Range",
+      "label": "Manual curation by IIIF Curation Viewer",
+      "members": [
+        {
+          "@id": "https://nakamura196.github.io/piranesi/map/vh/canvas/1#xywh=232,344,1,1",
+          "@type": "sc:Canvas",
+          "label": "1",
+          "description": "",
+          "metadata": [
+            {
+              "value": [
+                {
+                  "on": "https://nakamura196.github.io/piranesi/map/vh/canvas/1#xywh=232,344,1,1",
+                  "resource": {
+                    "chars": "<a target=\"_parent\" href=\"http://localhost:8004/compare?map_area=601\">1 Poikile</a>",
+                    "@type": "cnt:ContentAsText",
+                    "marker": {
+                      "@type": "dctypes:Image",
+                      "@id": "http://codh.rois.ac.jp/edo-maps/icons/icon-1.png#xy=11,27"
+                    },
+                    "format": "text/html"
+                  },
+                  "@type": "oa:Annotation",
+                  "@id": "https://nakamura196.github.io/piranesi/map/vh/canvas/1#xywh=232,344,1,1",
+                  "motivation": "sc:painting"
+                }
+              ],
+              "label": "Annotation"
+            }
+          ]
+        },
+        {
+          "@id": "https://nakamura196.github.io/piranesi/map/vh/canvas/1#xywh=162,273,25,20",
+          "@type": "sc:Canvas",
+          "label": "1",
+          "description": ""
+        },
+        {
+          "@id": "https://nakamura196.github.io/piranesi/map/vh/canvas/1#xywh=255,232,36,27",
+          "@type": "sc:Canvas",
+          "label": "1",
+          "description": ""
+        },
+        {
+          "@id": "https://nakamura196.github.io/piranesi/map/vh/canvas/1#xywh=266,190,27,14",
+          "@type": "sc:Canvas",
+          "label": "1",
+          "description": ""
+        },
+        {
+          "@id": "https://nakamura196.github.io/piranesi/map/vh/canvas/1#xywh=277,150,44,35",
+          "@type": "sc:Canvas",
+          "label": "1",
+          "description": ""
+        },
+        {
+          "@id": "https://nakamura196.github.io/piranesi/map/vh/canvas/1#xywh=369,98,38,29",
+          "@type": "sc:Canvas",
+          "label": "1",
+          "description": ""
+        },
+        {
+          "@id": "https://nakamura196.github.io/piranesi/map/vh/canvas/1#xywh=387,20,44,38",
+          "@type": "sc:Canvas",
+          "label": "1",
+          "description": ""
+        },
+        {
+          "@id": "https://nakamura196.github.io/piranesi/map/vh/canvas/1#xywh=150,138,54,28",
+          "@type": "sc:Canvas",
+          "label": "1",
+          "description": ""
+        },
+        {
+          "@id": "https://nakamura196.github.io/piranesi/map/vh/canvas/1#xywh=89,250,45,26",
+          "@type": "sc:Canvas",
+          "label": "1",
+          "description": ""
+        }
+      ],
+      "within": {
+        "@id": "https://webpark5032.sakura.ne.jp/tmp/piranesi/map/vh/manifest.json",
+        "@type": "sc:Manifest",
+        "label": "Villa Adriana Villa Hadriana"
+      }
+    }
+  ]
+}

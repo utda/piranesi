@@ -1,0 +1,155 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0115/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Veduta ingrandita d'iscrizione onoriana",
+    "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0115"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2079-0115"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Veduta ingrandita d'iscrizione onoriana"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Porta Tiburtina"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[60] Porta Tiburtina"
+        },
+        {
+            "label": "photo_date",
+            "value": "2002"
+        },
+        {
+            "label": "photographer",
+            "value": "Giuseppe STUTO "
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografato da ovest."
+        },
+        {
+            "label": "Cronologia",
+            "value": "Cronologia: Acquedotti: 5 a.C., Porta: 270-272 d.C.."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Parte del monumento: facciata ovest con l'iscrizione onoriana."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "Porta S. Lorenzo"
+        },
+        {
+            "label": "sort2",
+            "value": "9010s, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma"
+        },
+        {
+            "label": "Edificio_i2",
+            "value": "[d] Acqua Marcia, [f] Acqua Giulia"
+        },
+        {
+            "label": "Edificio_l2",
+            "value": "Aqua Marcia, Tepula Aqua, Aqua Iulia"
+        },
+        {
+            "label": "map_no",
+            "value": "60"
+        },
+        {
+            "label": "file_n1",
+            "value": "9010"
+        },
+        {
+            "label": "main1",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[60] Porta Tiburtina [d] Acqua Marcia, [f] Acqua Giulia"
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "9010_05"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "926"
+        },
+        {
+            "label": "巻",
+            "value": "9"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "旧map_no",
+            "value": "70"
+        }
+    ],
+    "related": "https://piranesi.dl.itc.u-tokyo.ac.jp/photo/0115",
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0115/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0115/canvas/1",
+                            "resource": {
+                                "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/l/0115.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0115.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0115.jpg",
+    "viewingDirection": "left-to-right"
+}

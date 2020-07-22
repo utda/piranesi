@@ -1,0 +1,175 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0692/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Veduta dell'angolo nord-est dell'Arco",
+    "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0692"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2087-0692"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Veduta dell'angolo nord-est dell'Arco"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Arcus Constantini"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[1] Arco di Costantino"
+        },
+        {
+            "label": "photo_date",
+            "value": "2001. 7"
+        },
+        {
+            "label": "photographer",
+            "value": "Kazuko FUKUMURA"
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografato da est."
+        },
+        {
+            "label": "Direzione dell'oggetto",
+            "value": "Monumento costantiniano con parte architettonice traianeo."
+        },
+        {
+            "label": "Cronologia",
+            "value": "Cronologia: 315 d.C.."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Parte del monumento: la parte est dell'Arco, verso il colosseo. Sopra parte dei rilievi traianei, in mezzo il tondo con la Sole, e sotto parte del grande fregio costantiniano con la entrata dell'imperatore a Roma."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "Via di S. Gregorio, a sud della piazza del Colosseo"
+        },
+        {
+            "label": "soggetto",
+            "value": "Monumento costantiniano con parte architettonice traianeo."
+        },
+        {
+            "label": "sort",
+            "value": "1"
+        },
+        {
+            "label": "sort2",
+            "value": "8058m, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "1"
+        },
+        {
+            "label": "file_n1",
+            "value": "8058"
+        },
+        {
+            "label": "main1",
+            "value": "m"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[1] Arco di Costantino "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "0603"
+        },
+        {
+            "label": "縦横",
+            "value": "縦長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "287"
+        },
+        {
+            "label": "巻",
+            "value": "8"
+        },
+        {
+            "label": "memo",
+            "value": "コンスタンティヌス帝の凱旋門"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "データ登録日のコピー",
+            "value": "2004-01-09 00:00:00"
+        },
+        {
+            "label": "備考",
+            "value": "DSCF0603"
+        },
+        {
+            "label": "撮影順",
+            "value": "0630"
+        },
+        {
+            "label": "旧map_no",
+            "value": "1"
+        }
+    ],
+    "related": "https://piranesi.dl.itc.u-tokyo.ac.jp/photo/0692",
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0692/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0692/canvas/1",
+                            "resource": {
+                                "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/l/0692.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0692.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0692.jpg",
+    "viewingDirection": "left-to-right"
+}

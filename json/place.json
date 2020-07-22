@@ -1,0 +1,874 @@
+{
+    "Acqua Antoniniana 'Aqua Antoniniana' [g]": {
+        "i": "Aqua Antoniniana",
+        "label": "[g] Acqua Antoniniana"
+    },
+    "Acqua Antoniniana 'Aqua Antoniniana'  (tratto del c. d. Arco di Druso) [68]": {
+        "i": "Aqua Antoniniana",
+        "label": "[68] Acqua Antoniniana (tratto del c. d. Arco di Druso)"
+    },
+    "Acqua Claudia  'Aqua Claudia' [f]": {
+        "i": "Anio Novus, Aqua Claudia",
+        "label": "[f] Acqua Claudia"
+    },
+    "Acqua Giulia  'Aqua Iulia'[d]": {
+        "i": "Aqua Iulia",
+        "label": "[d] Acqua Giulia"
+    },
+    "Acqua Marcia  'Aqua Marcia' [c]": {
+        "i": "Aqua Marcia",
+        "label": "[c] Acqua Marcia"
+    },
+    "Acqua Traiana  'Aqua Traiana' [a]": {
+        "i": "Aqua Traiana",
+        "label": "[a] Acqua Traiana"
+    },
+    "Acqua Vergine  'Aqua Virgo' [b]": {
+        "i": "Aqua Virgo",
+        "label": "[b] Acqua Vergine"
+    },
+    "Anfiteatro Castrense  'Amphitheatrum Castrense' [64]": {
+        "i": "Amphitheatrum Castrense",
+        "label": "[64] Anfiteatro Castrense"
+    },
+    "Anfiteatro d'Albano  'Amphitheatrum Albanae' (Albano)": {
+        "i": "Amphitheatrum Albanae",
+        "label": "Anfiteatro dÕAlbano (Albano)"
+    },
+    "Anfiteatro di Pula  'Amphitheatrum Polae' (Pula)": {
+        "i": "Amphitheatrum Polae",
+        "label": "Anfiteatro di Pola (Pula)"
+    },
+    "Anfiteatro di Statilio Tauro 'Amphitheatrum Statilii Tauri' [37] ": {
+        "i": "Amphitheatrum Statilii Tauri",
+        "label": "[37] Anfiteatro di Statilio Tauro"
+    },
+    "Anfiteatro di Verona  'Amphitheatrum Veronae' (Verona)": {
+        "i": "Amphitheatrum Veronae",
+        "label": "Anfiteatro di Verona (Verona)"
+    },
+    "Anfiteatro Flavio (Colosseo)  'Amphitheatrum Flavium' [2]": {
+        "i": "Amphitheatrum Flavium",
+        "label": "[2] Anfiteatro Flavio (Colosseo)"
+    },
+    "Aniene Vecchio  'Anio Vetus' [e]": {
+        "i": "Anio Vetus",
+        "label": "[e] Aniene Vecchio"
+    },
+    "Antica villa sulla via Appia (Frattocchie)": {
+        "i": "",
+        "label": "Antica villa sulla via Appia, alle Frattocchie"
+    },
+    "Arco di Augusto  ' Arcus Augusti' (Aosta) ": {
+        "i": "Arcus Augusti",
+        "label": "Arco di Augusto (Aosta)"
+    },
+    "Arco di Augusto  'Arcus Augusti' (Rimini) ": {
+        "i": "Arcus Augusti",
+        "label": "Arco di Augusto (Rimini)"
+    },
+    "Arco di Benevento  'Arcus Traiani' (Benevento)": {
+        "i": "Arcus Traiani",
+        "label": "Arco di Benevento (Benevento)"
+    },
+    "Arco di Costantino  'Arcus Constantini' [1]": {
+        "i": "Arcus Constantini",
+        "label": "[1] Arco di Costantino"
+    },
+    "Arco di Dolabella e Silano  'Arcus Dolabellae et Silani' [66] ": {
+        "i": "Arcus Dolabellae et Silani",
+        "label": "[66] Arco di Dolabella e Silano"
+    },
+    "Arco di Gallieno 'Arcus Gallieni' [58]": {
+        "i": "Arcus Gallieni",
+        "label": "[58] Arco di Gallieno"
+    },
+    "Arco di Giano c.d.  'Ianus Quadrifrons' [23]": {
+        "i": "Ianus Quadrifrons",
+        "label": "[23] Arco di Giano c.d."
+    },
+    "Arco di Marco Aurelio  'Arcus Marci Aurelii'": {
+        "i": "Arcus Marci Aurelii",
+        "label": "Arco di Marco Aurelio"
+    },
+    "Arco di Nerone  'Arcus Neroniani' [63]": {
+        "i": "Arcus Neroniani",
+        "label": "[63]Arco di Nerone"
+    },
+    "Arco di Pula  'Arcus Sergii ' (Pula)": {
+        "i": "Arcus Sergii",
+        "label": "Arco di Pula (Pula)"
+    },
+    "Arco di Settimio Severo  'Arcus Septimii Severi'  [14] ": {
+        "i": "Arcus Septimii Severi",
+        "label": "[14] Arco di Settimio Severo"
+    },
+    "Arco di Tito  'Arcus Titi' [8]": {
+        "i": "Arcus Titi",
+        "label": "[8] Arco di Tito"
+    },
+    "Arco di Traiano  ' Arcus Traiani' (Ancona)": {
+        "i": "Arcus Traiani",
+        "label": "Arco di Traiano (Ancona)"
+    },
+    "Basilica di Massenzio e di Constantino  'Basilica Nova' [10]": {
+        "i": "Basilica Nova",
+        "label": "[10] Basilica di Massenzio e di Constantino"
+    },
+    "Basilica di S. Croce in Gerusalemme  'Basilica Sessoriana' [116] ": {
+        "i": "Basilica Sessoriana",
+        "label": "[116] Basilica di S. Croce in Gerusalemme"
+    },
+    "Basilica di S. Lorenzo fuori le Mura  'Basilica laurentiana et Pelagiana' [109]": {
+        "i": "Basilica laurentiana et Pelagiana",
+        "label": "[109] Basilica di S. Lorenzo fuori le Mura"
+    },
+    "Basilica di S. Maria Maggiore [108]": {
+        "i": "",
+        "label": "[108] Basilica di S. Maria Maggiore"
+    },
+    "Basilica di S. Paolo fuori le Mura  'Basilica Ostiensis' [110]": {
+        "i": "Basilica Ostiensis",
+        "label": "[110] Basilica di S. Paolo fuori le Mura"
+    },
+    "Basilica di S. Pietro in Vaticano [134]": {
+        "i": "",
+        "label": "[134] Basilica di S. Pietro in Vaticano"
+    },
+    "Basilica di S. Sebastiano fuori le Mura di Roma   'Basilica Apostolorum' [111]": {
+        "i": "Basilica Apostolorum",
+        "label": "[111] Basilica di S. Sebastiano fuori le Mura di Roma"
+    },
+    "Battistero Lateranense [106]": {
+        "i": "",
+        "label": "[106] Battistero Lateranense"
+    },
+    "Camera sepolcrale dirimpetto alla Chiesa di S. Sebastiano fuori delle mura [75]": {
+        "i": "",
+        "label": "[75] Camera sepolcrale dirimpetto alla Chiesa di S. Sebastiano fuori delle mura"
+    },
+    "Camera Sepolcrale presso la tomba della familia degli Arruntii [76]": {
+        "i": "",
+        "label": "[76] Camera Sepolcrale presso la tomba della familia degli Arruntii"
+    },
+    "Camere sepolcrali esistenti sull'antica Via Appia fuori di Porta S. Sebastiano": {
+        "i": "",
+        "label": "Camere sepolcrali esistenti sullÕantica Via Appia fuori di Porta S. Sebastiano"
+    },
+    "Campo Marzio  'Campus Martius' [D]": {
+        "i": "Campus Martius",
+        "label": "[D] Campo Marzio"
+    },
+    "Casa antistante la Casa del Chirurgo (Pompei)": {
+        "i": "",
+        "label": "Casa antistante la Casa del Chirurgo (Pompei)"
+    },
+    "Casa dei Crescenzi [112]": {
+        "i": "",
+        "label": "[112] Casa dei Crescenzi"
+    },
+    "Cascata (Tivoli)": {
+        "i": "",
+        "label": "Cascata (Tivoli)"
+    },
+    "Cascatelle (Tivoli)": {
+        "i": "",
+        "label": "Cascatelle (Tivoli)"
+    },
+    "Castello dell'Acqua Felice [124]": {
+        "i": "",
+        "label": "[124] Acqua Felice (Castello)"
+    },
+    "Castello dell'Acqua Paola (Fontana Paola alle pendici del Gianicolo) [132]": {
+        "i": "",
+        "label": "[132] Fontana Paola alle pendici del Gianicolo"
+    },
+    "Castro pretorio  'Castra Praetoria' [57] ": {
+        "i": "Castra Praetoria",
+        "label": "[57] Castro pretorio"
+    },
+    "Chiesa di S. Stefano Rotondo [107]": {
+        "i": "",
+        "label": "[107] Chiesa di S. Stefano Rotondo"
+    },
+    "Chiesa di Sant'Urbano alla Caffarella (Triopio di Erode Attico)  'Triopius' [74]": {
+        "i": "Triopius",
+        "label": "[74] Triopio di Erode Attico"
+    },
+    "Circo di Caracalla  'Circus Maxentii' [94] ": {
+        "i": "Circus Maxentii",
+        "label": "[94] Circo di Caracalla"
+    },
+    "Circo Flaminio  'Circus Flaminius' [36]": {
+        "i": "Circus Flaminius",
+        "label": "[36] Circo Flaminio"
+    },
+    "Circo Massimo  'Circus Maximus' [7] ": {
+        "i": "Circus Maximus",
+        "label": "[7] Circo Massimo"
+    },
+    "Cisternone (Albano)": {
+        "i": "",
+        "label": "Cisternone (Albano)"
+    },
+    "Collegio di Silvano Aureliano  'Collegium Silvani Aureliani' [79]": {
+        "i": "Collegium Silvani Aureliani",
+        "label": "[79] Collegio di Silvano Aureliano"
+    },
+    "Colombario dei Liberti di Augusto [78]": {
+        "i": "",
+        "label": "[78] Colombario dei Liberti di Augusto"
+    },
+    "Colonna di Antonino Pio  'Columna Antonii Pii' [49] ": {
+        "i": "Columna Antonii Pii",
+        "label": "[49] Colonna di Antonino Pio"
+    },
+    "Colonna di Foca 'Columna Phocae'  [11] ": {
+        "i": "Columna Phocae",
+        "label": "[11] Colonna di Foca"
+    },
+    "Colonna di Marco Aurelio  'Columna Marci Aurelii Antonini' [50]": {
+        "i": "Columna Marci Aurelii Antonini",
+        "label": "[50] Colonna di Marco Aurelio"
+    },
+    "Colonna Traiana  'Columna Traiani' [20] ": {
+        "i": "Columna Traiani",
+        "label": "[20] Colonna Traiana"
+    },
+    "Curia Innocenziana (Palazzo di Montecitorio) [120]": {
+        "i": "",
+        "label": "[120] Curia Innocenziana (Palazzo di Montecitorio)"
+    },
+    "Domus Augustana con il Septizodio  'Domus Augustana et Septizodium' [6]": {
+        "i": "Domus Augustana et Septizodium",
+        "label": "[6] Domus Augustana con il Septizodio"
+    },
+    "Edifizi presa dalla porta di Ercolano  (Pompei)": {
+        "i": "",
+        "label": "Edifizi presa dalla porta di Ercolano  (Pompei)"
+    },
+    "Emissario del Lago Albano (Albano)": {
+        "i": "",
+        "label": "Emissario del Lago Albano (Albano)"
+    },
+    "Foce della Cloaca Massima  'Cloaca Maxima' [27] ": {
+        "i": "Cloaca Maxima",
+        "label": "[27] Foce della Cloaca Massima"
+    },
+    "Fontana di Trevi (ex mostra dell'acqua Vergine)    'Aqua Virgo' [127]": {
+        "i": "Aqua Virgo",
+        "label": "[127] Fontana di Trevi ([b] Acqua Vergine)"
+    },
+    "Foro di Augusto  'Forum Augusti' [18] ": {
+        "i": "Forum Augusti",
+        "label": "[18] Foro di Augusto"
+    },
+    "Foro di Nerva o Transitorio  'Forum Nervae  '(Forum Transitorivm)' [17] ": {
+        "i": "Forum Nervae  (Forum Transitorivm)",
+        "label": "[17] Foro di Nerva o Transitorio"
+    },
+    "Foro Romano (Campo Vaccino)  'Forum Romanum' [A]": {
+        "i": "Forum Romanum",
+        "label": "[A] Foro Romano (Campo Vaccino)"
+    },
+    "Grotta di Posilipo (Posilipo)": {
+        "i": "",
+        "label": "Grotta di Posilipo (Posilipo)"
+    },
+    "Isola Tiberina  'Insula Tiberina' [29]": {
+        "i": "Insula Tiberina",
+        "label": "[29] Isola Tiberina"
+    },
+    "La Conocchia (Capua)": {
+        "i": "",
+        "label": "La Conocchia (Capua)"
+    },
+    "Lago di Albano  'Lacus Albanus' (Albano)": {
+        "i": "Lacus Albanus",
+        "label": "Lago di Albano (Albano)"
+    },
+    "Mausoleo della famiglia Plauzia  'Mausoleum Plautiorum' [98]": {
+        "i": "Mausoleum Plautiorum",
+        "label": "[98] Mausoleo della famiglia Plauzia"
+    },
+    "Mausoleo di Adriano (Castel sant'Angelo)   'Mausoleum Hadriani' [46]": {
+        "i": "Mausoleum Hadriani",
+        "label": "[46] Mausoleo di Adriano"
+    },
+    "Mausoleo di Augusto  'Mausoleum Augusti' [48]": {
+        "i": "Mausoleum Augusti",
+        "label": "[48] Mausoleo di Augusto"
+    },
+    "Mausoleo di Cecilia Metella  'Mausoleum Caeciliae Metellae' [73]": {
+        "i": "Mausoleum Caeciliae Metellae",
+        "label": "[73] Mausoleo di Cecilia Metella"
+    },
+    "Mausoleo di Costanza  'Mausoleum Constantinae' [105]": {
+        "i": "Mausolevm Constantinae",
+        "label": "[105] Mausoleo di Costanza"
+    },
+    "Mausoleo di S. Elena  'Mausoleum Helenae' [97]": {
+        "i": "Mausoleum Helenae",
+        "label": "[97] Mausoleo di S. Elena"
+    },
+    "Mercati traianei [19]": {
+        "i": "",
+        "label": "[19] Mercati traianei"
+    },
+    "Monte Capitolino  'Mons Capitolinus' [21]": {
+        "i": "Mons Capitolinus",
+        "label": "[21] Monte Capitolino"
+    },
+    "Mura Aureliane  'Muri Aureliani' [h]": {
+        "i": "Muri Aureliani",
+        "label": "[h] Mura Aureliane"
+    },
+    "Mura Aureliane 'Muri Aureliani' [h] (tratto presso Porta Salaria) [55]": {
+        "i": "Muri Aureliani",
+        "label": "[55] Mura Aureliane [h] (tratto presso Porta Salaria)"
+    },
+    "Mura Ciclopiche (Cori)": {
+        "i": "",
+        "label": "Mura Ciclopiche (Cori)"
+    },
+    "Ninfeo Bergantino (Albano)": {
+        "i": "",
+        "label": "Ninfeo Bergantino (Albano)"
+    },
+    "Ninfeo degli Orti Liciniani (c. d. Tempio di Minerva Medica)  'Nymphaeum Hortorum Licinianorum' [61]": {
+        "i": "Nymphaeum Hortorum Licinianorum",
+        "label": "[61] Ninfeo degli Orti Liciniani (c. d. Tempio di Minerva Medica)"
+    },
+    "Ninfeo di Alessandro Severo  'Nymphaeum Severi Alexanderi' [59]": {
+        "i": "Nymphaeum Severi Alexanderi",
+        "label": "[59] Ninfeo di Alessandro Severo"
+    },
+    "Ninfeo di Egeria  'Nymphaeum Egeriae' [80]": {
+        "i": "Nymphaeum Egeriae",
+        "label": "[80] Ninfeo di Egeria"
+    },
+    "Ninfeo Dorico (Albano)": {
+        "i": "",
+        "label": "Ninfeo Dorico (Albano)"
+    },
+    "Nuova Piazza di Padova (Padova)": {
+        "i": "",
+        "label": "Nuova Piazza di Padova (Padova)"
+    },
+    "Palazzo Barberini [123]": {
+        "i": "",
+        "label": "[123] Palazzo Barberini"
+    },
+    "Palazzo della Consulta [122]": {
+        "i": "",
+        "label": "[122] Palazzo della Consulta"
+    },
+    "Palazzo e Bagni di Sallustio (parte degli Horti Sallustiani)  'Horti Sallustiani' [54]": {
+        "i": "Horti Sallustiani",
+        "label": "[54] Palazzo e Bagni di Sallustio (parte degli )"
+    },
+    "Palazzo Farnese [131]": {
+        "i": "",
+        "label": "[131] Palazzo Farnese"
+    },
+    "Palazzo Mancini-Salviati (Palazzo dell'Accademia) [126]": {
+        "i": "",
+        "label": "[126] Palazzo Mancini-Salviati"
+    },
+    "Palazzo Odescalchi [125]": {
+        "i": "",
+        "label": "[125] Palazzo Odescalchi"
+    },
+    "Palazzo Stoppani (Palazzo Vindoni Caffarelli) [130]": {
+        "i": "",
+        "label": "[130] Palazzo Stoppani (Palazzo Vindoni Caffarelli)"
+    },
+    "Pantheon  'Pantheon' [40]": {
+        "i": "Pantheon",
+        "label": "[40]"
+    },
+    "Parte sud della scarpata dell'Aventino (presso il Tevere) [71]": {
+        "i": "",
+        "label": "[71] Arco di San Lazzaro"
+    },
+    "Piazza del Popolo [117]": {
+        "i": "",
+        "label": "[117] Piazza del Popolo"
+    },
+    "Piazza del Quirinale (Piazza di Monte Cavallo)  [121]": {
+        "i": "",
+        "label": "[121] Piazza del Quirinale (Piazza di Monte Cavallo)"
+    },
+    "Piazza di Pietro in Vaticano (Circo di Gaio e Nerone) 'Circus Gaii et Neronis' [135] ": {
+        "i": "Circus Gaii et Neronis",
+        "label": "[135] Piazza di Pietro in Vaticano (Circo di Gaio e Nerone)"
+    },
+    "Piazza di Rotonda [128]": {
+        "i": "",
+        "label": "[128] Piazza di Rotonda"
+    },
+    "Piazza di Spagna [119]": {
+        "i": "",
+        "label": "[119] Piazza di Spagna"
+    },
+    "Piazza S. Giovanni in Laterano [115]": {
+        "i": "",
+        "label": "[115] Piazza S. Giovanni in Laterano"
+    },
+    "Piramide di C. Cestio  'Sepulcrum C. Cestii' [70] ": {
+        "i": "Sepulcrum C. Cestii",
+        "label": "[70] Piramide di C. Cestio"
+    },
+    "Piscina esistente nella vigna de' PP. della Compagnia di Jesus": {
+        "i": "",
+        "label": "Piscina esistente nella vigna deÕ PP. della Compagnia di Jesus (Castel Gandolfo)"
+    },
+    "Pompei II, 4, 3: Villa di Giulia Felice" : {
+        "i": "",
+        "label": "II, 4, 3: Villa di Giulia Felice(Pompei)"
+    },
+    "Pompei VI, 1, 10: Casa del Chirurgo" : {
+        "i": "",
+        "label": "VI, 1, 10: Casa del Chirurgo (Pompei)"
+    },
+    "Pompei VI, 1, 2-4: Termopolio" : {
+        "i": "",
+        "label": "VI, 1, 2-4: Termopolio (Pompei)"
+    },
+    "Pompei VI, 1, 5": {
+        "i": "",
+        "label": "VI, 1, 5 (Pompei)"
+    },
+    "Pompei VI, 17 (Ins. Occ.), 1.2": {
+        "i": "",
+        "label": "VI, 17 (Ins. Occ.), 1.2 (Pompei)"
+    },
+    "Pompei VI, 17 (Ins.Occ.), 11-26": {
+        "i": "",
+        "label": "VI, 17 (Ins.Occ.), 11-26 (Pompei)"
+    },
+    "Pompei VI, 17 (Ins.Occ.), 12-16": {
+        "i": "",
+        "label": "VI, 17 (Ins.Occ.), 12-16 (Pompei)"
+    },
+    "Pompei VI, 17 (Ins.Occ.), 17: casa a due piani": {
+        "i": "",
+        "label": "VI, 17 (Ins.Occ.), 17: casa a due piani (Pompei)"
+    },
+    "Pompei VI, 17 (Ins.Occ.), 19-26: Casa del Leone": {
+        "i": "",
+        "label": "VI, 17 (Ins.Occ.), 19-26: Casa del Leone (Pompei)"
+    },
+    "Pompei VI, 17 (Ins. Occ.), 3.4": {
+        "i": "",
+        "label": "VI, 17 (Ins. Occ.), 3.4 (Pompei)"
+    },
+    "Pompei VIII, 7, 28: Tempio di Iside": {
+        "i": "",
+        "label": "VIII, 7, 28: Tempio di Iside (Pompei)"
+    },
+    "Ponte Cestio  'Pons Cestius' [30]": {
+        "i": "Pons Cestius",
+        "label": "[30] Ponte Cestio"
+    },
+    "Ponte di Rimino (Rimini)": {
+        "i": "",
+        "label": "Ponte di Rimino (Rimini)"
+    },
+    "Ponte Emilio (Ponte Rotto)  'Pons Aemilius' [28]": {
+        "i": "Pons Aemilius",
+        "label": "[28] Ponte Emilio (Ponte Rotto)"
+    },
+    "Ponte Fabrizio  'Pons Fabricius' [31]": {
+        "i": "Pons Fabricius",
+        "label": "[31] Ponte Fabrizio"
+    },
+    "Ponte Lucano  'Pons Lucanus' [99] ": {
+        "i": "Pons Lucanus",
+        "label": "[99] Ponte Lucano"
+    },
+    "Ponte Molle  'Pons Mulvius' [103]": {
+        "i": "Pons Mulvius",
+        "label": "[103] Ponte Molle"
+    },
+    "Ponte S. Angelo  ' Pons Aelius (Pons Hadrianus)' [47]": {
+        "i": "Pons Aelius (Pons Hadrianus)",
+        "label": "[47] Ponte S. Angelo"
+    },
+    "Ponte Salario  'Pons Salarius' [101]": {
+        "i": "Pons Salarius",
+        "label": "[101] Ponte Salario"
+    },
+    "Ponte Trionfale  'Pons Triumphalis' [45]": {
+        "i": "Pons Triumphalis",
+        "label": "[45] Ponte Trionfale"
+    },
+    "Porta della Pompei (Pompei)": {
+        "i": "",
+        "label": "Porta della Pompei (Pompei)"
+    },
+    "Porta Maggiore  'Porta Praenestina' [62] ": {
+        "i": "Porta Praenestina",
+        "label": "[62] Porta Maggiore"
+    },
+    "Porta Tiburtina  'Porta Tiburtina' [60]": {
+        "i": "Porta Tiburtina",
+        "label": "[60]"
+    },
+    "Portico di epoca repubblicana sul Vicus Iugarius  'Vicus Iugarius' [24] ": {
+        "i": "Vicus Iugarius",
+        "label": "[24] Portico di epoca repubblicana sul"
+    },
+    "Portico di Filippo  'Porticus Philippi' [35]": {
+        "i": "Porticus Philippi",
+        "label": "[35] Portico di Filippo"
+    },
+    "Portico di M. Emilio Lepido  'Porticus Aemilia' [72]": {
+        "i": "Porticus Aemilia",
+        "label": "[72] Portico di M. Emilio Lepido"
+    },
+    "Portico di Ottavia  'Porticus Octaviae' [34]": {
+        "i": "Porticus Octaviae",
+        "label": "[34] Portico di Ottavia"
+    },
+    "Porto di Ripa Grande [113]": {
+        "i": "",
+        "label": "[113] Porto di Ripa Grande"
+    },
+    "Porto di Ripetta [129]": {
+        "i": "",
+        "label": "[129] Porto di Ripetta"
+    },
+    "S. Giovanni in Laterano  'Basilica Lateranensis (Salvatoris)' [114]": {
+        "i": "Basilica Lateranensis (Salvatoris)",
+        "label": "[114] S. Giovanni in Laterano"
+    },
+    "Sepolcrale accanto a Torre pignatara [81]": {
+        "i": "",
+        "label": "[81] Sepolcrale accanto a Torre pignatara"
+    },
+    "Sepolcrale situata nella Villa Gordianida di Tor de schiavi [82]": {
+        "i": "",
+        "label": "[82] Sepolcrale situata nella Villa Gordianida di Tor de schiavi"
+    },
+    "Sepolcrale vicino a Tor de schiavi [83]": {
+        "i": "",
+        "label": "[83] Sepolcrale vicino a Tor de schiavi"
+    },
+    "Sepolcro a piramide attribuito al Quintilii [93]": {
+        "i": "",
+        "label": "[93] Sepolcro a piramide attribuito al Quintilii"
+    },
+    "Sepolcro antico su la via Appia [84]": {
+        "i": "",
+        "label": "[84] Sepolcro antico su la via Appia"
+    },
+    "Sepolcro c.d. di Priscilla  'Priscillae sepulchrum' [85] ": {
+        "i": "Priscillae sepulchrum",
+        "label": "[85] Sepolcro c.d. di Priscilla"
+    },
+    "Sepolcro degli Istacidii (Pompei)": {
+        "i": "",
+        "label": "Sepolcro degli Istacidii (Pompei)"
+    },
+    "Sepolcro degli Scipioni  'Sepulcrum Scipionum' [67]": {
+        "i": "Sepulcrum Scipionum",
+        "label": "[67] Sepolcro degli Scipioni"
+    },
+    "Sepolcro detto falsamente degli Orazi e Curiazi (Albano)": {
+        "i": "",
+        "label": "Sepolcro detto falsamente degli Orazi e Curiazi (Albano)"
+    },
+    "Sepolcro di Alessandro Severo  'Sepulcrum  'Severi Alexanderi' [96]": {
+        "i": "Sepulcrum  Severi Alexanderi",
+        "label": "[96] Sepolcro di Alessandro Severo"
+    },
+    "Sepolcro di Annia Regillia [90]": {
+        "i": "",
+        "label": "[90] Sepolcro di Annia Regillia"
+    },
+    "Sepolcro di Aulus Persius Flaccus [86]": {
+        "i": "",
+        "label": "[86] Sepolcro di Aulus Persius Flaccus"
+    },
+    "Sepolcro di C. Poblicio Bibulo  'Sepulcrum C. Publicii Bibuli' [22] ": {
+        "i": "Sepulcrum C. Publicii Bibuli",
+        "label": "[22] Sepolcro di C. Poblicio Bibulo"
+    },
+    "Sepolcro di P. Vibio Mariano (Tomba di Nerone) [104]": {
+        "i": "",
+        "label": "[104] Sepolcro di P. Vibio Mariano"
+    },
+    "Sepolcro fatto a modo di settizonio (Albano)": {
+        "i": "",
+        "label": "Sepolcro fatto a modo di settizonio (Albano)"
+    },
+    "Sepolcro Regio o Consolare (Palazzolo)": {
+        "i": "",
+        "label": "Sepolcro Regio o Consolare (Palazzolo)"
+    },
+    "Sepolcro sull'antica Via Appia nella Vigna Buonamici [87]": {
+        "i": "",
+        "label": "[87] Sepolcro nella Vigna Buonamici"
+    },
+    "Sepolcro sulla via Tiburtina vicino a Ponte Lugano [100]": {
+        "i": "",
+        "label": "[100] Sepolcro sulla via Tiburtina vicino a Ponte Lugano"
+    },
+    "Septi Giuli  'Saepta Iulia' [39]": {
+        "i": "Saepta Iulia",
+        "label": "[39] Septi Giuli"
+    },
+    "Sostruzione di Clodio (Castel Gandolfo)": {
+        "i": "",
+        "label": "Sostruzione di Clodio (Castel Gandolfo)"
+    },
+    "Speranza Vecchia  'Aedes Spes Vetus' [65]": {
+        "i": "Aedes Spes Vetus",
+        "label": "[65] Speranza Vecchia"
+    },
+    "Stadio (c. d.)  'Stadium Palatium' [5] ": {
+        "i": "Stadium Palatium",
+        "label": "[5] Stadio (c. d.)"
+    },
+    "Stadio di Domiziano (Piazza Navona)  'Stadium Domitiani' [44]": {
+        "i": "Stadium Domitiani",
+        "label": "[44] Stadio di Domiziano (Piazza Navona)"
+    },
+    "Stanza sepolcrale nella vigna Casali a Porta S. Sebastiano [88]": {
+        "i": "",
+        "label": "[88] Stanza sepolcrale nella vigna Casali a Porta S. Sebastiano"
+    },
+    "Teatro di Balbo  'Theatrum Balbi' [38]": {
+        "i": "Theatrum Balbi",
+        "label": "[38] Teatro di Balbo"
+    },
+    "Teatro di Ercolano (Ercolano)": {
+        "i": "",
+        "label": "Teatro di Ercolano (Ercolano)"
+    },
+    "Teatro di Marcello  'Theatrum Marcelli' [33]": {
+        "i": "Theatrum Marcelli",
+        "label": "[33] Teatro di Marcello"
+    },
+    "Teatro di Pompeo  'Theatrum Pompeii' [43]": {
+        "i": "Theatrum Pompeii",
+        "label": "[43] Teatro di Pompeo"
+    },
+    "Tempio antico volgarmente detto della Salute [89]": {
+        "i": "",
+        "label": "[89] Tempio antico volgarmente detto della Salute"
+    },
+    "Tempio d'Hera I (c. d. Basilica) 'Heraion I' (Pesto)": {
+        "i": "Heraion I",
+        "label": "c. d. Basilica (Pesto)"
+    },
+    "Tempio d'Hera II (c. d. Tempio di Nettuno)  'Heraion II' (Pesto)": {
+        "i": "Heraion II",
+        "label": "c. d. Tempio di Nettuno (Pesto)"
+    },
+    "Tempio dei Castori (o dei Dioscuri)  'Aedes Castorum' [12]": {
+        "i": "Aedes Castorum",
+        "label": "[12] Tempio dei Castori (o dei Dioscuri)"
+    },
+    "Tempio dei Castori (o dei Dioscuri)  'Aedes Castorum' (Cori)": {
+        "i": "Aedes Castorum",
+        "label": "Tempio dei Castori (o dei Dioscuri) (Cori)"
+    },
+    "Tempio del divo Adriano  'Hadrianeum' [51]": {
+        "i": "Hadrianeum",
+        "label": "[51] Tempio del divo Adriano"
+    },
+    "Tempio della Concordia ad Agrigento  'Templum Concordiae' (Agrigento)": {
+        "i": "Templum Concordiae",
+        "label": "Tempio della Concordia ad Agrigento (Agrigento)"
+    },
+    "Tempio della Sibilla  'Templum sibyllae' (Tivoli)": {
+        "i": "Templum sibyllae",
+        "label": "Tempio della Sibilla (Tivoli)"
+    },
+    "Tempio della Tosse (Tivoli)": {
+        "i": "",
+        "label": "Tempio della Tosse (Tivoli)"
+    },
+    "Tempio di Antonino e Faustina  'Templum Antonini et Faustinae' [13]  ": {
+        "i": "Templum Antonini et Faustinae",
+        "label": "[13] Tempio di Antonino e Faustina"
+    },
+    "Tempio di Athena 'Athenaion' (Pesto)": {
+        "i": "Athenaion",
+        "label": "Tempio di Athena (Pesto)"
+    },
+    "Tempio di Claudio  'Templum divi Claudii' [4]": {
+        "i": "Templum divi Claudii",
+        "label": "[4] Tempio di Claudio"
+    },
+    "Tempio di Clitunno  'Templum Clitumni' (Campello sul Clitunno)": {
+        "i": "Templum Clitumni",
+        "label": "Tempio di Clitunno (Campello sul Clitunno)"
+    },
+    "Tempio di Ercole  'Templum Herculis' (Cori)": {
+        "i": "Templum Herculis",
+        "label": "Tempio di Ercole (Cori)"
+    },
+    "Tempio di Ercole Vincitore  'Aedes Herculis Victoris' [26]": {
+        "i": "Aedes Herculis Victoris",
+        "label": "[26] Tempio di Ercole Vincitore"
+    },
+    "Tempio di Ercole Vincitore (Tivoli)": {
+        "i": "",
+        "label": "Tempio di Ercole Vincitore (Tivoli)"
+    },
+    "Tempio di Giove Laziale  'Aedes Iovis Latiaris' (Albano)": {
+        "i": "Aedes Iovis Latiaris",
+        "label": "Tempio di Giove Laziale (Albano)"
+    },
+    "Tempio di Giuturna, Area sacra di largo Argentina  'Templum Iuturnae' [42]": {
+        "i": "Templum Iuturnae",
+        "label": "[42] Tempio di Giuturna, Area sacra di largo Argentina"
+    },
+    "Tempio di Pola  'Templum Divi Augusti' (Pula)": {
+        "i": "Templum Divi Augusti",
+        "label": "Tempio di Pola (Pula)"
+    },
+    "Tempio di Portumno  'Portunium, Aedes Portuni' [25]": {
+        "i": "Portunium, Aedes Portuni",
+        "label": "[25] Tempio di Portumno"
+    },
+    "Tempio di Saturno  'Aedes Saturni' [16] ": {
+        "i": "Aedes Saturni",
+        "label": "[16] Tempio di Saturno"
+    },
+    "Tempio di Serapis  'Templum Serapis' [52]": {
+        "i": "Templum Serapis",
+        "label": "[52] Tempio di Serapis"
+    },
+    "Tempio di Venere e Roma  'Aedes Veneris et Romae' [9] ": {
+        "i": "Aedes Veneris et Romae",
+        "label": "[9] Tempio di Venere e Roma"
+    },
+    "Tempio di Vespasiano e Tito  'Templum Divus Vespasianus' [15]": {
+        "i": "Templum Vespasiani et Titi",
+        "label": "[15] Tempio di Vespasiano e Tito"
+    },
+    "Tempio di Vesta  'Aedes Vesta' (Tivoli)": {
+        "i": "Aedes Vesta",
+        "label": "Tempio di Vesta (Tivoli)"
+    },
+    "Templi repubblicani del Foro Olitorio [32]": {
+        "i": "",
+        "label": "[32] Templi repubblicani del Foro Olitorio"
+    },
+    "Terme di Agrippa  'Thermae Agrippae' [41]": {
+        "i": "Thermae Agrippae",
+        "label": "[41] Terme di Agrippa"
+    },
+    "Terme di Caracalla  'Thermae Antoninianae' [69]": {
+        "i": "Thermae Antoninianae",
+        "label": "[69] Terme di Caracalla"
+    },
+    "Terme di Diocleziano  'Thermae Diocletiani' [56]": {
+        "i": "Thermae Diocletiani",
+        "label": "[56] Terme di Diocleziano"
+    },
+    "Terme di Traiano  'Thermae Traiani' [3]": {
+        "i": "Thermae Traiani",
+        "label": "[3] Terme di Traiano"
+    },
+    "Terme in Albano denominati Cellomaio (Albano)": {
+        "i": "",
+        "label": "Terme di Cellomaio (Albano)"
+    },
+    "Tomba della familia degli Arruntii, liberti e schiavi  'Sepulcrum Arruntiorum' [77]": {
+        "i": "Sepulcrum Arruntiorum",
+        "label": "[77] Tomba della familia degli Arruntii, liberti e schiavi"
+    },
+    "Tomba di Mamia (Pompei)": {
+        "i": "",
+        "label": "Tomba di Mamia (Pompei)"
+    },
+    "Tombe etrusche (Chiusi)": {
+        "i": "",
+        "label": "Tombe etrusche (Tarquinia)"
+    },
+    "Tombe etrusche (Corneto)": {
+        "i": "",
+        "label": "Tombe etrusche (Tarquinia)"
+    },
+    "Tratto del Muro Torto (presso gli  'Horti Aciliorum ') [53]": {
+        "i": "",
+        "label": "[53]  Tratto del Muro Torto (presso gli Horti Aciliorum)"
+    },
+    "Tre sale sepolcrali credute della famiglia di Augusto [91]": {
+        "i": "",
+        "label": "[91] Tre sale sepolcrali credute della famiglia di Augusto"
+    },
+    "Ustrino  'Ustrinum' [92]": {
+        "i": "Ustrinum",
+        "label": "[92] Ustrino"
+    },
+    "Via Appia, a cinque miglia dalla Porta S. Sebastiano": {
+        "i": "Via Appius",
+        "label": "Via Appia, a cinque miglia dalla Porta S. Sebastiano"
+    },
+    "Via Appia, Casale di S. Maria Nuova": {
+        "i": "",
+        "label": "Via Appia, Casale di S. Maria Nuova"
+    },
+    "Via Appia che passa sotto le mura dell'Ustrino": {
+        "i": "Via Appius",
+        "label": "Via Appia che passa sotto le mura dell'Ustrino"
+    },
+    "Via Appia fuori di Porta S. Sebastiano circa tre miglia": {
+        "i": "Via Appius",
+        "label": "Via Appia fuori di Porta S. Sebastiano circa tre miglia"
+    },
+    "Via Appia  'Via Appius' (Albano)": {
+        "i": "Via Appius",
+        "label": "Via Appia (Albano)"
+    },
+    "Via Appia, Via Ardeatina  'Via Appius, Via Ardeatina'": {
+        "i": "Via Appius, Via Ardeatina",
+        "label": "Via Appia, Via Ardeatina"
+    },
+    "Via Flaminia  'Via Flaminia'": {
+        "i": "Via Flaminia",
+        "label": ""
+    },
+    "Villa Adriana  'Villa Hadriana' (Tivoli)": {
+        "i": "Villa Hadriana",
+        "label": "Villa Adriana (Tivoli)"
+    },
+    "Villa Albani (Villa Torlonia) [136]": {
+        "i": "",
+        "label": "[136] Villa Albani (Villa Torlonia)"
+    },
+    "Villa Barberini (Castel Gandolfo)": {
+        "i": "",
+        "label": "Villa Barberini (Castel Gandolfo)"
+    },
+    "Villa dei Cinque [102]": {
+        "i": "",
+        "label": "[102] Villa dei Cinque"
+    },
+    "Villa dei Sette Bassi [95]": {
+        "i": "",
+        "label": "[95] Villa dei Sette Bassi"
+    },
+    "Villa di Diomede (Pompei)": {
+        "i": "",
+        "label": "Villa di Diomede (Pompei)"
+    },
+    "Villa Doria Pamphili [133]": {
+        "i": "",
+        "label": "[133] Villa Doria Pamphili"
+    },
+    "Villa Estense (Tivoli)": {
+        "i": "",
+        "label": "Villa Estense (Tivoli)"
+    },
+    "Villa Medici [118]": {
+        "i": "",
+        "label": "[118] Villa Medici"
+    }
+}

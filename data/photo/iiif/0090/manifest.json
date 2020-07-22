@@ -1,0 +1,151 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0090/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Veduta generale del Ninfeo",
+    "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0090"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2078-0090"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Veduta generale del Ninfeo"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Nymphaeum Severi Alexanderi"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[59] Ninfeo di Alessandro Severo"
+        },
+        {
+            "label": "photo_date",
+            "value": "2002"
+        },
+        {
+            "label": "photographer",
+            "value": "Giuseppe STUTO "
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografato da ovest."
+        },
+        {
+            "label": "Cronologia",
+            "value": "Cronologia: 226 d.C.;costruito come la mostra dell'acqua captata da Alessandro Severo."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "I resti del Ninfeo."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "Piazza Vittorio Emanuele"
+        },
+        {
+            "label": "soggetto",
+            "value": "Conosciuto come \"Trofei di Mario\" o \"Ninfeo dell'Acqua Giulia\"."
+        },
+        {
+            "label": "sort2",
+            "value": "9007s, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "59"
+        },
+        {
+            "label": "file_n1",
+            "value": "9007"
+        },
+        {
+            "label": "main1",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[59] Ninfeo di Alessandro Severo "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "9007_04"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "985"
+        },
+        {
+            "label": "巻",
+            "value": "9"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "旧map_no",
+            "value": "69"
+        }
+    ],
+    "related": "https://piranesi.dl.itc.u-tokyo.ac.jp/photo/0090",
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0090/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0090/canvas/1",
+                            "resource": {
+                                "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/l/0090.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0090.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0090.jpg",
+    "viewingDirection": "left-to-right"
+}

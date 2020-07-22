@@ -1,0 +1,171 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0292/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Piedistallo della Colonna, lato principale",
+    "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0292"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2086-0292"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Piedistallo della Colonna, lato principale"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Columna Marci Aurelii Antonini"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[50] Colonna di Marco Aurelio"
+        },
+        {
+            "label": "photo_date",
+            "value": "2001. 7"
+        },
+        {
+            "label": "photographer",
+            "value": "Kazuko FUKUMURA"
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografata da est."
+        },
+        {
+            "label": "Direzione dell'oggetto",
+            "value": "Iscrizine che ha sostituito i rilievi Traianei."
+        },
+        {
+            "label": "Cronologia",
+            "value": "Cronologia: 1589 (Sisto V)."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Parte del monumento: lato est della Colonna, verso via Corso, iscrizione di SistoV."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "Piazza Colonna"
+        },
+        {
+            "label": "soggetto",
+            "value": "Iscrizine che ha sostituito i rilievi Traianei."
+        },
+        {
+            "label": "sort",
+            "value": "1"
+        },
+        {
+            "label": "sort2",
+            "value": "14037m, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "50"
+        },
+        {
+            "label": "file_n1",
+            "value": "14037"
+        },
+        {
+            "label": "main1",
+            "value": "m"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[50] Colonna di Marco Aurelio "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "0198"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "424"
+        },
+        {
+            "label": "巻",
+            "value": "14"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "データ登録日のコピー",
+            "value": "2004-01-05 00:00:00"
+        },
+        {
+            "label": "備考",
+            "value": "DSCF0198"
+        },
+        {
+            "label": "撮影順",
+            "value": "0265"
+        },
+        {
+            "label": "旧map_no",
+            "value": "50"
+        }
+    ],
+    "related": "https://piranesi.dl.itc.u-tokyo.ac.jp/photo/0292",
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0292/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0292/canvas/1",
+                            "resource": {
+                                "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/l/0292.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0292.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0292.jpg",
+    "viewingDirection": "left-to-right"
+}

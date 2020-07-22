@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/*
+ * IIIF Curation Viewer - Curation metadata edit plugin
+ * http://codh.rois.ac.jp/software/iiif-curation-viewer/
+ *
+ * Copyright 2017 Center for Open Data in the Humanities, Research Organization of Information and Systems
+ * Released under the MIT license
+ *
+ * Core contributor: Jun HOMMA (@2SC1815J)
+ */
+#editor_holder .well-sm {
+  margin-bottom: 9px;
+}
+#editor_holder .table {
+  margin-bottom: 12px;
+}
+#editor_holder h3 {
+  margin-top: 12px;
+}

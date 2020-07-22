@@ -1,0 +1,155 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0712/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Veduta del angolo nord-est dell'Arco",
+    "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0712"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2087-0712"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Veduta del angolo nord-est dell'Arco"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Arcus Constantini"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[1] Arco di Costantino"
+        },
+        {
+            "label": "photo_date",
+            "value": "2001. 7"
+        },
+        {
+            "label": "photographer",
+            "value": "Kazuko FUKUMURA"
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografato da est."
+        },
+        {
+            "label": "Cronologia",
+            "value": "Cronologia: 315 d.C.."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Parte del monumento: angolo dell'Arco, lato verso la Meta Sudante."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "Via di S. Gregorio, a sud della piazza del Colosseo"
+        },
+        {
+            "label": "soggetto",
+            "value": "Opera costantiniana con elementi architettonici tratti da monumenti dell' et&#224; di Traiano, Adriano, Commodo."
+        },
+        {
+            "label": "sort2",
+            "value": "17025s, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "1"
+        },
+        {
+            "label": "file_n1",
+            "value": "17025"
+        },
+        {
+            "label": "main1",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[1] Arco di Costantino "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "0625"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "932"
+        },
+        {
+            "label": "巻",
+            "value": "17"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "備考",
+            "value": "DSCF0625"
+        },
+        {
+            "label": "撮影順",
+            "value": "0650"
+        },
+        {
+            "label": "旧map_no",
+            "value": "1"
+        }
+    ],
+    "related": "https://piranesi.dl.itc.u-tokyo.ac.jp/photo/0712",
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0712/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0712/canvas/1",
+                            "resource": {
+                                "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/l/0712.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0712.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0712.jpg",
+    "viewingDirection": "left-to-right"
+}

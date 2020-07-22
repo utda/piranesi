@@ -1,0 +1,163 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0173/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Veduta dell basamento",
+    "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0173"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2083-0173"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Veduta dell basamento"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Portunium, Aedes Portuni"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[25] Tempio di Portumno"
+        },
+        {
+            "label": "photo_date",
+            "value": "2002"
+        },
+        {
+            "label": "photographer",
+            "value": "Giuseppe STUTO "
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografata da sud-ovest."
+        },
+        {
+            "label": "Direzione dell'oggetto",
+            "value": "Tempio pseudoperiptero ionico."
+        },
+        {
+            "label": "Cronologia",
+            "value": "Cronologia: 80-70 a.C. su edificio preesistente del IV-III sec. a.C.."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Parte del monumento: particolare del lato ovest."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "Via del Ponte Rotto"
+        },
+        {
+            "label": "soggetto",
+            "value": "Tempio pseudoperiptero ionico."
+        },
+        {
+            "label": "sort2",
+            "value": "4059s, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "25"
+        },
+        {
+            "label": "file_n1",
+            "value": "4059"
+        },
+        {
+            "label": "main1",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[25] Tempio di Portumno "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "4059_01"
+        },
+        {
+            "label": "縦横",
+            "value": "縦長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "250"
+        },
+        {
+            "label": "巻",
+            "value": "4"
+        },
+        {
+            "label": "memo",
+            "value": "Tempio di Fortuna Virile"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "データ登録日のコピー",
+            "value": "2003-12-26 00:00:00"
+        },
+        {
+            "label": "旧map_no",
+            "value": "26"
+        }
+    ],
+    "related": "https://piranesi.dl.itc.u-tokyo.ac.jp/photo/0173",
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0173/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0173/canvas/1",
+                            "resource": {
+                                "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/l/0173.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0173.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0173.jpg",
+    "viewingDirection": "left-to-right"
+}

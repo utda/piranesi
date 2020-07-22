@@ -1,0 +1,143 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/d0101032/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "d0101032",
+    "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "d0101032"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "d0101032"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Ianus Quadrifrons"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[23] Arco di Giano c.d."
+        },
+        {
+            "label": "photo_date",
+            "value": "2001. 1. 5"
+        },
+        {
+            "label": "photographer",
+            "value": "Takashi IIZUKA"
+        },
+        {
+            "label": "sort",
+            "value": "1"
+        },
+        {
+            "label": "sort2",
+            "value": "1036m, 17024s,8060s"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "23"
+        },
+        {
+            "label": "file_n1",
+            "value": "1036"
+        },
+        {
+            "label": "main1",
+            "value": "m"
+        },
+        {
+            "label": "file_n2",
+            "value": "17024"
+        },
+        {
+            "label": "main2",
+            "value": "s"
+        },
+        {
+            "label": "file_n3",
+            "value": "8060"
+        },
+        {
+            "label": "main3",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[23] Arco di Giano c.d. "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "d0101032"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "28"
+        },
+        {
+            "label": "巻",
+            "value": "1"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "旧map_no",
+            "value": "22"
+        }
+    ],
+    "related": "https://piranesi.dl.itc.u-tokyo.ac.jp/photo/d0101032",
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/d0101032/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/d0101032/canvas/1",
+                            "resource": {
+                                "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/l/d0101032.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/d0101032.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/d0101032.jpg",
+    "viewingDirection": "left-to-right"
+}

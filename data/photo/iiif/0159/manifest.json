@@ -1,0 +1,175 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0159/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Veduta della facciata esterna della cavea",
+    "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0159"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2082-0159"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Veduta della facciata esterna della cavea"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Theatrum Marcelli"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[33] Teatro di Marcello"
+        },
+        {
+            "label": "photo_date",
+            "value": "2002"
+        },
+        {
+            "label": "photographer",
+            "value": "Giuseppe STUTO "
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografato da nord-est."
+        },
+        {
+            "label": "Cronologia",
+            "value": "Cronologia: 17 a.C.."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Parte del monumento: la parte nord-est dell'anello esterno, verso Via del Teatro di Marcello; la facciata esterna della cavea, con Tempio di Apollo."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "Via del Teatro di Marcello"
+        },
+        {
+            "label": "sort",
+            "value": "2"
+        },
+        {
+            "label": "sort2",
+            "value": "4030m, 4031m,4038s"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "33"
+        },
+        {
+            "label": "file_n1",
+            "value": "4030"
+        },
+        {
+            "label": "main1",
+            "value": "m"
+        },
+        {
+            "label": "file_n2",
+            "value": "4031"
+        },
+        {
+            "label": "main2",
+            "value": "m"
+        },
+        {
+            "label": "file_n3",
+            "value": "4038"
+        },
+        {
+            "label": "main3",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[33] Teatro di Marcello "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "4038_03"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "110"
+        },
+        {
+            "label": "巻",
+            "value": "4"
+        },
+        {
+            "label": "memo",
+            "value": "マルケッルス劇場"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "データ登録日のコピー",
+            "value": "2004-01-05 00:00:00"
+        },
+        {
+            "label": "旧map_no",
+            "value": "34"
+        }
+    ],
+    "related": "https://piranesi.dl.itc.u-tokyo.ac.jp/photo/0159",
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0159/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0159/canvas/1",
+                            "resource": {
+                                "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/l/0159.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0159.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0159.jpg",
+    "viewingDirection": "left-to-right"
+}

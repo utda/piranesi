@@ -1,0 +1,171 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0855/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Veduta della Mura",
+    "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0855"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2087-0855"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Veduta della Mura"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Forum Augusti"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[18] Foro di Augusto"
+        },
+        {
+            "label": "photo_date",
+            "value": "2001. 7"
+        },
+        {
+            "label": "photographer",
+            "value": "Kazuko FUKUMURA"
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografata da sud."
+        },
+        {
+            "label": "Cronologia",
+            "value": "Cronologia: 42-2 a.C.."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Parte del monumento: mura del Tempio di Marte Ultore."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "Via dei Fori Imperiali"
+        },
+        {
+            "label": "sort2",
+            "value": "8064s, 1053s,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "18"
+        },
+        {
+            "label": "file_n1",
+            "value": "8064"
+        },
+        {
+            "label": "main1",
+            "value": "s"
+        },
+        {
+            "label": "file_n2",
+            "value": "1053"
+        },
+        {
+            "label": "main2",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[18] Foro di Augusto "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "0768"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "185"
+        },
+        {
+            "label": "巻",
+            "value": "8"
+        },
+        {
+            "label": "memo",
+            "value": "アウグストゥス帝のフォルム"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "データ登録日のコピー",
+            "value": "2004-01-09 00:00:00"
+        },
+        {
+            "label": "備考",
+            "value": "DSCF0768"
+        },
+        {
+            "label": "撮影順",
+            "value": "0758"
+        },
+        {
+            "label": "旧map_no",
+            "value": "17"
+        }
+    ],
+    "related": "https://piranesi.dl.itc.u-tokyo.ac.jp/photo/0855",
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0855/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0855/canvas/1",
+                            "resource": {
+                                "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/l/0855.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0855.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0855.jpg",
+    "viewingDirection": "left-to-right"
+}

@@ -1,0 +1,115 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/3023/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "3023",
+    "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "3023"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0821-3301-0750-0079"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "Tempio di Athena (Pesto)"
+        },
+        {
+            "label": "photo_date",
+            "value": "2001.10.1"
+        },
+        {
+            "label": "photographer",
+            "value": "Takeo FUKAZAWA"
+        },
+        {
+            "label": "sort2",
+            "value": "15021s, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Pesto"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Paestum"
+        },
+        {
+            "label": "file_n1",
+            "value": "15021"
+        },
+        {
+            "label": "main1",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "Tempio di Athena (Pesto) "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "0821-3301-0750-0079"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "13"
+        },
+        {
+            "label": "巻",
+            "value": "15"
+        },
+        {
+            "label": "memo",
+            "value": "ヘラ神殿（アテナ神殿）"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-10-06 00:00:00"
+        }
+    ],
+    "related": "https://piranesi.dl.itc.u-tokyo.ac.jp/photo/3023",
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/3023/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/3023/canvas/1",
+                            "resource": {
+                                "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/l/3023.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/3023.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/3023.jpg",
+    "viewingDirection": "left-to-right"
+}

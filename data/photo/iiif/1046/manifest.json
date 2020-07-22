@@ -1,0 +1,159 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/1046/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Particolare del castello medioevale adiacente al Mausoleo",
+    "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "1046"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2087-1046"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Particolare del castello medioevale adiacente al Mausoleo"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Mausoleum Caeciliae Metellae"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[73] Mausoleo di Cecilia Metella"
+        },
+        {
+            "label": "photo_date",
+            "value": "2001. 7"
+        },
+        {
+            "label": "photographer",
+            "value": "Kazuko FUKUMURA"
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografato da sud-ovest."
+        },
+        {
+            "label": "Cronologia",
+            "value": "Cronologia: I sec.a.C.."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Parte del monumento: rovine castello medioevale adiacente al Mausoleo"
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "III miglio della via Appia Antica(lato orientale)"
+        },
+        {
+            "label": "sort2",
+            "value": "17045s, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma, Subrubio"
+        },
+        {
+            "label": "map_no",
+            "value": "73"
+        },
+        {
+            "label": "file_n1",
+            "value": "17045"
+        },
+        {
+            "label": "main1",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[73] Mausoleo di Cecilia Metella "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "0959"
+        },
+        {
+            "label": "縦横",
+            "value": "縦長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "348"
+        },
+        {
+            "label": "巻",
+            "value": "17"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "データ登録日のコピー",
+            "value": "2004-01-09 00:00:00"
+        },
+        {
+            "label": "備考",
+            "value": "DSCF0959"
+        },
+        {
+            "label": "撮影順",
+            "value": "0902"
+        },
+        {
+            "label": "旧map_no",
+            "value": "93"
+        }
+    ],
+    "related": "https://piranesi.dl.itc.u-tokyo.ac.jp/photo/1046",
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/1046/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/1046/canvas/1",
+                            "resource": {
+                                "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/l/1046.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/1046.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/1046.jpg",
+    "viewingDirection": "left-to-right"
+}

@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/*
+ * IIIF Curation Viewer v1.7
+ * http://codh.rois.ac.jp/software/iiif-curation-viewer/
+ *
+ * Copyright 2016 Center for Open Data in the Humanities, Research Organization of Information and Systems
+ * Released under the MIT license
+ *
+ * Core contributor: Jun HOMMA (@2SC1815J)
+ *
+ * Licenses of open source libraries, see acknowledgements.txt
+ */
+.navbar-custom-header {
+  min-height: 44px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.container-custom-header {
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
+
+.navbar-header-custom-header {
+  margin-bottom: 5px;
+}
+
+.navbar-toggle-custom-header {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.navbar-brand-custom-header {
+  height: 34px;
+  min-height: 34px;
+  padding: 5px 15px;
+}
+
+.icp_navbar_brand_logo {
+  display: inline !important;
+  margin-left: 1px;
+  margin-right: 10px;
+  padding-right: 1em;
+  background-size: 1em 1em;
+  background-image: url("icp-logo.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  vertical-align: baseline;
+}
+
+.navbar-nav-custom {
+  margin: 0px -15px;
+}
+.navbar-nav-custom > li {
+  display: inline-block;
+}
+.navbar-nav-custom > li > a {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px; 
+}
+.navbar-nav-custom > li:first-child {
+  margin-left: 15px;
+}
+.navbar-nav-custom > li:first-child:after {
+  content: '/';
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
+.navbar-text-custom-header {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 0px;
+  color: #ccc !important;
+}
+
+.navbar-custom-footer {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, "Arial", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  min-height: 24px;
+  margin-bottom: 0px;
+  background-color: #313642;
+}
+
+.navbar-text-custom-footer {
+  margin: 3px 0px;
+  width: 100%;
+  color: #ccc !important;
+  font-size: 75%;
+}
+
+.container-custom {
+  min-height: calc(100vh - 70px);
+}
+
+@media (min-width: 1400px) {
+  .container-custom-header,
+  .container-custom-footer {
+    width: 100%;
+  }
+}
+
+@media print {
+  header a[href]:after,
+  footer a[href]:after {
+    content: '' !important;
+  }
+}

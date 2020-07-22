@@ -1,0 +1,159 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0146l/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Particolare dell'iscrizione",
+    "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0146l"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2081-0146"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Particolare dell'iscrizione"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Sepulcrum C. Publicii Bibuli"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[22] Sepolcro di C. Poblicio Bibulo"
+        },
+        {
+            "label": "photo_date",
+            "value": "2002"
+        },
+        {
+            "label": "photographer",
+            "value": "Giuseppe STUTO "
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografato da sud-ovest."
+        },
+        {
+            "label": "Cronologia",
+            "value": "Cronologia: I sec.a.C.."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Parte del monumento: l'iscrizione sul lato sud-ovest."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "Lato nord del monumento a Vittorio Emanuele II"
+        },
+        {
+            "label": "sort2",
+            "value": "2005s, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "22"
+        },
+        {
+            "label": "file_n1",
+            "value": "2005"
+        },
+        {
+            "label": "main1",
+            "value": "s"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[22] Sepolcro di C. Poblicio Bibulo "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "2005_01"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "999"
+        },
+        {
+            "label": "巻",
+            "value": "2"
+        },
+        {
+            "label": "memo",
+            "value": "2004_02をメインとしたい"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "データ登録日のコピー",
+            "value": "2004-01-13 00:00:00"
+        },
+        {
+            "label": "追加",
+            "value": "登録"
+        },
+        {
+            "label": "旧map_no",
+            "value": "21"
+        }
+    ],
+    "related": "https://piranesi.dl.itc.u-tokyo.ac.jp/photo/0146l",
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0146l/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0146l/canvas/1",
+                            "resource": {
+                                "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/l/0146l.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0146l.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0146l.jpg",
+    "viewingDirection": "left-to-right"
+}

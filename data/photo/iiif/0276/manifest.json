@@ -1,0 +1,171 @@
+{
+    "@context": "http://iiif.io/api/presentation/2/context.json",
+    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0276/manifest.json",
+    "@type": "sc:Manifest",
+    "attribution": "東京大学 The University of Tokyo, JAPAN",
+    "label": "Veduta della Piazza",
+    "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",
+    "metadata": [
+        {
+            "label": "photo_no",
+            "value": "0276"
+        },
+        {
+            "label": "PICUREphotoID",
+            "value": "0000-0000-2086-0276"
+        },
+        {
+            "label": "Didascalia",
+            "value": "Veduta della Piazza"
+        },
+        {
+            "label": "Edificio_l",
+            "value": "Stadium Domitiani"
+        },
+        {
+            "label": "Edificio_i",
+            "value": "[44] Stadio di Domiziano (Piazza Navona)"
+        },
+        {
+            "label": "photo_date",
+            "value": "2001. 7"
+        },
+        {
+            "label": "photographer",
+            "value": "Kazuko FUKUMURA"
+        },
+        {
+            "label": "Fotografato_da",
+            "value": "Fotografata da nord."
+        },
+        {
+            "label": "Direzione dell'oggetto",
+            "value": "La fontana dei fiumi &#232; opera di Gian Lorenzo Bernini. S. Agnese in Agone, fu iniziata da Girolamo Rainaldi e Carlo Rainaldi sotto Innoccenzo X e compiuta dal Francesco Borromini."
+        },
+        {
+            "label": "Cronologia",
+            "value": "Cronologia:fontana 1651, chiesa 1652."
+        },
+        {
+            "label": "Parte dell'oggetto",
+            "value": "Zona centrale con la fontana dei fiumi e S. Agnese in Agone."
+        },
+        {
+            "label": "Localizzazione moderna",
+            "value": "Piazza Navona"
+        },
+        {
+            "label": "soggetto",
+            "value": "La fontana dei fiumi opera di Gian Lorenzo Bernini. S. Agnese in Agone, fu iniziata da Girolamo Rainaldi e Carlo Rainaldi sotto Innoccenzo X e compiuta dal Francesco Borromini."
+        },
+        {
+            "label": "sort",
+            "value": "1"
+        },
+        {
+            "label": "sort2",
+            "value": "16031m, ,"
+        },
+        {
+            "label": "citta`",
+            "value": "Roma"
+        },
+        {
+            "label": "citta` antica",
+            "value": "Urbs Roma"
+        },
+        {
+            "label": "map_no",
+            "value": "44"
+        },
+        {
+            "label": "file_n1",
+            "value": "16031"
+        },
+        {
+            "label": "main1",
+            "value": "m"
+        },
+        {
+            "label": "Edificio_all",
+            "value": "[44] Stadio di Domiziano (Piazza Navona) "
+        },
+        {
+            "label": "参照写真ファイル名",
+            "value": "0177"
+        },
+        {
+            "label": "縦横",
+            "value": "横長"
+        },
+        {
+            "label": "レコード番号",
+            "value": "409"
+        },
+        {
+            "label": "巻",
+            "value": "16"
+        },
+        {
+            "label": "荒木チェック",
+            "value": "済"
+        },
+        {
+            "label": "データ登録日",
+            "value": "2005-03-28 00:00:00"
+        },
+        {
+            "label": "データ登録日のコピー",
+            "value": "2003-12-26 00:00:00"
+        },
+        {
+            "label": "備考",
+            "value": "DSCF0177"
+        },
+        {
+            "label": "撮影順",
+            "value": "0250"
+        },
+        {
+            "label": "旧map_no",
+            "value": "40"
+        }
+    ],
+    "related": "https://piranesi.dl.itc.u-tokyo.ac.jp/photo/0276",
+    "sequences": [
+        {
+            "@type": "sc:Sequence",
+            "canvases": [
+                {
+                    "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0276/canvas/1",
+                    "@type": "sc:Canvas",
+                    "height": 3006,
+                    "images": [
+                        {
+                            "@type": "oa:Annotation",
+                            "motivation": "sc:painting",
+                            "on": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/iiif/0276/canvas/1",
+                            "resource": {
+                                "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/l/0276.jpg",
+                                "@type": "dctypes:Image",
+                                "format": "image/jpeg",
+                                "height": 3006,
+                                "width": 3969
+                            }
+                        }
+                    ],
+                    "label": "1",
+                    "thumbnail": {
+                        "@id": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0276.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg"
+                    },
+                    "width": 3969
+                }
+            ],
+            "viewingHint": "individuals"
+        }
+    ],
+    "thumbnail": "https://piranesi.dl.itc.u-tokyo.ac.jp/data/photo/m/0276.jpg",
+    "viewingDirection": "left-to-right"
+}
