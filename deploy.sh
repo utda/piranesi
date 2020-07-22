@@ -1,2 +1,2 @@
-yarn generate:gh-pages
-yarn deploy
+npm run generate:gh-pages
+npm run deploy
