@@ -3,8 +3,9 @@
     <section class="mb-5">
       <v-img src="img/ogp/home.jpg" height="300px">
         <v-row align="center" class="lightbox white--text pa-2 fill-height">
-          <v-col>
-            <h1 class="display-1 text-center">
+          <v-col class="text-center">
+            <h3>{{ $t('attribution') }}</h3>
+            <h1 class="display-1">
               <b>{{ $t('piranesi_db') }}</b>
             </h1>
           </v-col>

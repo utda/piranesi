@@ -235,5 +235,7 @@
     "table" : "Table",
     "graph" : "Graph",
     "search_query" : "Filter",
-    "clear" : "Clear"
+    "clear" : "Clear",
+
+    "attribution" : "The University of Tokyo, The General Library's Kamei Collection"
   }

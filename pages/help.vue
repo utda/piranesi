@@ -236,6 +236,7 @@
             </template>
           </p>
 
+          <!--
           <v-divider class="my-5" />
 
           <a :href="baseUrl + '/sitemap.xml'" target="_blank">
@@ -252,6 +253,7 @@
               Sitemap of thie site.
             </template>
           </p>
+          -->
         </div>
       </v-card>
     </v-container>
