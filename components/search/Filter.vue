@@ -10,12 +10,16 @@
           style="white-space: normal; word-wrap: break-word;"
           class="ma-1"
           close
-          color="primary"
+          :color="!value.startsWith('-') ? 'primary' : 'grey'"
           label
           text-color="white"
           @click:close="removeKey(value, 'keyword')"
         >
-          {{ $t('keyword') }}: {{ value }}
+          <v-icon v-if="value.startsWith('-')" class="mr-1"
+            >mdi-minus-box</v-icon
+          >
+          {{ $t('keyword') }}:
+          {{ !value.startsWith('-') ? value : value.slice(1) }}
         </v-chip>
       </template>
 
@@ -40,8 +44,11 @@
                   )
                 "
               >
+                <v-icon v-if="method !== '+'" class="mr-1"
+                  >mdi-minus-box</v-icon
+                >
                 {{ getLabel(label) }}:
-                {{ method === '+' ? value : '-' + value }}
+                {{ value }}
               </v-chip>
             </template>
           </span>

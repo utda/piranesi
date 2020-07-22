@@ -171,7 +171,7 @@
           <v-col cols="12" sm="6">
             <h2 class="mt-5">お知らせ</h2>
             <ul class="mt-4">
-              <li>2020-07-21: システムを公開しました。</li>
+              <li>2020-07-22: システムを公開しました。</li>
             </ul>
           </v-col>
         </v-row>
@@ -192,7 +192,7 @@
           <v-col cols="12" sm="6">
             <h2 class="mt-5">News</h2>
             <ul class="mt-4">
-              <li>2020-07-21: The system was opened to the public.</li>
+              <li>2020-07-22: The system was opened to the public.</li>
             </ul>
           </v-col>
         </v-row>
