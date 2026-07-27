@@ -9,7 +9,7 @@
  */
 var icvExportJsonKeeper = (function() {
     var jsonKeeperConfig = {
-        accessControl: 'firebase',
+        accessControl: '',
         allowAnonymousPost: true
     };
     return ICVExportJsonKeeper(jsonKeeperConfig);
