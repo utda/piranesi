@@ -34,8 +34,8 @@
             >https://warp.ndl.go.jp/info:ndljp/pid/1016139/www.coe.l.u-tokyo.ac.jp:8080/piranesi.html</a
           >
           を引き継ぎ、当時提供されていた機能を再構築したものです。なお、2019年に画像とメタデータのみの「ピラネージ画像データベース」
-          <a href="https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/page/home"
-            >https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/page/home</a
+          <a href="https://da.dl.itc.u-tokyo.ac.jp/portal/collection/piranesi"
+            >https://da.dl.itc.u-tokyo.ac.jp/portal/collection/piranesi</a
           >
           （以下「シンプル版」といいます）を公開しましたが、本サイトはシンプル版が提供する機能を包含していますので、こちらの拡張版サイトを利用されることをお勧めします。 </template
         ><template v-else>
@@ -49,8 +49,8 @@
             href="https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-11CE2001/"
             >https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-11CE2001/</a
           >), and uses images provided by
-          <a href="https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/page/home"
-            >https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/page/home</a
+          <a href="https://da.dl.itc.u-tokyo.ac.jp/portal/collection/piranesi"
+            >https://da.dl.itc.u-tokyo.ac.jp/portal/collection/piranesi</a
           >.
         </template>
       </v-alert>

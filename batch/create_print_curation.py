@@ -78,7 +78,7 @@ for key in data2:
       "@type": "sc:Range",
       "label": "Manual curation by IIIF Curation Viewer",
       "within": {
-        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/"+uuid+"/manifest",
+        "@id": "https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/"+uuid+"/manifest",
         "@type": "sc:Manifest",
         "label": str(key)
       },
@@ -89,7 +89,7 @@ for key in data2:
           "label": str(key),
           "metadata": data1[key],
           "thumbnail": data2[key]["thumbnail"],
-          "related" : "https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/document/"+uuid
+          "related" : "https://da.dl.itc.u-tokyo.ac.jp/portal/assets/"+uuid
         }
         ]
     })

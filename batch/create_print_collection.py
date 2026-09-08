@@ -75,7 +75,7 @@ for key in data2:
 
     manifests.append(
         {
-        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/"+uuid+"/manifest",
+        "@id": "https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/"+uuid+"/manifest",
         "@type": "sc:Manifest",
         "label": str(key),
         "license": "http://creativecommons.org/publicdomain/zero/1.0/",

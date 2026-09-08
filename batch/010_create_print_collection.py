@@ -150,7 +150,7 @@ for key in data2:
     title = "第" + str(volume) + "巻 第" + str(plate) + "葉" + constellation
 
     map[volume]["manifests"].append({
-        "@id": "https://iiif.dl.itc.u-tokyo.ac.jp/repo/iiif/"+uuid+"/manifest",
+        "@id": "https://da.dl.itc.u-tokyo.ac.jp/portal/repo/iiif/"+uuid+"/manifest",
         "@type": "sc:Manifest",
         "label": title,
         "license": "https://www.lib.u-tokyo.ac.jp/ja/library/contents/archives-top/reuse",

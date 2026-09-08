@@ -82,7 +82,7 @@
         </v-list-item>
 
         <v-list-item
-          href="https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/page/about"
+          href="https://da.dl.itc.u-tokyo.ac.jp/portal/collection/piranesi"
           link
           target="_blank"
         >
@@ -98,7 +98,7 @@
         </v-list-item>
 
         <v-list-item
-          href="https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/piranesi/page/legend"
+          href="https://da.dl.itc.u-tokyo.ac.jp/portal/collection/piranesi"
           link
           target="_blank"
         >
