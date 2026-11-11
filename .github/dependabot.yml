@@ -22,8 +22,6 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    # github-actions は semver-*-days 非対応。書くと設定全体がエラーになる
     cooldown:
       default-days: 5
-      semver-major-days: 30
-      semver-minor-days: 7
-      semver-patch-days: 3
