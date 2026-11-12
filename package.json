@@ -23,7 +23,7 @@
     "@nuxtjs/vuetify": "^1.11.2",
     "@types/chart.js": "^2.9.20",
     "chart.js": "^2.9.3",
-    "nuxt": "^2.12.2",
+    "nuxt": "^4.6.3",
     "nuxt-i18n": "^6.11.1",
     "vue-chartjs": "^3.5.0"
   },
